@@ -10,13 +10,13 @@ lunes 16 marzo 2026
 
 - README.md, es muy importante, es donde están las instrucciones de cómo usar un software o un hardware. La documentación técnica la mostraremos siempre en markdown
 
-- ejemplo, la documentación de [mateo](https://github.com/matbutom) es muy buena
+- ejemplo, la documentación de mateo <https://github.com/matbutom> es muy buena
   
-- [pandoc.org](https://oshwa.org/)
+- <https://pandoc.org/>
 
 - instalaremos arduino, probablemente es de los últimos cursos en los que Aarón enseñará arduino
 
-- [oshwa.org](https://oshwa.org/)
+- <https://oshwa.org/>
 
 - las herramientas que utilizaremos serán opensource
 
@@ -119,6 +119,7 @@ void loop() {
   pantalla.endDraw();
 }
 ```
+
 - este segundo código nos muestra un menasje dentro de la pantallita que viene en el arduino en físico
 - este código utiliza la velocidad 115200 en serial.begin, es otro tipo de velocidad distinto a 9600
 
@@ -128,15 +129,14 @@ void loop() {
 
 - todos los arduinos se conoectarán al servidor mosquitto
 
--  hashtag espacio es otra forma de hacer comentarios, es otro lenguaje si
+- hashtag espacio es otra forma de hacer comentarios, es otro lenguaje si
 
--  -h es ayuda (help)
+- -h es ayuda (help)
 
--  le debo decir al arduino que se conecte al wifi y al servidor mosquitto
+- le debo decir al arduino que se conecte al wifi y al servidor mosquitto
 
--  los mensajes se mandan a través de canales
+- los mensajes se mandan a través de canales
 
--  en el ejemplo, int port = 1883; es que toca la puerta para conectarse a ese puerto
+- en el ejemplo, int port = 1883; es que toca la puerta para conectarse a ese puerto
 
--  debe conectarse al wifi, luego  mosquitto,
-
+- debe conectarse al wifi, luego  mosquitto,
