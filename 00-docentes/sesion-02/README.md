@@ -90,95 +90,11 @@ al igual que en Processing, el código en Arduino tiene dos funciones principale
 
 ## ejemplo00
 
-```cpp
-// ejemplo00
-// imprime la sigla del curso en el monitor serial
-// luego espera 1 segundo e imprime :)
-// funciona con Arduino Uno R4 WiFi
-// marzo 2026
-// por montoyamoraga para disenoUDP
-
-// crear instancia de ArduinoLedMatrix
-// con nombre pantalla
-ArduinoLEDMatrix pantalla;
-
-void setup() {
-  // iniciar puerto serial
-  Serial.begin(9600);
-}
-
-void loop() {
-  // imprimir en consola
-  Serial.println("dis9079");
-  // esperar un segundo
-  delay(1000);
-
-  // imprimir en consola
-  Serial.println(":)");
-  // esperar un segundo
-  delay(1000);
-}
-```
+disponible en [./ejemplo00/](./ejemplo00/)
 
 ## ejemplo01
 
-```cpp
-// ejemplo01
-// imprime la sigla del curso en la pantalla led
-// de la Arduino Uno R4 WiFi
-// basado en
-// https://docs.arduino.cc/tutorials/uno-r4-wifi/led-matrix/#scrolling-text-example
-// marzo 2026
-// por montoyamoraga para disenoUDP
-
-// incluir bibliotecas
-#include <ArduinoGraphics.h>
-#include "Arduino_LED_Matrix.h"
-
-// declarar instancia de ArduinoLEDMatrix
-// con nombre pantalla
-ArduinoLEDMatrix pantalla;
-
-void setup() {
-
-  // iniciar puerto serial
-  Serial.begin(115200);
-
-  // inicializar pantalla
-  pantalla.begin();
-
-}
-
-void loop() {
-
-  // definir nuevo dibujo
-  pantalla.beginDraw();
-
-  // definir trazo
-  pantalla.stroke(0xFFFFFFFF);
-
-  // definir velocidad de deslizamiento
-  pantalla.textScrollSpeed(100);
-
-  // definir texto
-  const char texto[] = "    diseno udp dis9704 interacciones inalambricas    ";
-  
-  // definir tipo
-  pantalla.textFont(Font_5x7);
-
-  // definir inicio del texto
-  pantalla.beginText(0, 1, 0xFFFFFF);
-
-  // imprimir el texto
-  pantalla.println(texto);
-
-  // deslizar hacia la izquierda
-  pantalla.endText(SCROLL_LEFT);
-
-  // fin del dibujo
-  pantalla.endDraw();
-}
-```
+disponible en [./ejemplo01/](./ejemplo01/)
 
 ## mosquitto
 
@@ -194,9 +110,10 @@ mosquitto -c mosquitto.conf
 
 ## ejemplo02
 
-```cpp
+este ejemplo tiene 2 partes
 
-```
+1. la de recibir está disponible en [./ejemplo02Recibir/](./ejemplo02Recibir/)
+2. la de enviar está disponible en [./ejemplo02Enviar/](./ejemplo02Enviar/)
 
 ## enlaces
 
