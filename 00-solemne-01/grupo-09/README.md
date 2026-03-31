@@ -2,9 +2,9 @@
 
 ## integrantes
 
-* nombre completo
-* nombre completo
-* nombre completo
+* Marlén Génesis Constanza Soto Soto
+* Marcela Zúñiga
+  
 
 ## descripción del proyecto
 
