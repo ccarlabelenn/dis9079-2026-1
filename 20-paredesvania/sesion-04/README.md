@@ -41,3 +41,6 @@ MQTT es un protocolo de mensajería ligero (publicación/suscripción) ideal par
 Te odiamos MQTT
 
 ![teodiamos](./imagenes/teodiamos.jpeg)
+
+Hola Aarón soy yo de nuevo, que bacan.
+adios aarón nos vemos
