@@ -2,9 +2,9 @@
 
 ## integrantes
 
-* Sofía Cartes Aravena / [sofiacartes](https://github.com/sofiacartes)
-* Monserrat Paredes / [Monserrat-Paredes](https://github.com/Monserrat-Paredes)
-* Valentina Ruz Pizarro / [vxlentiinaa](https://github.com/vxlentiinaa)
+* Sofía Cartes Aravena / <https://github.com/sofiacartes>
+* Monserrat Paredes / <https://github.com/Monserrat-Paredes>
+* Valentina Ruz Pizarro / <https://github.com/vxlentiinaa>
 
 ## descripción del proyecto
 
@@ -23,5 +23,11 @@
 ```cpp
 // rellenar
 ```
+
+## investigaciones individuales
+
+<./persona-01.md>
+<./persona-02.md>
+<./persona-03.md>
 
 ## bibliografía
