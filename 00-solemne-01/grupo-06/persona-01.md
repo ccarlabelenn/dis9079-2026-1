@@ -95,5 +95,6 @@ https://pip-assets.raspberrypi.com/categories/1005-raspberry-pi-pico-2/documents
 https://cursos.mcielectronics.cl/2025/08/12/introduccion-a-raspberry-pi-pico-2-y-pico-2-w/
 
 
+
 *[Texto de investigación redactado personalmente y reestructurado con ayuda de ChatGPT + toques personales]*
 
