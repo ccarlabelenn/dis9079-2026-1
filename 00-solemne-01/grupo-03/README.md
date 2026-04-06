@@ -1,10 +1,10 @@
-# grupo-xx
+# grupo-03
 
 ## integrantes
 
-* nombre completo
-* nombre completo
-* nombre completo
+* Antonella Aguilar
+* Tomás Catrileo
+* Angel Sabogal
 
 ## descripción del proyecto
 
