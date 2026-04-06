@@ -18,6 +18,8 @@
 
 
 nos estuvo saliendo solo puntitos durante toda la clase, tratamos con 3 internnet diferentes y usuario de adafruit 
+pero luego cambiamos la contraseña de internet a una mas larga y solo con minusculas y numeros 
+con ese cambio resulto al enviar datos.
 
 
 ```cpp
