@@ -26,4 +26,26 @@ Aquí lo edité:
 
 ![baudios solucionado](./imagenes/solucionado_baud.png)
 
+Teniendo eso solucionado lo volví a enviar el código
+
+Error 2: acá me estanqué un rato porque el serial monitor solo me tiraba "............" pero ningún mensaje, hasta que luego de un rato probando me apareció este mensaje y efectivamente como dijo Aaron me daba el error por el firmware del arduino, también me costó actualizarlo porque daba error y se quedaba pegada la aplicación, pero lo terminé solucionando solamente intentando de nuevo actualizarlo
+
+![error por firmware](./imagenes/error2.png)
+
+![actualizando firmware](./imagenes/actualizarfirmware.png)
+
+Error 3: luego de solucionar esto volví a intentarlo pero me seguía dando los puntitos "....." por lo que averigüé es que el arduino está tratando de entrar al WiFi pero no lo logra, por lo que utilicé el hotspot de mi celular porque el iPhone tiene una opción de "máxima compatibilidad" para que pueda conectarse ya que sin eso estaria en 5Ghz y el arduino opera en 2.4GHz
+
+Con esto solucionado vuelvo a tirar el código al arduino y funciona!
+
+![valores en serial monitor](./imagenes/serialmonitor1.png)
+
+Empezaron a aparecer los números en la sección "Feeds" en la página de Adafruit IO y viendo cómo funciona el dashboard creé uno con un block de "streams" para que ahi se puedan ir viendo los valores que envía el arduino, como la página de Adafruit estaba en inglés me guié de [esta página](https://mkelectronica.com/aprende-a-utilizar-la-plataforma-adafruit-io-para-tus-dispositivos-iot-parte-1/) para ir entendiendo cómo funcionaban 
+
+![valores en feeds](./imagenes/valorfeed.png)
+
+Así se ve en el Dashboard que creé: 
+
+![streams en dashboard](./imagenes/dashboardstreams.png)
+
 ## sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
