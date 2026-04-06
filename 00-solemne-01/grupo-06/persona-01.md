@@ -1,6 +1,6 @@
 # persona-01 - Renata Arévalo Urra
 
-investigaciones individuales
+Investigaciones Individuales
 
 # sobre adafruit i/o
 
@@ -9,37 +9,38 @@ Lo primero que hice fue entrar a la página de Adafruit io https://io.adafruit.c
 
 ## Cuenta creada en Adafruit IO
 
-<img width="1293" height="1079" alt="image" src="https://github.com/user-attachments/assets/7e614164-ae6f-4b0e-afcc-b49a63f77d23" />
+![titulo](./imagenes/perfilarevalourra.png)
 
 
 ## Sección de guía de descarga de Adafruit IO
 
-<img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/959b7ec6-33b3-4d65-9c8a-2ffaf9e0ae81" />
+![titulo](./imagenes/quickguidesarevalourra.png)
 
 
 ## Despliegue de guías - Selección de "Primeros pasos con Arduino" o "Getting Started With Arduino" en idioma original
 
-<img width="1125" height="769" alt="image" src="https://github.com/user-attachments/assets/3663ef69-d585-4961-874e-195db31c6281" />
+![titulo](./imagenes/menuguiasarevalourra.png)
 
 
 ## Primera Descarga - Adafruit MQTT
 
-<img width="1919" height="1079" alt="instalación_adafruit_mqtt" src="https://github.com/user-attachments/assets/4a78869d-8ea8-42ba-8eff-5fbde73d2b07" />
+![titulo](./imagenes/instalaciónadafruitmqtt.png)
 
 Saqué el pantallazo antes de que se descargara por completo pero si se instaló exitosamente! 
 
 
 ## Segunda Descarga - ArduinoHttpClient
 
-<img width="1919" height="1079" alt="instalación_arduinohttpclient" src="https://github.com/user-attachments/assets/13b3f4d3-a61b-435e-b29c-72a0a3899817" />
+![titulo](./imagenes/instalaciónarduinohttpclient.png)
 
 
 ## Tercera Descarga - Adafruit IO Arduino
 
-<img width="1919" height="1079" alt="instalación_adafruit_io_arduino" src="https://github.com/user-attachments/assets/82d9a3a8-30b5-424e-a96e-9ccc7467a73d" />
+![titulo](./imagenes/instalaciónadafruitioarduino.png)
 
 
 En general me llamó la atención que las descargas fueran tan rápidas, pensé que tendría que dejar el computador por horas!!, no tuve dificultades durente los procesos de descarga, sólo al inicio, como comenté anteriormente, me intriga saber cómo funcionan estos sistemas, personalmente todo esto es nuevo para mí, considero un desafío personal el haber tomado este ramo, espero poder aprender mucho sobre ésta area a lo largo del semestre!!
+
 
 
 ## Sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
@@ -96,5 +97,5 @@ https://cursos.mcielectronics.cl/2025/08/12/introduccion-a-raspberry-pi-pico-2-y
 
 
 
-*[Texto de investigación redactado personalmente y reestructurado con ayuda de ChatGPT + toques personales]*
+
 

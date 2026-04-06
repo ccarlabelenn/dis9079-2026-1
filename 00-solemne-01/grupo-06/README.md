@@ -7,6 +7,42 @@
 * Nicolás Elías Valdés Greve / https://github.com/arevalourra/dis9079-2026-1/tree/main/29-nicolasvaldesgreve
 
 ## Descripción del proyecto
+
+## Sistema Enviar
+
+![titulo](./imagenes/armadosistemaenviar.jpeg)
+
+![titulo](./imagenes/primerapruebapotenciometro.gif)
+
+![titulo](./imagenes/pruebabrilloledadafruitio.png)
+
+
+## Sistema Recibir
+
+![titulo](./imagenes/armadosistemarecibir.jpeg)
+
+![titulo](./imagenes/Raspberry-Pi-Pico-2-W-Pinout.webp)
+
+![titulo](./imagenes/instalación-raspberrypiboards.jpeg)
+
+![titulo](./imagenes/error-arduinoide.jpeg)
+
+
+## Aarón nos ayuda en el Lid
+
+![titulo](./imagenes/ayudadeaaronenlid.jpeg)
+
+
+## Prueba sin potenciómetro
+
+![titulo](./imagenes/pruebaledsinpotenciometro.jpeg)
+
+![titulo](./imagenes/pruebalederror.gif)
+
+![titulo](./imagenes/lednodeclarado.jpeg)
+
+![titulo](./imagenes/leddeclarado.jpeg)
+
 El proyecto que realizaremos consiste en la comunicación entre dos placas (Arduino Uno R4 Wifi - Raspberry Pi Pico 2W) conectadas a distintos computadores mediante internet (llamado "si"), utilizando Adafruit IO como intermediario. La idea principal de nuestro proyecto es enviar información desde un dispositivo físico y representarla en otro en tiempo real. 
 
 En este caso, los componentes que utilizamos son:
