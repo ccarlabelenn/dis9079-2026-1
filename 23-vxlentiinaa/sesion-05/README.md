@@ -93,6 +93,31 @@ por mi wifi
 
 Luego probé el ejemplo para ver si en el monitor serial salía el mensaje de **"Connecting to Adafruit IO"** , pero solo me aparecía signos de interrogación
 
-Podría haber sido por el baud, que en el código estaba a 115200 y en el monitor seriañ estaba a 9600
+`subir foto`
 
-Lo cambié y después solo salían puntitos, no el mensaje de que ya estaba conectado
+- Podría haber sido por el baud, que en el código estaba a 115200 y en el monitor serial estaba a 9600
+- Lo cambié y después solo salían puntitos, no el mensaje de que ya estaba conectado
+
+## Apuntes
+
+- `Firmware updater:` Capa límite entre el Software y el Hardware; es el pegamento que hace que las dos convivan.
+ - según gemini: El Firmware Updater en el IDE de Arduino es una herramienta especializada diseñada para actualizar el software interno (el firmware) de los módulos de conectividad (Wi-Fi o Bluetooth) que vienen integrados en ciertas placas de Arduino.
+
+En Adafruit IO, te da la llave para colocar en el código en arduino
+
+```cpp
+#define IO_USERNAME  "vxlentiinaa"
+#define IO_KEY       "blablabla"
+```
+
+siempre hay que colocar esa línea, para que el arduino no olvide el adafruit IO
+
+```cpp
+io.run();
+```
+
+Es para ver lo que manda el otro arduino en adafruit 
+
+```
+io.feed();
+```
