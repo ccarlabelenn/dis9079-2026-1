@@ -41,3 +41,4 @@ rellenar en el mismo orden que los integrantes del grupo
 
 * <https://learn.adafruit.com/series/adafruit-io-basics>
 * <https://github.com/adafruit/Adafruit_IO_Arduino>
+* <https://github.com/adafruit/Adafruit_IO_Arduino/blob/master/examples/adafruitio_01_subscribe/adafruitio_01_subscribe.ino>
