@@ -23,28 +23,34 @@ En el 2013 fue nombrado tutor del Departamento de Diseño de Producto en el Roya
 
 Utiliza el sonido como medio para dar foma a los espacios e involucrar al público en un discurso social dinámico. Sus obras son sonoras como visuales, exploran la interrelaciones humanas, entrelazando diferentes aspectos de la cultura y el género para trascender fronteras. 
 
-<img width="1920" height="1280" alt="image" src="https://github.com/user-attachments/assets/6c2f3ace-c78c-4e73-8e40-21f22c47a520" />
+## Obras
 
 OTOTNOMORI-SOUND FOREST
 
 Escultura acústica en constante evolución que fomenta el juego, descanso y la conexión en el parque de Jing´an de Shanghái. 
 
-<img width="2990" height="2243" alt="image" src="https://github.com/user-attachments/assets/ed6a0408-2ca5-474e-b723-459a3f180d85" />
+<img width="1920" height="1280" alt="image" src="https://github.com/user-attachments/assets/6c2f3ace-c78c-4e73-8e40-21f22c47a520" />
 
 THE PHYSICAL VALUE OF SOUND 
 
 Consiste en una serie de productos que permiten a las personas experimentar la fisicalidad de la música.
 
+<img width="2990" height="2243" alt="image" src="https://github.com/user-attachments/assets/ed6a0408-2ca5-474e-b723-459a3f180d85" />
+
 https://www.youtube.com/watch?v=Kcc9Q67HPnw
 
+THE AMBIENT MACHINE
+
+Instrumento táctil para crear la atmósfera sonora de nuestra vida cotidiana, una exploración de como el sonido influye nuestro estado de ánimo, la persepción y la presencia. Transforma el ruido de fondo en una composición intencional, permitiendo al usuario diseñar su propio ambiente sonoro mediante una interfaz táctil sencilla. 
+
+<img width="1400" height="1050" alt="image" src="https://github.com/user-attachments/assets/314a1439-10a6-497b-9c61-80c14632b884" />
 
 
 
+## Fuentes 
 
-
-
-
-
+https://open.spotify.com/intl-es/artist/3Wmgn7OmNzxVcwTQA21P2W
+ 
 https://yurisuzuki.com/
 
 https://laboralcentrodearte.org/es/artistas-e-investigadores/yuri-suzuki/
