@@ -30,6 +30,13 @@ Estructura del código:
 archivo .ino: controla el funcionamiento del sensor y el envío de datos.
 config.h: guarda credenciales (usuario, claves y red) para mantener el código ordenado.
 
+Proceso de instalación 
+<img width="1867" height="956" alt="cuenta adafruit" src="https://github.com/user-attachments/assets/2fbb8908-ea97-4bd2-b1af-2b6b0a6f92e3" />
+Ingresas tus datos y tus correo institucional 
+
+Luego instalas en la biblioteca de arduino la versión mas nueva de adafruit que es la 4.3.4
+<img width="1918" height="961" alt="Descarga de programa biblioteca " src="https://github.com/user-attachments/assets/96816d6b-413c-47bf-9425-5adff24679e4" />
+
 ## sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
 **Mariko Mori** es una artista contemporánea japonesa reconocida internacionalmente por su trabajo en arte multidisciplinario, donde combina tecnología, espiritualidad y estética futurista. Su obra explora la relación entre el ser humano, el universo y la conciencia, integrando influencias del budismo, el sintoísmo y la cultura contemporánea.
 
