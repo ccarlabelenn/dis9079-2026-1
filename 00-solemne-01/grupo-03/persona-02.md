@@ -1,6 +1,7 @@
 # persona-02
 * tomascatri
-* investigaciones individuales
+  
+investigaciones individuales
 
 ## sobre adafruit i/o
 * Empecé instalando la librería de Adafruit IO al Arduino.
@@ -280,3 +281,26 @@ void publicarImagen(const char* img) {
 
 
 ## sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
+**Mónica Rikić** nació en Barcelona en 1986. Estudió Bellas Artes en la Universidad de Barcelona, luego hizo un máster en artes digitales en la Universidad Pompeu Fabra, además de cursar una asignatura en Atenas en donde hizo su primer trabajo de net.art (uso de recursos de la red para producir una obra, la cual puede ser interactiva). Su trayectoria se caracteriza por un enfoque "hecho a mano" de la tecnología, alejándose de lo industrial para centrarse en lo artístico y lo social, inclusive cuestionando filosóficamente la electrónica, haciéndolo capaz de incomodar.
+
+Comenzó con proyectos que unen la musica, codigo y jeugo, uno de ellos es conocido como Buildasound el cual es un juego de bloque de espumas el cual permitia que los niños pudieran crear composiciones musicales de forma tactil, ya con el tiempo decidió ir evolucionando sus obras, creando asi robots con problemas filosoficos los cuales hacian cuestionar a la etica de la robotica y como la vemos, ella no busca la funcionalidad o la productividad de la obra, por lo que en cambio, desea que actuen como un dispositivo critico el cual busque pensamientos y debates colectivos a las personas que lo observen.
+
+Mónica ha participado en diferentes festivales e instituciones de arte:
+* Jugos Ars Electronica
+* Bienal Manifesta
+* ISEA
+* Semana de la Tecnología Creativa (NY)
+* obotronica (AUS)
+* Loop Festival (ES)
+* Festival Sónar (ES)
+* Festival Imagen (COL)
+* Laboral (ES)
+* FILE (BR)
+* ADAF (GR)
+* CCCoth Arts (ES)
+
+También ha sido nominada a muchos premios como el Japan Media Arts Festival, el A MAZE. Berlín y el Margaret Guthman Musical Instrument Competition en Atlanta.
+
+Mi obra favorita de Mónica Rikić fue 1 especie, 2 y 3, la cual se basa en un conjunto de dispositivos robóticos, construidos a partir de estructuras algorítmicas inspiradas en principios filosóficos, que representan un pequeño ecosistema inorgánico.
+Me gusta mucho esta obra por como representa este sistema inorgánico pero a la vez se siente demasiado vivo, las 3 especies a pesar de ser tan diferentes entre si, todas siguen el mismo significado de intentar existir en este mundo, es hasta aterrador a mi parecer como estas maquinas se mueven simulando “vida” y como si estuvieran atrapadas en esa pared intentando ser algo mas pero simplenete no pueden por sus limitaciones impuestas por la artista, también me encanta mucho como logra crear estos movimientos organicos con la electronica, me parece que llego a un realismo casi de miedo.
+![Obra Artista](./imagenes/proceso14.png)
