@@ -69,26 +69,6 @@ Adafruit IO se puede conectar con:
 + Más simple pero menos eficiente en tiempo real
 + Funciona con solicitudes tipo GET/POST
 
-## Flujo completo de datos
-
-1. Un sensor mide algo (ej: luz)
-2. Un microcontrolador (ej: ESP32) procesa el dato
-3. Lo envía a Adafruit IO vía MQTT o HTTP
-4. El dato se guarda en un feed
-5. El dashboard lo visualiza
-6. Opcional: un trigger genera una acción
-
-## Enfoque conceptual
-
-Adafruit IO no es solo técnico:
-es una herramienta para diseñar sistemas interactivos sensibles al entorno.
-
-Permite trabajar con:
-
-+ Datos como material de diseño
-+ Interacción en tiempo real
-+ Relaciones causa–efecto entre entorno y objeto
-
 ## Ventajas
 
 + Muy accesible 
@@ -100,8 +80,6 @@ Permite trabajar con:
 + No es tan potente como soluciones industriales
 + Tiene límites en la versión gratuita
 + Dependes de conexión a internet
-
-<img width="1080" height="810" alt="IMG_0057" src="https://github.com/user-attachments/assets/0c5daedb-0d63-4025-a788-e82a25d963d7" />
 
 ## sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
 
@@ -125,3 +103,11 @@ Tipos de obras que hace.
 <img width="665" height="356" alt="image" src="https://github.com/user-attachments/assets/ef4a5584-97c9-4634-a408-e85405b5580c" />
 
 + Messa di Voce complementa el habla, los gritos y las canciones de dos vocalistas con visualizaciones interactivas en tiempo real. El proyecto aborda temas como la comunicación abstracta, las relaciones sinestésicas, el lenguaje de los dibujos animados y los sistemas de escritura y puntuación, todo ello dentro del contexto de una narrativa audiovisual sofisticada, lúdica y virtuosa. Un software personalizado transforma cada matiz vocal en gráficos complejos, sutilmente diferenciados y altamente expresivos. Messa di Voce se sitúa en la intersección de los extremos de la interpretación humana y tecnológica, fusionando la espontaneidad impredecible y las técnicas vocales extendidas de los improvisadores humanos con las últimas tecnologías de visión artificial y análisis del habla. Completamente sin palabras, pero profundamente verbal, Messa di Voce está diseñada para provocar preguntas sobre el significado y los efectos de los sonidos del habla, los actos de habla y el entorno inmersivo del lenguaje.
+
++ La obra evidencia la invisibilidad de la infraestructura tecnológica, ya que los participantes interactúan únicamente a través de la voz, sin la presencia de dispositivos visibles ni de interfaces tradicionales. Esto se relaciona con la idea de computación inalámbrica entendida como un sistema integrado al entorno, donde la tecnología deja de ser evidente y pasa a operar de manera transparente dentro de la experiencia.
+
++ Messa di Voce funciona mediante un flujo continuo de datos en tiempo real, en el cual la voz es capturada, analizada y transformada inmediatamente en visualizaciones. Este proceso responde a la lógica de los sistemas inalámbricos actuales, donde los datos se capturan, transmiten y procesan de manera constante y sin interrupciones.
+
++ Asimismo, la obra propone una interacción continua y no discreta. A diferencia de las interfaces tradicionales, basadas en acciones puntuales como presionar un botón, aquí la voz opera como un flujo permanente de información que influye directamente en el comportamiento del sistema. Esto es coherente con los entornos conectados, donde los datos circulan de forma constante.
+
++ Por otra parte, se establece una relación directa entre el cuerpo, el sistema y el espacio. La voz del usuario no solo activa el sistema, sino que también transforma el entorno visual en tiempo real, generando un espacio reactivo. De esta manera, la obra refleja una concepción de la computación como una capa activa del entorno, propia de la computación ubicua.
