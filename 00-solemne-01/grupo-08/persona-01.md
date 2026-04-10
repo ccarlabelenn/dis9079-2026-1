@@ -159,11 +159,21 @@ fuente: [donkey](https://docs.donkeycar.com/guide/build_hardware/)
 
 fuente: [digipart](https://www.digipart.com/part/PCA9685PW118?kw=PCA9685PW118&utm_source=bing&utm_medium=cpc&utm_campaign=Tier_F&utm_term=PCA9685PW118&utm_content=Tier_F_1)
 
-- este es el pinout sobre cómo debemos conectar el I2CPCA a la Raspberry Pi
+- Este es el pinout sobre cómo debemos conectar el I2CPCA a la Raspberry Pi
 
 ![pinout](./imagenes/pinoutRaspiI2CP.png)
 
 - Después de tener esto listo, debemos montar sobre la carcasa del auto, nos dan la opción de agregar una cámara, la Raspberry PI debe quedar conectada cerca del controlador de servos
 
 **Software**
-- debemos seguir una serie de pasos, lo primero es setear nuestra configuración según nuestro sistema operativo, en mi caso sería Windows
+- Debemos seguir una serie de pasos, lo primero es setear nuestra configuración según nuestro sistema operativo, en mi caso sería Windows
+
+![software](./imagenes/softwareInstalacion.JPG)
+
+- Debemos seguir estos 2 pasos que nos indican
+
+- 
+
+- Los componentes de software de Donkeycar deben instalarse en la plataforma robótica que elijas. Raspberry Pi y Jetson Nano cuentan con documentación de instalación, pero también se sabe que funciona en Jetson TX2, Friendly Arm SBC o casi cualquier SBC (computador de placa única) basado en Debian.
+
+- Después de la instalación, crearás la aplicación de Donkeycar a partir de una plantilla. Esta contiene código diseñado para que lo personalices según tu caso particular. No te preocupes, comenzaremos con configuraciones predeterminadas útiles.
