@@ -308,7 +308,7 @@ Lo segundo que hicimos, fue averiguar sobre Adafruit, ya que esta web iba ser la
 
 ## investigaciones individuales
 
-[persona-01.md](./persona-01.md)
+[sofiacartes.md](./persona-01.md)
 
 [persona-02.md](./persona-02.md)
 
@@ -320,3 +320,4 @@ Lo segundo que hicimos, fue averiguar sobre Adafruit, ya que esta web iba ser la
 - Arduino libraries Adafruit IO <https://docs.arduino.cc/libraries/adafruit-io-arduino/>
 - Adafruit IO <https://learn.adafruit.com/adafruit-io/arduino>
 - Adafruit IO overview <https://io.adafruit.com/vxlentiinaa/overview>
+- Wokwi Pantalla OLED animator <https://animator.wokwi.com/>
