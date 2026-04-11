@@ -14,6 +14,10 @@ El Arduino se conecta a una red WiFi y luego a Adafruit IO mediante credenciales
 
 Este sistema se basa en el paradigma de Internet de las Cosas (IoT), donde dispositivos físicos se conectan a internet para intercambiar datos en tiempo real.
 
+![proceso](./imagenes/adafruit1.png)
+![proceso](./imagenes/adafruit2.png)
+
+
 ## materiales usados en solemne-01
 
 | Cantidad | Componente / Recurso | Función |
