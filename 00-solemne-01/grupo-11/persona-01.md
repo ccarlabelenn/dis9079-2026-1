@@ -16,6 +16,24 @@ Ying Gao cuestiona nuestras suposiciones sobre la ropa combinando diseño de mod
 
 "Consiste en tela blanca y plateada cubierta con alfileres de modista, que sobresalen hacia fuera de la fachada textil. Mediante una colaboración de medios y tecnologías, plástico PVDF, alfileres de modista y dispositivos electrónicos, los accesorios metálicos interactúan y responden al ruido en su entorno, activado por la voz del espectador. Su movimiento fluido genera un flujo ondulatorio, contrayendo y expandiendo todo el objeto portátil"
 
+![foto](./imagenes/investigacion1.jpg)
+
+![foto](./imagenes/investigacion2.jpg)
+
+### Video del proyecto: https://vimeo.com/73585344
+
 Elegí a Ying Gao y su obra Incertitudes porque me gusta mucho lo que quiere representar, la inspiración que tiene y la forma en que lo transmite, cambia muchísimo las ideas que se tiene del vestuario, es una mezcla de cuerpo, máquinas y diseño.
 
 Me gusta como tiene una crítica más profunda y como muestra cómo hoy todo es rápido e inestable, y eso lo refleja la ropa que siempre está cambiando pero no sabes cómo va a reaccionar, igual que en la vida donde no todo se puede controlar.
+
+Recomiendo mucho ver sus otras obras :)
+
+Tambien me pillé unas bandas por spotify que me parecieron interesantes:
+
+Holly Herndon - https://open.spotify.com/intl-es/artist/2c9yn5DJQd5es7YMY92ikZ?si=yO9admdrQYydrW3eNt7LrQ
+
+Usa una IA creada por ella y su equipo para hacer música, donde la voz y los datos se transmiten y procesan digitalmente.
+
+Ryoji Ikeda - https://open.spotify.com/intl-es/artist/5y835stYdAVOoNOq5EBMxz?si=DmoOmGFzSN2j0gOLu-MzYQ
+
+Hace música con datos y señales digitales, mostrando cómo la información se transmite y se convierte en sonido.
