@@ -16,6 +16,7 @@ Hoy nos hicimos cuentas en Github, y nos enseñaron a usarlo. Tuvimos que hacer 
 * #es Include
 * ;es Dentro de
 
-## Broker 
+## Broker
+Componente de software que hace de intermediario entre dos o más sistemas que necesitan comunicarse entre ellos.
 
 
