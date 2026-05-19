@@ -34,6 +34,7 @@ Como ejemplo me llamo la atencion Pulse Room de el artista digital Mexicano, Raf
 
 
 ## Actuador
+Steppers motors 
 
 ## Bibliografía
 
@@ -45,4 +46,7 @@ https://www.lozano-hemmer.com/pulse_room.php
 https://pulsesensor.com/pages/pulsesensor-manual
 https://afel.cl/products/sensor-pulsioximetria-max30102?srsltid=AfmBOooQsCS0TE0x-UjsNl8IM3HjaWYF2Kxkyd0HIkJtS6jv7nIKT0D3
 https://afel.cl/products/sensor-pulso-cardiaco-corazon?srsltid=AfmBOoo6FuucuOXlNX7iixlNmI2xyjE65Wf7BrylaO0yiD9LFT9xGvdn
+
+### Actuador 
+https://www.youtube.com/watch?v=kV8v2GKC8WA
 
