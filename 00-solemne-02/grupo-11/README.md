@@ -76,3 +76,8 @@ https://github.com/user-attachments/assets/ff885a3a-38ae-4f76-9ec6-ffaf2f524898
 ## Animaciones del proyecto
 
 ## Bibliografía
+chat gpt
+claude
+profesor aron 
+mateo 
+compañeros 
