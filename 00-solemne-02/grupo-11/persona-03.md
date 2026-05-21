@@ -32,6 +32,8 @@ Los sensores pueden presentar distintos problemas como:
 
 Estos errores afectan la precisión de los datos y el funcionamiento del sistema. Por ello es importante realizar mantenimiento y configurar correctamente el sensor.
 
+## Proyecto o empresa que utiliza sensores
+
 La empresa Tesla utiliza una gran cantidad de sensores en sus vehículos eléctricos y autónomos. Los automóviles Tesla incorporan cámaras, radares, sensores ultrasónicos y sistemas de inteligencia artificial que permiten analizar el entorno en tiempo real.
 
 Estos sensores ayudan al vehículo a detectar obstáculos, medir distancias, identificar peatones, reconocer señales de tránsito y mantener el automóvil dentro del carril. Toda la información captada se procesa automáticamente para asistir al conductor o incluso controlar el automóvil de forma autónoma mediante el sistema Autopilot.
@@ -69,6 +71,8 @@ Entre los problemas más frecuentes en actuadores se encuentran:
 Estos inconvenientes pueden afectar el rendimiento y la seguridad del sistema automatizado.
 
 La empresa Boston Dynamics es reconocida mundialmente por desarrollar robots avanzados que utilizan actuadores de alta precisión. Algunos de sus robots más conocidos son Atlas y Spot.
+
+## Proyecto o empresa que utiliza sensores
 
 El robot Atlas utiliza actuadores hidráulicos y eléctricos que le permiten caminar, correr, saltar y mantener el equilibrio de forma similar a un ser humano. Por otro lado, Spot es un robot cuadrúpedo diseñado para desplazarse en terrenos difíciles y realizar tareas de inspección industrial.
 
