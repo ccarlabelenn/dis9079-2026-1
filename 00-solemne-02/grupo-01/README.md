@@ -16,6 +16,8 @@ Por otro lado el Arduino lee el feed de datos creado en la nube y según el valo
 
 Para poder controlar el envío de información y no saturar la nube, cuenta con un botón pulsador conectado a la Raspberry permitiendo que solo se envíen los datos pulsando brevemente el botón, Arduino lo recibe y mueve el servomotor al último dato envíado.
 
+A la Raspberry le sumamos una pantalla OLED de 128x64 px para poder ver los datos que vamos enviando en tiempo real.
+
 ## Materiales usados
 
 - Protoboard
@@ -40,6 +42,10 @@ Lo utilizamos para captar la posición en la que queremos mover el servomotor, e
 Servomotor: Motor pequeño que puede moverse y quedarse fijo en un ángulo entre 0° y 180°.
 
 Utilizado en el Arduino Uno para realizar un movimiento en un ángulo exacto dependiendo del valor recibido desde Adafruit IO.
+
+Pantalla OLED 128x64 px: Pantalla pequeña que sirve para mostrar textos, números o gráficos simples programados desde el microcontrolador. 
+
+Es el monitor del proyecto, utilizada para mostrar la información recibida del potenciómetro y el ángulo en el que moveremos el servo que se enviará a través de Adafruit IO, permitiendo saber en tiempo real los datos que vamos enviando a la nube. 
 
 ## Código usado para enviar
 
