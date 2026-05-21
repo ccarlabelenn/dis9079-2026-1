@@ -14,37 +14,40 @@
 
 * Posteriormente, el Arduino se conectará a Adafruit IO para recibir los valores enviados desde la Raspberry Pi. Dependiendo del valor entregado por el potenciómetro, el Arduino podrá ejecutar distintas acciones, como controlar la intensidad de un LED, mover un servomotor o activar otros componentes electrónicos.
 
+Un botón pulsador normal tiene 4 patas pero solo 2 circuitos internos: las patas A-B están siempre conectadas entre sí, y las patas C-D están siempre conectadas entre sí. Cuando apretás el botón, A-B se conecta con C-D. Por eso solo usás una pata de cada lado.
+No necesitás resistencia externa porque el código usa Pin.PULL_UP, que activa una resistencia interna del Pico que mantiene GP15 en nivel alto (HIGH) cuando el botón no está presionado. Al presionar, GP15 cae a nivel bajo (LOW) y el Pico detecta ese cambio.
+
+<img width="487" height="460" alt="boton" src="https://github.com/user-attachments/assets/27a12dc5-1013-4e0c-a581-41366887edde" />
+
+
+        USB
+    ┌────┤├────┐
+ GP0│  1    40 │VBUS
+ GP1│  2    39 │VSYS
+ GND│  3    38 │GND   ← podés usar este GND
+ GP2│  4    37 │3V3_EN
+ GP3│  5    36 │3V3
+ GP4│  6    35 │ADC_VREF
+ GP5│  7    34 │GP28
+ GND│  8    33 │GND
+ GP6│  9    32 │GP27
+ GP7│ 10    31 │GP26
+ GP8│ 11    30 │RUN
+ GP9│ 12    29 │GP22
+ GND│ 13    28 │GND
+GP10│ 14    27 │GP21
+GP11│ 15    26 │GP20
+GP12│ 16    25 │GP19
+GP13│ 17    24 │GP18
+ GND│ 18    23 │GND
+GP14│ 19    22 │GP17
+GP15│ 20    21 │GP16  ← GP15 está acá
+    └──────────┘
+
 <img width="880" height="463" alt="inalambrico" src="https://github.com/user-attachments/assets/881f277e-f0f4-46e5-ac69-5ec51a5124f7" />
 
-para optener el ip del arduino tuvimo que utilizar este codigo
-
-#include <WiFiS3.h>
-
-const char* ssid     = "TU_RED_WIFI";      // ← cambiá esto
-const char* password = "TU_CONTRASEÑA";    // ← cambiá esto
-
-void setup() {
-  Serial.begin(9600);
-  WiFi.begin(ssid, password);
-
-  Serial.print("Conectando");
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-
-  Serial.println("\nIP del Arduino:");
-  Serial.println(WiFi.localIP());
-}
-
-void loop() {
-  // no hace nada más
-}
-
-* Subís el sketch al Arduino (botón de la flecha →)
-* Abrís el Monitor Serie (Ctrl+Shift+M) y esperás unos segundos
-* Ves la IP, por ejemplo: 192.168.1.105 → la anotás
-* Después subís el código final del proyecto (el que escucha el puerto UDP) y ya no necesitás este sketch más
+durante la clase se probo con enviar datos al adafruit
+<img width="1882" height="861" alt="io adafruit" src="https://github.com/user-attachments/assets/a86efa48-aaeb-46b4-947a-0579609b8873" />
 
 
 ## Materiales usados
