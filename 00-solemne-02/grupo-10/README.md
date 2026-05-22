@@ -421,9 +421,11 @@ Una vez que los dos nodos estuvieron operativos, salimos a probar la estabilidad
 
 <div align="center"> <video src="https://github.com/user-attachments/assets/65c58277-9847-4ca5-b7d3-566cec492208" width="315" autoplay loop muted playsinline></video> </div
 
-Conclusión de la Jornada
+Conclusión 
 
-Estas pruebas nos permitieron confirmar que nuestro sistema no solo funciona en la mesa del laboratorio, sino que es capaz de atravesar estructuras sólidas y salvar distancias considerables. Aprendimos que la limitante no es la potencia de las placas, sino la gestión y alcance de la red WiFi, un aprendizaje fundamental para nuestra formación en interacción inalámbrica.
+Estas pruebas nos sirvieron para confirmar que el proyecto no se queda solo en la mesa del laboratorio, el sistema de verdad se la puede atravesando muros y funcionando a distancias largas. Nos dimos cuenta de que las placas tienen potencia de sobra, y que el verdadero reto es qué tan estable es el WiFi, algo clave que aprendimos hoy sobre redes inalámbricas.
+
+Al ser ahora un grupo de cuatro, aprovechamos la jornada para nivelar a todos. No nos quedamos solo en armar el circuito, sino que nos dimos el tiempo de revisar los códigos paso a paso, entender por qué los archivos se guardan con ciertos nombres (como el main.py en la Raspberry) y cómo ordenar las bibliotecas para que nada falle. Terminamos el día con el sistema funcionando impecable y con todo el equipo entendiendo realmente cómo se conecta y se organiza el proyecto.
 
 ---
 ### Animaciones del proyecto
