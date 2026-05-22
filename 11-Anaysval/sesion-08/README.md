@@ -55,7 +55,7 @@ Se deben agregar manualmente a la carpeta lib de la placa:
 
 En esta clase no tenemos registros fotográficos T T 
 
-Usamos el código que nos dieron, pero nos dieron mal unas indicaciones. Por eso, cada vez que armábamos el circuito, se nos quemaban los potenciómetros.
+Usamos el código que nos dieron, pero nos dieron mal unas indicaciones. Por eso, cada vez que armábamos el circuito, se nos quemaban los potenciómetros ( •᷄ᯅ•᷅ )
 
 Intentamos varias veces hasta que mi compañero se dio cuenta del error, pero ya no quedaba tiempo para probar de nuevo, así que no pudimos terminar la actividad.
 
