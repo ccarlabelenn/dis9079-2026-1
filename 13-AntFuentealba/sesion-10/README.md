@@ -59,9 +59,9 @@ Debido a las complicaciones técnicas y para optimizar el desarrollo del proyect
 
 ### Nuevo grupo:
 - Agustina Aceituno
-- Nosotros
-- Anays Cornejo
 - Benjamín Álvarez
+- Anays Cornejo
+- Antonia Fuentealba
 
 Esta decisión permitió reorganizar tareas, compartir conocimientos y avanzar de forma más eficiente en la preparación de la solemne.
 
