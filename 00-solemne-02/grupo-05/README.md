@@ -215,7 +215,15 @@ Todos los push buttons que utilizamos en éste proyecto son botones de 4 pines, 
 
 #### Potenciómetro
 
+El potenciómetro B20K que se utilizó en este proyecto no se cambió en ningún momento ya que no causó ningún problema. Como lo menciona en su nombre, éste potenciómetro tiene una resistencia de 20.000 ohmios, lo cual se va ajustando a medida que interactuamos con él y va controlando el paso del voltaje o de la corriente.
 
+![Potenciómetro B20K](./imagenes/potenciometro.jpg)
+
+Este potenciómetro tiene 3 pines, los cuales cumplen la siguiente función:
+
+- Pin 1 -> Terminal de entrada (Vcc), es en donde se alimenta del voltaje.
+- Pin 2 -> Terminal de salida, es en donde se entrega la señal según la posición del eje.
+- Pin 3 -> Terminal a tierra (GND), es en donde se conecta a tierra.
 
 ## Actuador usado
 
