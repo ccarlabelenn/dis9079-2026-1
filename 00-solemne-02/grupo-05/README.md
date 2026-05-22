@@ -63,6 +63,133 @@ el siguiente video: <https://www.youtube.com/watch?v=d_odoKbEjgg&t=120s> en dond
 
 Como se puede observar en la imagen, mi primer error fue el no saber cómo enviarle el código en el mismo mensaje donde le doy la información que necesito, razón por la cual la IA me tuvo que pedir en un mensaje aparte que le envíe el código lo cual fue toda una experiencia. Como segundo error es algo que en ese momento aún no me daba cuanta y es que le menciono que el botón va en el pin ``3V3`` y ``GP0``, cosa que más tarde Aarón me corrigió y me di cuenta de que no debería ir en ``3V3`` sino en ``GND``.
 
+Luego de que la IA generara el código, se probó y funcionó a medias ya que al momento de correr el código si no presionábamos el botón, en efecto, no se enviaba la información, pero cuando se presionaba el botón una vez empezaba a mandar información y no paraba a pesar de que ya no se le estaba ejerciendo ninguna fuerza a éste, por lo que nos dimos cuenta de que no estaba funcionando como push button sino que como un toggle. Como no se podía controlar el cúando dejar de mandar información, se tenía que parar de correr el código desde PuTTY presionando las teclas ``Ctrl + C``, cosa que le comentamos a Aarón en la clase que tuvimos el 18 de mayo y nos dijo que solucionemos el que funcione como push button con el sistema push down, y el resto del proceso de veía después y que nos apoyemos en la ayuda de Mateo para poder lograr todo ésto. Cuando llegó mateo, leyó el código y nos dimos cuenta de muchos errores dentro del código original, por lo que lo corregimos, lo corrimos y nos dimos cuenta de que no se estaba mandando nada de información cosa que pasó reiteradas veces y decidimos probar con otra Raspberry para revisar si era nuestro microcontrolador el problema, por lo que le pedimos prestada la Raspberry al grupo 09 compuesto por Josefa Araya, Débora Soto y Cristobal Vergara, los cuales muy amablemente nos prestaron su microcontrolador en donde probamos nuestro código y si funcionaba, cosa que le comenté a Mateo y me recomendó reiniciar la Raspberry y volver a hacer el proceso de transformarla e inyectarle bibliotecas, por lo que tuvimos que seguir los siguientes pasos:
+
+1. Desconectar la Raspberry del computador
+2. Mantener presionado el botón que se encuentra en la placa de la Raspberry por unos segundos
+3. Mientras se mantiene presionado el botón, conectarlo al computador
+4. Soltar el botón
+
+Una vez ya completados esos pasos, ya tendremos la Raspbery reiniciada. Notaremos que se nos abre una ventana que es la carpeta del microcontrolador, en donde tendremos que insertar el archivo llamado ``adafruit-circuitpython-raspberry_pi_pico2_w-es-10.2.1.uf2`` que se puede descarcar en el siguiente link: <https://circuitpython.org/board/raspberry_pi_pico2_w/>. Luego de meter el archivo en la carpeta, notaremos que se cerrará la ventana del microcontrolador, volverá a aparecer con otro nombre y notaremos que dentro de ella hay una carpeta nombrada ``lib``, en donde tendremos que agregar las siguientes bibliotecas:
+
+![Bibliotecas en raspi](./imagenes/bibliotecas.png)
+
+Para poder descargar estas bibliotecas, nos tenemos que dirigir a el siguiente link: <https://circuitpython.org/libraries>, en donde tendremos que bajar hasta las sección llamada "Bundles", en donde tendremos que descargar el bundle para la versión "10.X".
+
+![Opciones de bundles](./imagenes/bundles.png)
+
+Luego de hacer todo este proceso le avisamos a Mateo y nos recomendó probar un código que envió por el server de discord para comprobar si un botón está realmente funcionando o no, el cual es el siguiente:
+
+```cpp
+import time
+import board
+import digitalio
+import wifi
+import socketpool
+import adafruit_minimqtt.adafruit_minimqtt as MQTT
+
+print("Iniciando programa...")
+
+# -------------------------
+# WiFi
+# -------------------------
+SSID = "wifi"
+PASSWORD = "contraseñawifi"
+
+print("Conectando WiFi...")
+
+try:
+    wifi.radio.connect(SSID, PASSWORD)
+    print("WiFi conectado")
+    print("IP:", wifi.radio.ipv4_address)
+
+except Exception as e:
+    print("Error WiFi:")
+    print(e)
+
+    while True:
+        pass
+
+
+# -------------------------
+# Adafruit IO
+# -------------------------
+AIO_USERNAME = "udpmontoyamoraga"
+AIO_KEY = "keydeaarón"
+
+FEED_BOTON = AIO_USERNAME + "/feeds/potenciometro-05"
+
+print("Creando conexión MQTT...")
+
+pool = socketpool.SocketPool(wifi.radio)
+
+mqtt = MQTT.MQTT(
+    broker="io.adafruit.com",
+    username=AIO_USERNAME,
+    password=AIO_KEY,
+    socket_pool=pool,
+)
+
+print("Conectando a Adafruit IO...")
+
+try:
+    mqtt.connect()
+    print("Conectado a Adafruit IO")
+
+except Exception as e:
+    print("Error MQTT:")
+    print(e)
+
+    while True:
+        pass
+
+
+# -------------------------
+# Botón GP0
+# -------------------------
+boton = digitalio.DigitalInOut(board.GP0)
+boton.direction = digitalio.Direction.INPUT
+boton.pull = digitalio.Pull.UP
+
+estado_anterior = True
+
+print("Sistema listo")
+
+# -------------------------
+# Loop principal
+# -------------------------
+while True:
+
+    try:
+        mqtt.loop()
+
+        estado_actual = boton.value
+
+        # Detecta transición:
+        # sin presionar -> presionado
+        if estado_anterior and not estado_actual:
+
+            print("Botón presionado")
+            print("Enviando impulso...")
+
+            mqtt.publish(FEED_BOTON, "1")
+
+            print("Impulso enviado")
+
+            # anti-rebote
+            time.sleep(0.25)
+
+        estado_anterior = estado_actual
+
+    except Exception as e:
+        print("Error:")
+        print(e)
+
+    time.sleep(0.02)
+```
+
+Luego de hacer correr el código nos dimos cuenta de que no estaba respondiendo el botón, por lo que decidimos cambiarlo por otro y éste tampoco funcionó hasta que llegó Aarón e hizo bien la conexión, cambiando el pin que estaba conectado a ``3V3`` a ``GND`` en donde finalmente empezó a reaccionar como queríamos.
+
 ---
 
 ## Sensor usado
