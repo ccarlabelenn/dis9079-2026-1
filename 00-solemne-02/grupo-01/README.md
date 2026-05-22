@@ -64,3 +64,10 @@ Es el monitor del proyecto, utilizada para mostrar la información recibida del 
 ![Proceso 5](./imagenes/ejemplo5.gif)
 
 ## Bibliografía
+
+- Adafruit Learning System. (s.f.). Monochrome OLED breakouts. Adafruit Industries.
+- Arduino Documentation. (s.f.). Analog input. Arduino.
+- Interacciones inalámbricas. (2026). Código y ejemplos prácticos utilizados en clases. Material proporcionado por los profesores.
+- PuTTY Official Website. (s.f.). PuTTY. PuTTY.org.
+- Raspberry Pi Documentation. (s.f.). Pico series. Raspberry Pi Ltd.
+- Raspberry Pi Projects. (s.f.). Physical computing. Raspberry Pi Foundation.
