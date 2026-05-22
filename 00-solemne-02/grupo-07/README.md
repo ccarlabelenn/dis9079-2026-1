@@ -637,19 +637,7 @@ void loop() {
 
 ## Animaciones del proyecto
 ### Frames
-
-![frame1](imagenes/frame1.jpeg)
-
-
-![frame2](imagenes/frame2.jpeg)
-
-
-![frame3](imagenes/frame3.jpeg)
-
-
-![frame4](imagenes/frame4.jpeg)
-
-
+![frames](imagenes/frames.png)
 
 ### Loop:
 ![alien_loop](imagenes/alien_loop.gif)
