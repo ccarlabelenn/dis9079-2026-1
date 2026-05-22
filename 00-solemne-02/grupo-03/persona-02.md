@@ -150,6 +150,10 @@ Teenage Engineering es una empresa sueca de diseño de instrumentos musicales el
 
 Eso me hizo reflexionar sobre el rol de la pantalla en nuestro proyecto. En una escala mucho más pequeña, la OLED hace lo mismo: convierte algo invisible (un mensaje viajando por WiFi desde otra habitación) en algo concreto y legible. Sin el actuador, el sistema existe pero no se percibe.
 
+<img src="./imagenes/op1.1.png" alt="tinkercad" width="800">
+<img src="./imagenes/op1.2.png" alt="tinkercad" width="800">
+<img src="./imagenes/op1.3.png" alt="tinkercad" width="800">
+
 🔗 [Teenage Engineering](https://teenage.engineering)
 
 ---
