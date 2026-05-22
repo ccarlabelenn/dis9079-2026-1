@@ -55,7 +55,7 @@ Cuando el servo alcance un ángulo previamente definido dentro del código, el A
 
 Un potenciómetro es un dispositivo electrónico. Se puede usar como resistencia o resistor variable mecánica (con cursor y de al menos tres terminales). El usuario al manipularlo, obtiene entre el terminal central (cursor) y uno de los extremos una fracción de la diferencia de potencial total, se comporta como un divisor de tensión o divisor de voltaje.
 
-<img src="./imagenes/pote.png" alt="tinkercad" width="300">
+<img src="./imagenes/valentina_imagenes/pote.png" alt="tinkercad" width="300">
 
 `Tipos de resistencia de variación mecánica para su uso como potenciómetros:`
 
@@ -115,7 +115,7 @@ Muchos proyectos de Teenage Engineering utilizan potenciómetros como parte cent
   - efectos de sonido
   - navegación de interfaces
 
-<img src="./imagenes/teenage.png" alt="teenage" width="300">
+<img src="./imagenes/valentina_imagenes/teenage.png" alt="teenage" width="300">
 
 ## Actuador
 
@@ -138,7 +138,7 @@ El SG90 es un micro servomotor controlado mediante señales PWM. Permite mover s
 |Alimentación|Tierra|Señal|
 |(+)|(-)|PWM|
 
-<img src="./imagenes/servomotor.png" alt="tinkercad" width="300">
+<img src="./imagenes/valentina_imagenes/servomotor.png" alt="tinkercad" width="300">
 
 **PWM**
 
@@ -206,9 +206,9 @@ El Robot Araña 12 DOF es un robot inspirado en el movimiento de las arañas, di
 
 El sistema es controlado mediante un microcontrolador Arduino, el cual envía señales PWM a los servomotores SG90 para coordinar el desplazamiento del robot.
 
-<img src="./imagenes/robotArana1.png" alt="robot" width="300">
+<img src="./imagenes/valentina_imagenes/robotArana1.png" alt="robot" width="300">
 
-<img src="./imagenes/robotArana2.png" alt="robot" width="300">
+<img src="./imagenes/valentina_imagenes/robotArana2.png" alt="robot" width="300">
 
 `Diseño`
 
@@ -363,29 +363,42 @@ void loop() {
 
 1. La función de leer los valores en Arduino, no funcionó
 
-<img src="./imagenes/noLeevalores.png" alt="valores" width="600">
+<img src="./imagenes/valentina_imagenes/noLeevalores.png" alt="valores" width="600">
 
 2. No conectaba o no reconocía la Raspberry PI
 
-<img src="./imagenes/nofunciono.png" alt="valores" width="600">
+<img src="./imagenes/valentina_imagenes/nofunciono.png" alt="valores" width="600">
 
 3. Después de muchos intentos (que se me olvidó tomar captura) finalmente funcionó el MQTT
 
-<img src="./imagenes/funcionaMQTT.png" alt="valores" width="600">
+<img src="./imagenes/valentina_imagenes/funcionaMQTT.png" alt="valores" width="600">
 
 4. Luego de que ya mandara los datos, se ve reflejado en Adafruit IO
 
-<img src="./imagenes/raspberryPublicando.png" alt="valores" width="600">
+<img src="./imagenes/valentina_imagenes/raspberryPublicando.png" alt="valores" width="600">
 
-<img src="./imagenes/raspberry2Funcionando.png" alt="valores" width="600">
+<img src="./imagenes/valentina_imagenes/raspberry2Funcionando.png" alt="valores" width="600">
 
 5. Finalmente, funcionó super!!!
 
-<img src="./imagenes/finalFuncionando.png" alt="valores" width="600">
+<img src="./imagenes/valentina_imagenes/finalFuncionando.png" alt="valores" width="600">
 
-<img src="./imagenes/anguloPublicando.png" alt="valores" width="600">
+<img src="./imagenes/valentina_imagenes/anguloPublicando.png" alt="valores" width="600">
 
 ## Fotos del proyecto
+
+<img src="./imagenes/valentina_imagenes/lumi1.jpg" alt="valores" width="400">
+
+<img src="./imagenes/valentina_imagenes/lumi2.jpg" alt="valores" width="400">
+
+<img src="./imagenes/valentina_imagenes/lumi3.jpg" alt="valores" width="400">
+
+<img src="./imagenes/valentina_imagenes/lumi4.jpg" alt="valores" width="400">
+
+<img src="./imagenes/valentina_imagenes/lumi5.jpg" alt="valores" width="400">
+
+<img src="./imagenes/valentina_imagenes/lumi6.jpg" alt="valores" width="400">
+
 
 ## Bibliografía
 
