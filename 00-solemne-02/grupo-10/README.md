@@ -334,6 +334,27 @@ while True:
 
 ## Errores en Raspberry Pi Pico 2w
 
+Hubo diversos errores durante el proceso, al enfrentarse nuevamente a Raspberry Pi Pico 2w y abrir vscode, enviar el código, aparecía lo siguiente
+
+![error1](./imagenes/errorparabitacora1.JPG)
+
+Esto sucedía porque estábamos presionando el ícono de flecha en vscode para correr el código, aparecían estos avisos y el código no funcionaba correctamente, la placa no se conectaba a Wifi. 
+
+Le preguntamos a Mateo y nos dijo que sólo era necesario apretar ctrl+s para enviar el código a la Raspberry, lo intentamos, se envió correctamente y la placa se pudo conectar a WiFi. También notamos que al enviarse el código, el LED de la Raspberry siempre se enciende 1 vez rápidamente, esto es un aviso de que recibió el código y no habíamos notado esto hasta ese momento.
+
+Otro error al momento de iniciar vscode era el modo restringido
+
+![error2](./imagenes/errorPython.JPG)
+
+Esto aparecía cada vez que abríamos vscode en un computador, debemos apretar trust para poder seguir adelante. Lo que hacía este error era que de alguna manera restringe a Python y este no puede operar con normalidad, es como si lo "reprimiera". No encontramos la forma de evitar que se abriera esta ventana cada vez que abríamos vscode por lo que siempre teníamos que apretar "trust" para continuar.
+
+Uno de los errores más importantes fue el hecho de que el LED se quedaba encendido tras presionar el botón reiteradas veces. Esto ocurría porque el código en un inicio (lunes) al enviar datos a adafruit, sólo enviaba el valor 1, esto hacía que el LED detectara sólo la opción de encenderse después de cierto rato, era una especie de bug.
+
+Este error se solucionó al agregar esta parte extra al código, la cuál hace que al soltar el botón se envíe un 0, indicando que el led se debe apagar
+
+
+
+
 
 
 
