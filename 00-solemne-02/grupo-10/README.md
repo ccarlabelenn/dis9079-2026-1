@@ -377,7 +377,28 @@ Para nivelar los conocimientos técnicos, iniciamos con un taller práctico lide
 
 * *Circuito Emisor:* Braulio lideró la explicación de la Raspberry Pi Pico 2 W, mostrando cómo conectar el botón de 4 pines y recordando la importancia de la configuración Pull-UP interna para evitar el ruido eléctrico.
 
-<img width="579" height="662" alt="image" src="https://github.com/user-attachments/assets/d5bd1241-2c3d-4a62-9dd8-3319063ed601" />
+<p align="center">
+<img width="550" height="420" alt="image" src="https://github.com/user-attachments/assets/d5bd1241-2c3d-4a62-9dd8-3319063ed601" /></p>
+
+---
+
+Para asegurar que el equipo pudiera replicar el sistema de forma autónoma, le explicamos detalladamente sobre la lógica de programación y la gestión de archivos en ambas plataformas:
+
+1. Entorno de la Raspberry Pi Pico 2 W (MicroPython)
+
+Explicamos que la arquitectura de archivos en MicroPython es distinta a la de un PC. Los puntos clave fueron:
+
+* *Estructura de Carpetas:* Instruímos al equipo en la creación de una carpeta /lib en la raíz de la placa. Es fundamental que las bibliotecas de comunicación (como umqtt.simple) se alojen allí para que el intérprete las encuentre.
+  
+* *Automatización con main.py:* Les enseñamos que para que la Raspberry funcione de forma independiente (sin estar conectada al PC), el archivo debe guardarse obligatoriamente con el nombre main.py. Si se guarda con otro nombre, el programa no se ejecutará al recibir energía.
+
+2. Entorno del Arduino UNO R4 WiFi (C++)
+
+En el caso del Arduino, nos enfocamos en la gestión de dependencias y el flujo del programa:
+  
+* *Monitor Serial y Debugging:* Les enseñamos a fijarse en el Baud Rate (fijado en 115200) y a interpretar los mensajes de error en el Monitor Serial para saber si el problema es de conexión al router o de autenticación con Adafruit IO.
+  
+* *Manejo de Tópicos:* Detallamos cómo el nombre del "Feed" en el código debe ser exactamente igual al configurado en la plataforma para que la suscripción de datos funcione.
 
 ---
 ### 2. Pruebas de Distancia y Obstáculos (Stress Test)
@@ -388,7 +409,9 @@ Una vez que los dos nodos estuvieron operativos, salimos a probar la estabilidad
 
 <div align="center"> <video src="https://github.com/user-attachments/assets/f28bb838-175e-4d0b-ac70-f5c7eef1f5f3" width="315" autoplay loop muted playsinline></video> </div>
   
-* *El desafío de la red móvil:* Al intentar alejarnos más, la conexión se perdió. Identificamos que el problema era la fuente del WiFi: cuando el emisor de la señal (Hotspot móvil) se alejaba demasiado de una de las placas, esta quedaba fuera de la red. Solución: Tuvimos que independizar la red y asegurar que ambos nodos tuvieran cobertura constante, entendiendo que el IoT depende críticamente de la infraestructura de red.
+* *El desafío de la red móvil:* Al intentar alejarnos más, la conexión se perdió. Identificamos que el problema era la fuente del WiFi: cuando el emisor de la señal (Hotspot móvil) se alejaba demasiado de una de las placas, esta quedaba fuera de la red.
+  
+* *Solución:* Tuvimos que independizar la red y asegurar que ambos nodos tuvieran cobertura constante, entendiendo que el IoT depende críticamente de la infraestructura de red.
   
 * *Prueba de 15 Metros:* Con una red estable, logramos una respuesta instantánea a 15 metros de distancia lineal.
 
