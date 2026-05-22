@@ -636,5 +636,6 @@ void loop() {
 ## Imágenes del proyecto
 
 ## Animaciones del proyecto
+![alien_loop](imagenes/alien_loop.gif)
 
 ## Bibliografía
