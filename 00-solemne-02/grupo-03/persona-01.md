@@ -1,6 +1,6 @@
 # investigaciones individuales
 
-nombre completo / github
+Magdalena Balart / magdalenabalart
 
 ## Sensor
 ### sensor botón / pulsador
@@ -184,8 +184,10 @@ La salida del sistema es una respuesta comunicacional: el niño utiliza el dispo
 
 ## Actuador 
 
-Esta vez utilizamos como actuador una pantalla OLED, que funciona como una salida visual dentro del sistema. A diferencia de un sensor, que recibe información del entorno, la pantalla permite mostrar una respuesta: texto, símbolos, números, mensajes o pequeñas animaciones.
-
+Esta vez utilizamos como actuador una pantalla OLED, que funciona como una salida visual dentro del sistema. A diferencia de un sensor, que recibe información del entorno, la pantalla permite mostrar una respuesta: texto, símbolos, números, mensajes o pequeñas animaciones. 
+ 
+<img src="./imagenes/pantallaoled.png" alt="img 01karri" width="30%">   
+ 
 En nuestro caso, la pantalla OLED nos sirve para que el sistema pueda “responder” de una forma visible. Por ejemplo, si un botón envía una señal o si llega un dato desde Adafruit IO, la pantalla puede mostrar un mensaje específico. Esto permite transformar una acción física o digital en una respuesta visual que una persona puede leer e interpretar.
 
 Aunque técnicamente una pantalla no genera movimiento como un servo motor, sí funciona como un actuador en el sentido de que entrega una salida del sistema: **recibe una instrucción desde la placa y la convierte en información visible**.  
@@ -194,6 +196,8 @@ Aunque técnicamente una pantalla no genera movimiento como un servo motor, sí 
 
 La pantalla OLED que utilizamos funciona como una salida visual del sistema. En este caso, permite mostrar mensajes, números, símbolos o pequeñas respuestas gráficas según lo que le indique la placa.
 
+<img src="./imagenes/diagramaoled.png" alt="img 01karri" width="50%">    
+ 
 La pantalla usada tiene conexión I2C, por eso solo necesita cuatro pines:
 
 **GND**: tierra.    
@@ -288,16 +292,20 @@ Como referente para la pantalla OLED tomo el trabajo de Wang & Söderström, un 
 
 > “The digital world becomes animal, soft, and peculiarly sensual.”
 
+<img src="./imagenes/oledref01.png" alt="img 01karri" width="30%">  
+
 Me interesa su exposición Royal Chambers—Home as Host, Host as Home, realizada en Copenhague. En este proyecto investigan la relación entre lo digital, lo natural y lo doméstico, pensando el concepto de “hogar” no solo como un espacio humano, sino como un ecosistema donde también existen vidas no humanas, datos, tecnologías, virus, parásitos, estructuras invisibles y formas de conexión. Dentro de la exposición aparecen obras como Wh331 0f 1!f3, que muestra la vulnerabilidad de nuestra presencia digital a través de virus computacionales, y Nest of You, una instalación interactiva que compara el poder de las grandes empresas tecnológicas con el de las hormigas reina, pensando cómo nuestros hábitos y rutinas alimentan sistemas mucho más grandes que nosotros. 
 
 En sus obras la tecnología no aparece solo como una herramienta técnica, sino como una presencia viva dentro del espacio. Las pantallas, imágenes y dispositivos digitales no solo muestran información: construyen una atmósfera, generan una sensación y ayudan a pensar cómo lo digital también habita con nosotros. Esto me sirve para pensar la pantalla OLED como una pequeña presencia dentro del objeto. En nuestro proyecto, la OLED puede mostrar mensajes, estados de conexión o información recibida desde Adafruit IO, pero también puede darle una especie de voz al sistema. Puede hacer visible algo que normalmente estaría escondido en el código o en la comunicación entre dispositivos.
 
+<img src="./imagenes/oleddref02.png" alt="img 01karri" width="30%">   
+ 
 Por otro lado, Wang & Söderström hacen que lo digital se sienta más orgánico, más blando y más cercano. Sus obras muestran que la tecnología también puede hablar de cuidado, hogar, vínculo y dependencia. En ese sentido, una pantalla pequeña como la OLED puede funcionar como un espacio mínimo de comunicación: un lugar donde el objeto responde, avisa, espera o muestra que algo está ocurriendo.
 
 ## Bibliografía
 https://cursos.mcielectronics.cl/2024/10/22/explicando-el-modo-arduino-input_pullup-pinmode/ 
 https://www.automatizacionparatodos.com/push-button-con-arduino/ 
 https://karri.io/products/karri-classic?variant=55926510420341 
-https://programarfacil.com/blog/arduino-blog/ssd1306-pantalla-oled-con-arduino/ 
+https://programarfacil.com/blog/arduino-blog/ssd1306-pantalla-oled-con-arduino/   
 https://www.ignant.com/2023/01/30/wang-soderstrom-on-broadening-the-aesthetics-and-meanings-of-the-digital/ 
 
