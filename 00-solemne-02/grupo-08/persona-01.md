@@ -416,7 +416,7 @@ Provocado por movimientos forzados o uso continuo.
 
 ## Proyecto o referente artístico (actuador)
 
-### Igor Fonseca “Joy Robot de la Alegría”
+### Igor Fonseca “Robot de la Alegría”
 
 Ingeniero eléctrico y mecánico, máster en automatización y control. Especialista en instrumentación industrial. Científico loco e inventor.
 
