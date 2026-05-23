@@ -128,7 +128,7 @@ Esto abre la posibilidad de mostrar gráficos de barras con datos en tiempo real
 
 ### Empresa de referencia — Teenage Engineering (Suecia)
 
-Teenage Engineering es una empresa sueca de diseño de instrumentos musicales electrónicos. Sus productos más conocidos, como el **OP-1 Field** y la serie **Pocket Operator**, usan pantallas OLED como parte central de su interfaz. Lo que me interesó al investigarlos es que no usan la pantalla solo como display de estado: la convierten en parte de la **experiencia expresiva del instrumento**. Las formas de onda, los parámetros de síntesis y las animaciones se muestran en tiempo real, y el usuario aprende a leer la pantalla como parte de tocar el instrumento.
+Teenage Engineering es una empresa sueca de diseño de instrumentos musicales electrónicos. Sus productos más conocidos, como el **OP-1 Field** y la serie **Pocket Operator**, usan pantallas OLED como parte central de su interfaz. Lo que me interesó al investigarlos es que no usan la pantalla solo como display de estado, sino que la convierten en parte de la **experiencia expresiva del instrumento**. Las formas de onda, los parámetros de síntesis y las animaciones se muestran en tiempo real, y el usuario aprende a leer la pantalla como parte de tocar el instrumento.
 
 Eso me hizo reflexionar sobre el rol de la pantalla en nuestro proyecto. En una escala mucho más pequeña, la OLED hace lo mismo: convierte algo invisible (un mensaje viajando por WiFi desde otra habitación) en algo concreto y legible. Sin el actuador, el sistema existe pero no se percibe.
 
