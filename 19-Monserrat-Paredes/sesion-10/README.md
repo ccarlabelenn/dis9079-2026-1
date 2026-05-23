@@ -262,50 +262,68 @@ El uso constante puede deteriorar la pista resistiva interna del potenciómetro.
 
 ### Proyecto o referente artístico (sensor y robótica musical)
 
-Erin Gee “Swarming Emotional Pianos”
+### Andrea Gregorini “ARKeytar”
 
-Nacida en 1983, es una artista y compositora canadiense cuyo trabajo se centra en la voz, la emoción y la tecnología. Desarrolla instrumentos de biorretroalimentación personalizados que conectan el cuerpo humano con el sonido y los sistemas interactivos. Al crear estos sistemas, considera la manipulación emocional como una capa técnica que complementa el hardware y el software, vinculándola con la teoría feminista.
+Es un desarrollador independiente italiano reconocido en la comunidad de música electrónica por su trabajo en el diseño y creación de instrumentos MIDI de tipo hazlo tú mismo (DIY). Su enfoque combina ingeniería electrónica, programación creativa y diseño sonoro, fomentando la accesibilidad tecnológica para músicos y aficionados.
 
-trabaja mezclando:
 
-- biometría.
+### Trabaja mezclando:
+
+- Luthería digital.
+
+- Robótica musical.
+
+- Performance en vivo.
+
+- Diseño industrial.
+
+- Interacción física.
   
-- sensores corporales.
 
-- robótica sonora.
-  
-- emociones humanas.
+### Sobre el proyecto: ARKeytar
 
-- sistemas interactivos.
+Es un enorme instrumento MIDI tipo keytar construido con madera, sensores táctiles y controles analógicos.
 
-Sobre el proyecto: Swarming Emotional Pianos
+La idea para la creación de este controlador MIDI surgió tras observar lo que algunas personas podían lograr combinando softpots, Arduino e instrumentos musicales. Descubrí que algunas aplicaciones eran realmente interesantes.
 
-Una imponente proyección de un artista humano rodeado de seis robots musicales con campanillas: su música está impulsada por los ritmos cambiantes del cuerpo emocional del artista, transformados en datos y señales que activan los motores del conjunto.
-
-Instalación robótica que presenta la documentación de una actuación de una actriz que experimenta emociones extremas en intervalos de cinco minutos. Durante estas actuaciones cronometradas de sorpresa, ira, miedo, tristeza, excitación sexual y alegría extremas, Gee utilizó biosensores diseñados a medida para capturar cómo cada emoción afecta el ritmo cardíaco, la sudoración y la respiración de la actriz. Los datos de esta sesión impulsan las explosiones musicales de la robótica que rodea la documentación en video de la sesión emocional.
+Para crear un único instrumento capaz de ofrecer estas características, opté por la forma de una guitarra, para que sea fácil de manejar tanto de pie como sentado. En este caso, un ángulo de ejecución elevado favorece la posición de la mano derecha al tocar el teclado.
 
 
-Tecnologías utilizadas:
+### Tecnologías utilizadas:
 
-- Arduino.
+- Arduino
+ 
+- Potenciómetros analógicos.
+ 
+- SoftPot membrane potentiometers.
 
-- biosensores.
-  
-- servomotores.
-  
-- microcontroladores.
+- MIDI USB.
 
-- sistemas de sonido robótico.
-  
-Es interesante, ya que trabaja directamente con emociones humanas convertidas en comportamiento robótico, eso genera una experiencia mucho más sensible y perturbadora.
+- Sensores táctiles.
 
+- Shift registers
 
-Imagenes de proyecto
+- LEDs.
 
-<img width="1058" height="697" alt="Erin Gee01" src="https://github.com/user-attachments/assets/6a9c5427-fe75-4f54-91b4-936e655f0ad6" />
+- programación Arduino IDE.
 
 
-<img width="898" height="550" alt="Erin Gee02" src="https://github.com/user-attachments/assets/3ad32ca8-4457-4766-9f4a-6b5eabac43e0" />
+### ¿Por qué genera impacto?
+
+Porque parece un instrumento futurista híbrido entre guitarra, sintetizador e interfaz robótica.
+
+El uso de potenciómetros permite manipular sonido en tiempo real de forma corporal y performática.
+
+
+### Imagenes de proyecto
+
+<img width="734" height="456" alt="ARKeytar01" src="https://github.com/user-attachments/assets/912a8d2d-420d-45a0-9cd0-7a8ee93ec3f0" />
+
+
+<img width="528" height="414" alt="ARKeytar02" src="https://github.com/user-attachments/assets/85168c32-fa35-4b0e-804e-877c9f951b03" />
+
+
+<img width="579" height="123" alt="ARKeytar03" src="https://github.com/user-attachments/assets/659c881e-3cdc-4508-a9be-71cadded17fa" />
 
 
 ---
@@ -467,68 +485,83 @@ Provocado por movimientos forzados o uso continuo.
 
 ### Proyecto o referente artístico (actuador)
 
-Moritz Simon Geist “Vibrations”
+### Igor Fonseca “Robot de la Alegría”
 
-Moritz Simon Geist es un artista visual, investigador y productor musical cuyo trabajo se centra en la intersección de la robótica, el sonido físico y la agencia algorítmica. Su práctica explora la transición de instrumentos mecánicos funcionales a entidades autónomas, examinando la materialidad y las condiciones psicológicas y estéticas de la interacción humano-máquina.
+Ingeniero eléctrico y mecánico, máster en automatización y control. Especialista en instrumentación industrial. Científico loco e inventor.
 
-Con una sólida formación en física de semiconductores y robótica, Geist deconstruye sistemas técnicos complejos para investigar la fragilidad de los materiales y el comportamiento algorítmico. Su evolución artística ha pasado de instalaciones cinéticas performativas a esculturas autónomas a gran escala que utilizan inteligencia artificial y visión artificial para interactuar con su entorno.
-
-
-Trabaja mezclando:
-
-- robótica.
-
-- música experimental.
-
-- actuadores.
-
-- sonido físico.
-
-- inteligencia artificial.
-
-Su trabajo busca crear música utilizando máquinas reales en vez de sonido digital
+Es principalmente conocido por crear el proyecto “Robô da Alegria” (Joy Robot), un robot humanoide diseñado para interactuar con niños en hospitales infantiles y apoyar iniciativas educativas y sociales en Brasil.
 
 
-Sobre el proyecto:
+### Trabaja mezclando:
 
-“Vibrations” es un enorme instrumento robótico autónomo inspirado en un vibráfono.
+- Robótica social.
 
-La instalación sonora cinética "VIBRATIONS" reflexiona sobre la espacialidad y la contemplación.
+- Diseño emocional.
 
-Ninguno de los sonidos de este instrumento es interpretado por humanos, sino por 36 pequeños actuadores robóticos. La mecánica introduce ligeras variaciones en el sonido y el ritmo, que resultan orgánicas en contraste con los sonidos generados por ordenador. Por otro lado, los robots son lo suficientemente precisos como para reproducir estructuras repetitivas que ningún ser humano podría reproducir. Esto crea una nueva forma sonora («música electrónica robótica») que es a la vez orgánica y mecánica.
+- Impresión 3D.
 
+- Interacción humano-robot.
 
-Tecnologías utilizadas:
+- Electrónica DIY.
 
-- actuadores robóticos.
-
-- motores de precisión.
-
-- sistemas MIDI.
-
-- control computacional.
-
-- algoritmos generativos.
-
-- estructuras mecánicas sonoras.
-
-- iluminación LED sincronizada.
+- Programación interactiva.
 
 
-Es interesante, ya que convierte la robótica en una experiencia física y sonora extremadamente humana.
+### Sobre el proyecto:
 
-Los robots producen pequeñas imperfecciones mecánicas imposibles de replicar digitalmente, haciendo que la música se sienta viva, repetitiva y orgánica al mismo tiempo.
+Es un robot humanoide construido para interactuar con niños en hospitales y generar experiencias lúdicas y emocionales positivas. 
+
+El robot:
+
+- Mueve brazos y cabeza.
+
+- Responde mediante movimiento.
+
+- Puede desplazarse.
+
+- Genera expresiones corporales.
+
+- Interactúa remotamente vía WiFi.
+
+El diseño está inspirado en robots sociales educativos y utiliza múltiples servomotores SG90 para producir movimientos suaves y expresivos.
 
 
-Imágenes del proyecto:
+### Tecnologías utilizadas:
+
+- Arduino UNO.
+
+- 6 servomotores SG90.
+
+- ESP8266.
+
+- Controlador PCA9685.
+
+- Impresión 3D.
+
+- Motores DC.
+
+- Driver L298N.
+
+- Programación Arduino IDE.
 
 
-<img width="513" height="351" alt="Moritz01" src="https://github.com/user-attachments/assets/e45e43b9-ec55-4669-a60e-4bd444d8586d" />
+### ¿Por qué genera impacto?
+
+Porque transforma componentes simples y baratos en un robot humanoide expresivo.
+
+El movimiento generado por los SG90 hace que el robot parezca “vivo” y cercano emocionalmente, especialmente en contextos infantiles y sociales.
 
 
 
+### Imágenes del proyecto:
 
-<img width="646" height="441" alt="Moritz02" src="https://github.com/user-attachments/assets/a4eddcc1-009e-4f65-99a3-cb925f138bc1" />
+<img width="498" height="531" alt="Joy Robot01" src="https://github.com/user-attachments/assets/03da11ac-2a48-43f7-83fd-46fa81cacf11" />
+
+
+<img width="400" height="273" alt="Joy Robot03" src="https://github.com/user-attachments/assets/51e3a26d-b9e5-45e5-8941-9bb1175386dd" />
+
+
+<img width="555" height="549" alt="Joy Robot02" src="https://github.com/user-attachments/assets/5aa09049-7a3b-4d7f-8cc2-06862e18f855" />
 
 
 
