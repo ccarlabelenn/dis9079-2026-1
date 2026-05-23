@@ -47,6 +47,15 @@ Se utilizó como actuador una pantalla OLED junto con un push button. El funcion
 
 La pantalla OLED funciona mediante comunicación digital (generalmente protocolo I2C), lo que permite transmitir datos desde el microcontrolador hacia la pantalla usando pocos pines. Este tipo de pantalla se caracteriza por su bajo consumo energético, buen contraste y capacidad de mostrar texto o gráficos de forma clara. Por otro lado, el push button es un interruptor momentáneo que cierra el circuito solo mientras se presiona, enviando una señal digital al sistema.
 
+Aprendizajes del uso de animaciones:
+
+Las principales dificultades que tuvimos al realizar la animación fueron que, al principio, los frames no corrían correctamente en la pantalla. Después de investigar y ver varios videos, logramos que la pantalla mostrara un frame estático, aunque todavía sin movimiento.
+El siguiente desafío fue agregar los demás frames, ya que teníamos que convertir cada imagen individualmente usando Image2CPP, y en varias ocasiones el código nos arrojaba errores.
+Finalmente, conseguimos que el GIF funcionara correctamente y se reprodujera completo en la pantalla. Sin embargo, no logramos implementar el cambio entre distintos GIFs.
+
+foto de los settings de image2cpp
+
+
 ## Código usado para enviar
 
 ## Código usado para recibir
