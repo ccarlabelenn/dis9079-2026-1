@@ -786,13 +786,10 @@ void loop() {
   
 - Afel.cl.(s.f).potenciometro 500k-ohm. Afel.cl. https://afel.cl/products/potenciometro-500k-ohm?_pos=4&_psq=pote&_ss=e&_v=1.0
 
-- Erin Gee. (s.f.). Biography. https://eringee.net/biography/
+- Andrea Gregorini. (2021). ARKeytar – Arduino based MIDI controller keytar. Project Hub Arduino. https://projecthub.arduino.cc/andreagregorini/arkeytar-arduino-based-midi-controller-keytar-45b72d
 
-- Erin Gee. (s.f.). Swarming Emotional Pianos. https://eringee.net/swarming-emotional-pianos/
+- Igor Fonseca. (2018). Joy Robot (Robô Da Alegria). Hackster.io. https://www.hackster.io/igorF2/joy-robot-robo-da-alegria-bba54f
 
-- Moritz Simon Geist. (s.f.). About. https://www.moritzsimongeist.com/about
-
-- Moritz Simon Geist. (s.f.). Vibrations. https://www.moritzsimongeist.com/works/vibrations
-
+- Igor Fonseca. (s.f.). IgorF2 Profile. Hackster.io. https://www.hackster.io/igorF2
 
 
