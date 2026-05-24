@@ -128,8 +128,8 @@ import wifi
 import socketpool
 import adafruit_minimqtt.adafruit_minimqtt as MQTT
 
-SSID = "auxilio"
-PASSWORD = "cabal123"
+SSID = "wifi"
+PASSWORD = "clave"
 
 wifi.radio.connect(SSID, PASSWORD)
 
@@ -181,8 +181,8 @@ while True:
 
 #define IO_USERNAME  "udpmontoyamoraga"
 #define IO_KEY       "clavecredencial"
-#define WIFI_SSID    "marce"
-#define WIFI_PASS    "marce1234"
+#define WIFI_SSID    "wifi"
+#define WIFI_PASS    "clave"
 
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 
