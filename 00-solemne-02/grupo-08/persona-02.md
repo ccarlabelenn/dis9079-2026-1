@@ -398,7 +398,7 @@ void loop() {
 
 ```
 
-### Biografía
+### Bibliografía
 
 - Arduino.cl. (s.f.). Micro Servo Motor SG90 9g. Arduino.cl. <https://arduino.cl/producto/micro-servo-motor-sg90-9g>
 - Arduino.cl. (s.f.). Ejemplo análogo con potenciómetro. Arduino.cl. <https://arduino.cl/ejemplo-analogo-con-potenciometro/?srsltid=AfmBOopNZdWYQtTXaZWpSAN4Bjrw3WSeNnmfDP10xmWbFMU7vnoCf1vW>
