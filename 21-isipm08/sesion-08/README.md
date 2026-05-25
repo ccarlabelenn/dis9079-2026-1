@@ -34,6 +34,7 @@ mu editor (rip)
   - Recargar página: Ctrl + D Ctrl + C
   
 **RASPBERRY**
+
 Esta imagen referencial sirve para poder ubicarnos en la Raspberry Pi, ya que será de gran ayuda para nuestra solemne 2.
 
 ![titulo](./imagenes/raspberry.jpg)
