@@ -20,7 +20,7 @@ Le dimos a Claude AI el siguiente prompt:
  
 > *"Estamos haciendo un proyecto en el cual tenemos que conectar una Raspberry controlada por un potenciómetro, a través de una nube en Adafruit IO, a un Arduino UNO R4 con un motor servo. ¿Cómo podríamos hacer que el potenciómetro conectado a la Raspberry controle el servo conectado al Arduino a través de Adafruit?"*
  
-Cuando tratamos de modificar el código en Visual Studio Code, no nos funcionaba. Después de un rato nos dimos cuenta de que lo estábamos ejecutando en el computador y no en la Raspberry. Solucionado eso, guardamos el código en su carpeta interna y lo comenzamos a correr utilizando PuTTY.
+Cuando tratamos de modificar el código en Visual Studio Code, no nos funcionaba. Después de un rato nos dimos cuenta de que lo estábamos ejecutando en el computador y no en la Raspberry. Solucionado eso, guardamos el código en su carpeta interna y lo comenzamos a correr y vimos si funcionaba usando PuTTY para visualizar el puerto serial.
  
 En PuTTY tuvimos el siguiente problema: *"Error de módulo (no module named...)"*.
  
