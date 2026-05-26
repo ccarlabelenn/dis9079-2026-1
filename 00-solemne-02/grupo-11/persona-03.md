@@ -214,9 +214,10 @@ Este proyecto demuestra cómo los actuadores permiten transformar información d
 
 # Bibliografía
 
-ibm.com⁠
 arduino.cc⁠
 learn.microsoft.com⁠
-ibm.com⁠
 docs.arduino.cc⁠
 bostondynamics.com⁠
+agriculturaia.com⁠
+plantae.garden⁠
+tripo3d.ai⁠
