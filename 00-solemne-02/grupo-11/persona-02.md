@@ -98,6 +98,7 @@ Pocos proyectos de Arduino usan servomotores de una manera tan interesante como 
 
 <img width="900" height="675" alt="image" src="https://github.com/user-attachments/assets/22691394-8db0-4514-af59-d9b8cab687e6" />
 *Servo Motor Artwork* Doug Domke, 2019.
+
 ## Bibliografía
 
 Arduino Team. 2019. *Three dozen servos create animated artwork* <https://blog.arduino.cc/2019/09/06/three-dozen-servos-create-animated-artwork/>
