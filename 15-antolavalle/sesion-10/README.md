@@ -21,4 +21,4 @@ Con este cambio logramos avanzar, aunque aparecieron otros problemas: el código
 
 En cuanto a los resultados, vimos que el LED externo no encendía como esperábamos, pero sí se activaba el LED TX de la placa cada vez que llegaba un mensaje, lo que confirmó que la comunicación sí estaba funcionando. Esto indica que el problema probablemente está en la conexión o configuración del LED externo más que en la comunicación.
 
-Finalmente, probamos el sistema separando las placas aproximadamente 6 metros, y la comunicación siguió funcionando correctamente, lo que demuestra que efectivamente es inalámbrica y no depende de la cercanía entre dispositivos.
+Finalmente, probamos el sistema separando las placas aproximadamente 6 metros, y la comunicación siguió funcionando correctamente.
