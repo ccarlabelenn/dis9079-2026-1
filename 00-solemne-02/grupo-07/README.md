@@ -8,6 +8,7 @@
 - Antonia Fuentealba - [AntFuentealba](https://github.com/AntFuentealba)
   
 ## Descripción textual del proyecto
+
 Como encargo para la segunda solemne del curso, se nos pidió nuevamente desarrollar un sistema de comunicación inalámbrica. Para esto, trabajamos con dos microcontroladores distintos, programados mediante código: un Arduino Uno R4 WiFi y una Raspberry Pi Pico 2 W.
 
 El proyecto consiste en un sistema de detección de movimiento que envía información de forma remota. Para ello, se utilizó un sensor PIR que se activa mediante un botón. Una vez encendido, el sensor detecta el movimiento y transmite esta información a través de la Raspberry Pi Pico 2 W hacia la plataforma Adafruit IO.
@@ -32,8 +33,6 @@ El objetivo principal es evidenciar la integración entre sensores, actuadores y
 | Cable USB A a USB-C | 1 | $10.990 | <https://www.falabella.com/falabella-cl/product/17549587/>|
 | Cable USB A a Micro USB | 1 | $4.990 | <https://mcielectronics.cl/shop/product/cable-usb-a-micro-usb-negro/?srsltid=AfmBOor5DUGYyFpc1Hoo8KOhWzD-8jsF487IqqcuJiWnDG3BJi_rRwnQ> |
 
-
-
 ## Sensor usado
 
 Se utilizó un sensor PIR junto con un push button. El funcionamiento del sistema fue el siguiente: al presionar el botón, se activaba el sensor PIR, el cual detectaba movimiento mediante cambios en la radiación infrarroja (calor corporal). Cuando detecta movimiento, el sensor envía una señal al sistema Adafruit. Para detener el envío de datos, se presiona nuevamente el botón, desactivando el sensor.
@@ -46,7 +45,7 @@ Se utilizó como actuador una pantalla OLED junto con un push button. El funcion
 
 La pantalla OLED funciona mediante comunicación digital (generalmente protocolo I2C), lo que permite transmitir datos desde el microcontrolador hacia la pantalla usando pocos pines. Este tipo de pantalla se caracteriza por su bajo consumo energético, buen contraste y capacidad de mostrar texto o gráficos de forma clara. Por otro lado, el push button es un interruptor momentáneo que cierra el circuito solo mientras se presiona, enviando una señal digital al sistema.
 
-### Aprendizajes y errores
+## Aprendizajes y errores
 
 Con el sensor PIR tuvimos varios problemas. Trabajamos con dos modelos distintos: uno que venía con cables integrados y otro sin ellos. Por lo que investigamos, el que tenía cables estaba modificado. El sensor con cables integrados nunca logró funcionar correctamente, incluso después de probar distintos códigos y configuraciones.
 
@@ -63,12 +62,27 @@ El siguiente desafío fue agregar los demás frames, ya que teníamos que conver
 Finalmente, conseguimos que el GIF funcionara correctamente y se reprodujera completo en la pantalla.
 
 ### Pruebas de animación
+
 ![pruebas](imagenes/pruebas1.gif)
+
 ![pruebas](imagenes/pruebas.gif)
+
 ![pruebas](imagenes/pruebas3.jpeg)
+
 ![pruebas](imagenes/pruebas2.jpeg)
 
+## Resultado final
+A pesar de los errores y contratiempos que tuvimos durante el desarrollo, finalmente logramos obtener una animación funcional para el proyecto.
+Después de varias pruebas, decidimos simplificar la idea inicial y trabajar solo con un personaje, agregándole más frames para mejorar la fluidez del movimiento y lograr un resultado más estable en la pantalla.
+El resultado final fue una animación de un alien, esta se proyecta en la pantalla OLED que es accionada por un botón y que está conectada a su vez al Arduino UNO R4 Wifi que recibe la señal de Adafruit IO. Esa señal se manda gracias a un sensor PIR accionado por un botón, que al detectar el movimiento, la Raspberry Pi Pico 2 W manda la señal a la nube de Adafruit IO.
 
+![resultado](imagenes/solemne3.gif)
+
+Resultado de la animación al momento de que el sensor PIR siente movimiento.
+
+![resultado](imagenes/solemne3.jpeg)
+
+Resultado de la animación.
 
 ## Código usado para enviar
 
@@ -249,6 +263,7 @@ while True:
 ```
 
 ## Código usado para recibir
+
 ```cpp
 #include <WiFiS3.h>
 #include "AdafruitIO_WiFi.h"
@@ -832,35 +847,55 @@ void loop() {
 }
 
 ```
+
 ## Imágenes del proyecto
+
 ![movimiento](imagenes/movimiento.jpeg)
+
 ![proyecto](imagenes/materiales.jpeg)
 
-
-
 ## Animaciones del proyecto
+
 ![solemne](imagenes/solemne.gif)
 
 ### Frames
+
 ![frames](imagenes/frames.png)
 
 ### Loop:
+
 ![alien_loop](imagenes/alien_loop.gif)
 
 ## Bibliografía
+
 - <https://www.youtube.com/watch?v=HxjvP9m-hRo>
+
 - <https://www.330ohms.com/blog/explora-3/que-es-un-sensor-pir-y-como-funciona-8>
+
 - Javl. Image2cpp.
- https://javl.github.io/image2cpp/
+
+<https://javl.github.io/image2cpp/>
+
 - Adafruit Industries. Monochrome OLED Breakouts: Arduino Library and Examples.
- https://learn.adafruit.com/monochrome-oled-breakouts/arduino-library-and-examples
+
+<https://learn.adafruit.com/monochrome-oled-breakouts/arduino-library-and-examples>
+
 - Huy Khoong. gif2cpp.
- https://github.com/huykhoong/gif2cpp
+
+<https://github.com/huykhoong/gif2cpp>
+
 - Random Nerd Tutorials. ESP32/Arduino OLED Display Guide.
-https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/ 
+
+<https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/>
+
 - SparkFun Electronics. PIR Motion Sensor Hookup Guide.
-https://learn.sparkfun.com/tutorials/pir-motion-sensor-hookup-guide/all
+
+<https://learn.sparkfun.com/tutorials/pir-motion-sensor-hookup-guide/all>
+
 - Adafruit. (s.f.). Adafruit IO documentation. Adafruit Learning System. 
-https://io.adafruit.com/
+
+<https://io.adafruit.com/>
+
 - Soldered Electronics. (s.f.). SSD1306 OLED display overview. Soldered Documentation. 
-https://docs.soldered.com/ssd1306/overview/
+
+<https://docs.soldered.com/ssd1306/overview/>

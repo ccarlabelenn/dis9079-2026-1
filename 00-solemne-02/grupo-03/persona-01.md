@@ -33,7 +33,7 @@ Hay dos formas comunes de conectarlo:
 **Pull-down**: cuando el botón no se presiona, el pin queda en LOW / 0V. Al presionarlo, cambia a HIGH / 5V.
 
 La resistencia puede ser de distintos valores, pero normalmente se usan entre 1KΩ y 10KΩ. Arduino también tiene resistencias internas que se pueden activar desde el código, pero usar una resistencia externa ayuda a entender mejor el circuito y evitar errores.
-```
+```cpp 
 *  Como utilizar un botón con arduino
  *  
  *  EJEMPLO 01
@@ -78,7 +78,7 @@ Para solucionar esto se usa el **debounce**, que básicamente sirve para evitar 
 
 La idea del debounce es esta: cuando Arduino detecta que el botón cambió de estado, espera unos milisegundos antes de aceptar la lectura como válida.
  
-```
+```cpp
 ejemplo: 
 
 const int botonPin = 2;
@@ -123,23 +123,23 @@ void loop() {
    
  Esto significa que Arduino espera 50 milisegundos antes de aceptar el cambio del botón.
    
-```
+```cpp
 unsigned long tiempoDebounce = 50;
 ```
 
 Si el botón cambia, Arduino guarda el momento en que ocurrió ese cambio. 
  
-```
+```cpp
 if ((millis() - ultimoCambio) > tiempoDebounce) {
 ```
 Después revisa si ya pasó el tiempo suficiente. Si pasó, considera que la señal ya está estable. 
 
-```
+```cpp
 if ((millis() - ultimoCambio) > tiempoDebounce) {
 ```
 Como el código usa:
  
-```
+```cpp
 pinMode(botonPin, INPUT_PULLUP);
 ```
 el botón funciona “al revés”:
@@ -209,9 +209,9 @@ En la imagen se puede ver el orden de los pines: GND, VCC, SCL y SDA. Esto es im
 
 La pantalla funciona con una matriz de píxeles. se puede trabajar como una matriz de 128 columnas y 64 filas, donde cada píxel puede encenderse o apagarse. A partir de esa combinación de puntos se forman letras, números, íconos o pequeñas animaciones. Aunque técnicamente se podría controlar píxel por píxel, en la práctica usamos librerías de Arduino, como Adafruit SSD1306 y Adafruit GFX, que permiten escribir texto, cambiar el tamaño, limpiar la pantalla y actualizar lo que aparece. Así, la pantalla puede mostrar mensajes como “Hola mundo”, estados de conexión o respuestas recibidas desde otro dispositivo. 
 
-ejemplo codigo: 
+ejemplo código: 
 
-```
+```cpp
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -256,15 +256,19 @@ void loop() {
 ```
  
 define dónde va a aparecer el texto.
-```
+ 
+```cpp
 display.setCursor(10, 20);
 ```
-escribe el mensaje.
-```
+escribe el mensaje. 
+ 
+```cpp
 display.println("Hola mundo");
-``` 
+```
+ 
 recién con este lo muestra en la pantalla
-``` 
+ 
+```cpp
 display.display();
 ```
  
