@@ -1,10 +1,12 @@
-# ⋆⭒˚.⋆ └[∵┌] Clase 09: Receso académico [┐∵]┘ ⋆.˚⭒⋆
+# ⋆⭒˚.⋆ └[∵┌] Clase 09: Vuelta e incendio [┐∵]┘ ⋆.˚⭒⋆
 
-Lunes 4 de mayo 2026
+Lunes 11 de mayo 2026
 
 ## Observaciones
 
- Esta semana era de receso. Aproveché de dormir, descansar y retomar mis medicamentos y terapias.
+ Esta semana fue la vuelta del receso. Aproveché de dormir, descansar y retomar mis medicamentos y terapias.
+ Lamentablemente se incendió el edificio continuo de la facultad. Por decisión de la administración se cancelaron todas las clases.
+ Pese a ello fui para encontrarme con el Jota, e irnos.
 
 ***
 
