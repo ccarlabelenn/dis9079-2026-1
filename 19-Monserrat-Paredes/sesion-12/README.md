@@ -2,7 +2,7 @@
 
 lunes 01 junio 2026
 
-EXAMEN:  Estudios inalámbricos sobre  poéticos
+## EXAMEN:  Estudios inalámbricos sobre  poéticos
 
 1 parrafo de al menos 4 lineas, que hace su proyecto, no como que (buscar referentes, palabras clave)
 Grupo de 3 a 4 personas
@@ -28,6 +28,7 @@ REQUISITOS
 - Comentar el código
   
 - Declarar toda ia usada con lujo de detalles, incluyendo prompts y todo lo que hayan hecho
+
 
 ## NOMBRE PROYECTO
 
@@ -56,6 +57,7 @@ R: Se comunica mediante luces led. Rojo Biblioteca, Verde LID.
 - ¿qué sensor van a ocupar para detectar a un ser vivo?
 
 R: Sensor PIR HC-SR501 Detector de Movimiento o Sensor ultrasónico
+
 
 ## OPCIONES SENSORES (todos usan luz infrarroja)
 
