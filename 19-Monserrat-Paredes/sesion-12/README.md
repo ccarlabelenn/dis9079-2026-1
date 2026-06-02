@@ -35,6 +35,12 @@ REQUISITOS
 
 - Dualidad de esapcios
 
+- lectura (por datos)
+
+- connection BLID (Combinación directa de Biblioteca + LID)
+
+- Puente Digital
+
 
 ## PÁRRAFO DE CONTEXTO
 
@@ -57,6 +63,10 @@ La diferencia de los siguientws sensores es la forma en que interactúan con el 
 
 - Sensor Infrarrojo Evasor de Obstáculos
 
+<img width="540" height="500" alt="infrarrojoEvasor" src="https://github.com/user-attachments/assets/80ddaf9e-7b0c-4e7c-a720-cd896846ca23" />
+
+Imagen sacada de: https://afel.cl/products/sensor-infrarrojo-evasor-de-obstaculos?_pos=1&_sid=5dc4ed558&_ss=r 
+
 Cómo funciona: Es un sensor de reflexión activa. Tiene dos "ojos" pequeños: un LED emisor que lanza un haz de luz infrarroja invisible y un fotodiodo receptor que espera a que esa luz rebote en un objeto (el cuerpo de una persona).
 
 Área de visión: Un haz lineal muy estrecho y directo. Su rango es corto y ajustable mediante un pequeño tornillo (típicamente de 2 a 30 cm.
@@ -65,13 +75,23 @@ Para tu proyecto: Es ideal si quieres esconder la tecnología. Al ser tan peque�
   
 - Sensor de Proximidad Infrarrojo E18-D80NK
 
+<img width="633" height="446" alt="proximidadInfrarrojo" src="https://github.com/user-attachments/assets/69f93a31-2813-4352-80b3-635882e440c9" />
+
+Imagen sacada de: https://afel.cl/products/sensor-de-proximida-infrarrojo-e18-d80nk?_pos=1&_sid=f70d01128&_ss=r
+
 Cómo funciona: Utiliza el mismo principio de reflexión activa que el evasor de obstáculos (emite y recibe su propia luz infrarroja), pero con componentes de grado industrial. Viene encapsulado en un tubo plástico roscado y blindado contra interferencias de luz ambiental.
 
 Área de visión: Un haz directo, milimétrico y de largo alcance. Su potenciómetro trasero permite calibrar el disparo con precisión quirúrgica desde los 3 cm hasta 80 cm.
 
 Para tu proyecto: Es la mejor opción técnica para un conteo real. Al tener un alcance de hasta 80 cm, cubre perfectamente el ancho estándar del paso de una persona en una puerta. Su precisión es digital: en cuanto el cuerpo corta el haz, el sensor manda un pulso instantáneo al Arduino R4 WiFi. Al ser robusto, puedes fijarlo firmemente a los muros o estructuras de los accesos sin temor a que se descalibre si alguien lo pasa a llevar.
   
-- Sensor de Movimiento HC-SR501: El sensor PIR cuenta "siluetas". Técnicamente, un sensor PIR detecta cambio de calor en movimiento (es un interruptor ciego: hay o no hay movimiento), no formas.
+- Sensor de Movimiento HC-SR501:
+
+<img width="498" height="439" alt="sensorPir" src="https://github.com/user-attachments/assets/24d67823-2f06-4da0-b48d-7d81aba65b82" />
+
+Imagen sacada de: https://afel.cl/products/sensor-de-movimiento-hc-sr501?_pos=1&_sid=50d2fe854&_ss=r 
+
+El sensor PIR cuenta "siluetas". Técnicamente, un sensor PIR detecta cambio de calor en movimiento (es un interruptor ciego: hay o no hay movimiento), no formas.
 
 Cómo funciona: No emite luz; es un receptor pasivo. Detecta la radiación infrarroja (el calor) que emiten los cuerpos humanos en movimiento.
 
@@ -80,3 +100,7 @@ Funciona como un interruptor: si detecta un cambio térmico en su área de cober
 Área de visión: Muy amplia un cono de unos 110° y hasta 7 metros de distancia).
 
 Para tu proyecto: No sirve para contar. Al tener un ángulo tan abierto, si tres personas cruzan juntas el pasillo, el sensor se activará una sola vez de forma continua. Además, si alguien entra a la biblioteca y se queda completamente quieto leyendo, el sensor dejará de "verlo" porque ya no hay movimiento térmico, asumiendo falsamente que el espacio está vacío.
+
+## PARRAFO ARREGLADO
+
+Este proyecto consiste en un sistema que conecta el LID y la biblioteca para medir cuántas personas entran y salen de cada lugar en tiempo real. En la puerta de cada edificio se instalan dos sensores infrarrojos industriales conectados a una placa Arduino con WiFi. Al colocar dos sensores en fila, el sistema detecta de forma automática la dirección de la persona: si pasa primero por el de afuera y luego por el de adentro, cuenta como una entrada; si lo hace al revés, cuenta como una salida. Esta información se envía de manera inalámbrica a través de internet a una base de datos (API) que lleva el conteo exacto. Finalmente, el sistema responde encendiendo una pantalla o luces LED en el otro edificio; de esta forma, las personas que están en la biblioteca pueden ver mediante una señal visual qué tan lleno está el LID, y viceversa, automatizando el registro de ocupación de los espacios del campus.
