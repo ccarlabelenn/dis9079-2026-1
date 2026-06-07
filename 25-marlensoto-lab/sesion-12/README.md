@@ -3,6 +3,7 @@
 lunes 01 junio 2026
 
 # En el primer bloque de la clase 
+Vimos de que iba a tratar y que debemos entregar.
 
 ## Requisitos del Examen
 
