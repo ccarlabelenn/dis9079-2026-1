@@ -1,5 +1,7 @@
 # persona-2
 
+[Vania Paredes](https://github.com/paredesvania)
+
 ---
 
 ## Investigación
