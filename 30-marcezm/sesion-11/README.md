@@ -38,10 +38,6 @@ Durante la presentación realizamos pruebas de comunicación entre la Raspberry 
 
 Inicialmente aparecieron algunos problemas relacionados con la configuración y visualización de los archivos de programación. Después de revisar el entorno de desarrollo y la estructura de los archivos, logramos corregir los errores y restablecer la comunicación entre ambos dispositivos.
 
-![Problema de visualización](imagenes/visualizacion_ai.png)
-
-![Corrección de visualización](imagenes/visualizacion_code.png)
-
 ## Funcionamiento demostrado
 
 La demostración consistió en utilizar un botón pulsador conectado a la Raspberry Pi Pico. Cuando el botón era presionado, se enviaba una señal hacia el Arduino mediante la comunicación configurada entre ambos dispositivos.
