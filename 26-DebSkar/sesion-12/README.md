@@ -4,7 +4,7 @@
 
 La clase comenzó con el profesor mostrándonos un libro que está desarrollando para enseñar programación, diseñado especialmente para preparar a futuros estudiantes de este curso. Durante esta introducción, nos recalcó una idea clave:
 
-* “Debemos aprender a explicar de forma clara nuestros proyectos y habilidades" *
+> “Debemos aprender a explicar de forma clara nuestros proyectos y habilidades"
 
 Luego, pasamos a hablar detalladamente sobre los requisitos y la preparación para el examen final.
 
