@@ -45,7 +45,7 @@ La API es el puente que establece la conexión entre ellos.
 
 Si bien la transferencia de datos es según el servicio web utilizado, las solicitudes y respuestas se realizan a través de una API. No hay visibilidad en la interfaz de usuario, lo que significa que las API intercambian datos dentro del ordenador o la aplicación, y aparecen ante el usuario como una conexión sin fisuras.
 
-<img src="./imagenes/API.png" alt="api" width="300">
+<img src="./imagenes/API.png" alt="api" width="400">
 
 imagen sacada de: <https://outvio.com/es/blog/que-es-una-api/>
 
