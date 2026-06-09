@@ -203,11 +203,11 @@ Grupo 04: Queremos lograr una exploración sobre la capacidad de las tecnología
 
 - Aarón nos pregunta lo siguiente: van a procesar esos datos de pulso? van a enviar el pulso directamente? o un resumen en latidos por minuto?
 
-       - Resp: Resumen en latidos por minuto
+   - Resp: Resumen en latidos por minuto
 
 - Jesús Miranda nos pregunta: ¿qué pasa en este caso en el dispositivo receptor? ya que en el párrafo dice que los latidos "son observados" pero no queda claro si es una pantalla LED, sonido, ¿cómo se ve esa presencia remota?
 
-      - Resp: Estamos considerando el uso de la pantalla led del arduino o anexar una pantalla LCD para la visualización de los datos, que en este caso son las pulsaciones por minuto
+    - Resp: Estamos considerando el uso de la pantalla led del arduino o anexar una pantalla LCD para la visualización de los datos, que en este caso son las pulsaciones por minuto
 
 Estas interaccones nos sirvieron para recibir feedback de otras perspectivas e intercambiar dudas que uno puede tenerlas claras pero el resto no necesariamente.
 
