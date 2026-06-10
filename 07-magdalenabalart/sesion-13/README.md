@@ -12,11 +12,13 @@ A partir de esta conversación, definimos que el **Tótem 01** funcionará como 
 
 También definimos su composición, madera, impresión 3d y acrílico 
 
+<img src="imagenes/bocetototem01.jpg" style="width: 50%;" alt="Mi imagen">
+
 ### Tótem 02
 
 También aclaramos el funcionamiento del **Tótem 02**, que actuará como receptor de la información enviada desde el primer tótem. Este segundo objeto tendrá una pantalla LED y un servomotor. La información captada por el sensor del Tótem 01 se traducirá en movimiento mediante el servo, generando una respuesta física a la distancia de la persona. Cuando la presencia se complete, el Tótem 02 recibirá un mensaje que indicará que **alguien estuvo ahí, recordó o decidió hacerse presente**.
 
-quizas este diseño nos falta profundizar en su forma y su composición 
+Quizás este diseño nos falta profundizar en su forma y su composición 
 
 Durante la sesión también discutimos la pregunta que amplía el sentido del proyecto: ¿qué pasa si el altar no solo responde a quien se acerca, sino también a la ausencia de alguien? Esta idea nos permitió pensar en una segunda condición del sistema, donde la luz podría activarse de manera tenue o intermitente si pasa mucho tiempo sin que nadie se acerque. De esta forma, la ausencia también se transforma en una señal, como una presencia fantasma o una memoria que sigue habitando el espacio.
 
