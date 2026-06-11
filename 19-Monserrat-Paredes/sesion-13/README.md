@@ -59,7 +59,9 @@ BUCLE PRINCIPAL:
     esperar 500ms                        // evitar lecturas duplicadas
 
 ════════════════════════════════════════
+
 MÓDULO B — Arduino UNO R4 WiFi (Rep180)
+
 ════════════════════════════════════════
 
 VARIABLES:
@@ -92,7 +94,9 @@ BUCLE PRINCIPAL:
         apagar LED[i]
 
 ════════════════════════════════════════
+
 ADAFRUIT IO — Canal intermedio
+
 ════════════════════════════════════════
 
   Feed: "lid-conteo"
