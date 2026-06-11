@@ -179,7 +179,6 @@ Los llamaremos Sensor A (Exterior / Pasillo) y Sensor B (Interior / LID).
 
 
 PASILLO (Exterior)
-
 ---------------------------------
 
        [ Sensor A ]  <-- Lado Pasillo
@@ -187,12 +186,33 @@ PASILLO (Exterior)
        [ Sensor B ]  <-- Lado LID
        
 ---------------------------------
+   INTERIOR DEL LID
 
-       INTERIOR DEL LID
+
+   Requisitos:
+   
+- Distancia entre sensores (10 a 15 cm).
+
+- Altura de montaje (1.10 a 1.20 metros - Altura de la cadera/torso).
+
+- Calibración del rango (Con el potenciómetro): Los sensores traen un pequeño tornillo. Ajústalos para que solo detecten objetos a una distancia de 20 a 30 cm.
+
+
+[LID: Paso de persona] 
+   --> Si activa A primero y luego B = ENTRADA (+1)
+   --> Si activa B primero y luego A = SALIDA (-1)
+   --> Raspberry Pi Pico 2W calcula: Aforo_Neto
+   
+[Internet]
+   --> Pico 2W sube el valor "Aforo_Neto" por Wi-Fi a Adafruit IO o tu API.
+
+[FADD: Rep180]
+   --> El Arduino UNO R4 WiFi descarga el valor "Aforo_Neto" desde internet.
+   --> Mapea ese número (ej. de 0 a 30 personas) en tus 16 LEDs del anillo.
+
+
+Si el aforo es 0, el anillo en la FADD está apagado. Si el aforo sube a 15, el anillo se enciende hasta la mitad. Si hay un evento en el LID y entra mucha gente, el anillo se completará y brillará por completo en República 180, alertando del "desborde".
        
-
-
-
 
 
 ## Investigación sobre Apis
