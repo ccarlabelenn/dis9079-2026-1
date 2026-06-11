@@ -217,5 +217,6 @@ Codigo para el anillo led -> https://github.com/adafruit/Adafruit_NeoPixel/blob/
 # Codigo de prueba con consola simulado
 
 Poner datos al azar y cuando funcione cambiarlo los datos reales y rangos buscados.
+
 No alcanzamos, pero fui Afel a comprar lo que nos faltaba -> Anillo led y Sensor infrarrojo 
 
