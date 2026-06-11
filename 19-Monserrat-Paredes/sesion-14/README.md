@@ -67,5 +67,21 @@ while True:
             
     # Pequeño delay de estabilidad para evitar que el bucle sature el procesador
     time.sleep(0.05)
-´´´
-Investigación sobre Apis
+```
+
+Opción 3: Cambiar de conteo numérico -> Métrica de intensidad o pulso
+
+Torniquete -> termómetro que mide la vitalidad del LID (en tiempo real, flujo constante)
+
+Cada vez que el sensor del LID detecta un paso (sea entrada o salida), manda un pulso. Si hay muchos pulsos seguidos, el anillo LED se enciende rápido y cambia a colores cálidos/alerta (el espacio está "hirviendo" de movimiento). Si nadie pasa, el anillo se va apagando lentamente. Esto calza perfecto con la idea de mostrar el "ritmo" y el desborde del lugar.
+
+
+
+## Investigación sobre Apis
+
+Información sacada de: 
+
+https://openweathermap.org/api
+
+https://www.ibm.com/es-es/think/topics/api
+
