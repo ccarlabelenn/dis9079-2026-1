@@ -69,11 +69,129 @@ while True:
     time.sleep(0.05)
 ```
 
-Opción 3: Cambiar de conteo numérico -> Métrica de intensidad o pulso
+# Opción 3: Cambiar de conteo numérico -> Métrica de intensidad o pulso
 
 Torniquete -> termómetro que mide la vitalidad del LID (en tiempo real, flujo constante)
 
 Cada vez que el sensor del LID detecta un paso (sea entrada o salida), manda un pulso. Si hay muchos pulsos seguidos, el anillo LED se enciende rápido y cambia a colores cálidos/alerta (el espacio está "hirviendo" de movimiento). Si nadie pasa, el anillo se va apagando lentamente. Esto calza perfecto con la idea de mostrar el "ritmo" y el desborde del lugar.
+
+Ejemplo del funcionamiento del anillo led:
+
+- 0% de Energía: Sala en calma. El anillo está apagado o en un azul/verde muy tenue.
+
+- 50% de Energía: Flujo constante. El anillo se llena hasta la mitad con colores amarillos y naranjas.
+
+- 100% de Energía: ¡LID desbordado! Las 16 luces del anillo brillan intensamente en color rojo vivo o parpadean.
+
+
+Código para el Arduino UNO R4 WiFi:
+
+```cpp
+#include <Adafruit_NeoPixel.h>
+
+#define PIN_NEOPIXEL  6   // Pin de datos conectado al anillo LED
+#define NUM_LEDS      16  // Tu anillo de 16 LEDs
+
+Adafruit_NeoPixel anillo(NUM_LEDS, PIN_NEOPIXEL, NEO_GRB + KHZ800);
+
+int pulsosAnteriores = 0;
+int pulsosActuales = 0; // Este valor lo debes actualizar con lo que recibas por Wi-Fi
+
+float energia = 0.0;           // Nivel de energía actual de la sala (0 a 100)
+float tasaDesgaste = 0.15;     // Qué tan rápido se enfría la sala (ajustable)
+unsigned long ultimoTiempo = 0;
+
+void setup() {
+  anillo.begin();
+  anillo.show(); // Inicializa todos los LEDs apagados
+  Serial.begin(9600);
+}
+
+void loop() {
+  // --- SIMULACIÓN DE RECEPCIÓN WI-FI ---
+  // Aquí debes integrar tu código que lee desde Adafruit/API y actualiza 'pulsosActuales'
+  // -------------------------------------
+
+  // 1. Monitorear si llegaron nuevos pulsos desde el LID
+  if (pulsosActuales > pulsosAnteriores) {
+    int nuevosPulsos = pulsosActuales - pulsosAnteriores;
+    
+    // Cada pulso nuevo inyecta 25 unidades de energía
+    energia = energia + (nuevosPulsos * 25.0); 
+    if (energia > 100.0) energia = 100.0; // Límite máximo
+    
+    pulsosAnteriores = pulsosActuales;
+  }
+
+  // 2. Lógica de Desgaste (Enfriamiento constante del espacio)
+  if (millis() - ultimoTiempo >= 50) { // Se ejecuta cada 50 milisegundos
+    ultimoTiempo = millis();
+    
+    if (energia > 0.0) {
+      energia = energia - tasaDesgaste;
+    } else {
+      energia = 0.0;
+    }
+    
+    // 3. Actualizar la visualización del anillo LED según la energía
+    actualizarAnillo(energia);
+  }
+}
+
+void actualizarAnillo(float nivelEnergia) {
+  // Calculamos cuántos LEDs se deben encender (de 0 a 16)
+  int ledsPrendidos = map(nivelEnergia, 0, 100, 0, NUM_LEDS);
+  
+  // Definir color según la temperatura de la energía
+  uint32_t colorActual;
+  
+  if (nivelEnergia < 35.0) {
+    colorActual = anillo.Color(0, 255, 100);   // Verde/Cian: Sala calmada, ritmo lento
+  } else if (nivelEnergia < 75.0) {
+    colorActual = anillo.Color(255, 130, 0);   // Naranja: Ritmo constante, ocupación media
+  } else {
+    colorActual = anillo.Color(255, 0, 0);     // Rojo: ¡Desborde, movimiento intenso!
+  }
+
+  // Encender los LEDs que correspondan
+  for (int i = 0; i < NUM_LEDS; i++) {
+    if (i < ledsPrendidos) {
+      anillo.setPixelColor(i, colorActual);
+    } else {
+      anillo.setPixelColor(i, anillo.Color(0, 0, 0)); // Apagar el resto
+    }
+  }
+  anillo.show();
+}
+```
+
+Resultado visual: Si el LID está vacío, el anillo estará completamente apagado. Si entra un grupo de 3 personas seguidas, el anillo se encenderá de golpe hasta la mitad en color naranja. Si el flujo se detiene, se vera cómo los LEDs se van apagando uno a uno, como un eco que se desvanece, reflejando que el ritmo bajó. Si la sala se llena por completo de eventos, los 16 LEDs brillarán en un rojo intenso estático.
+
+# Opción 4: Agregar el segundo Sensor Infrarrojo
+
+Agregar un segundo sensor idéntico resuelve esto de forma limpia, económica y sin alterar la puerta. Anillo de LEDs en la FADD pretende mostrar qué tan "lleno" o "desbordado" está el LID, necesitas calcular el aforo neto 
+
+Gente adentro = Entradas - Salidas.
+
+Para que el sistema funcione, los dos sensores deben instalarse en fila (en serie), siguiendo la línea de la dirección en la que camina la gente.
+
+Los llamaremos Sensor A (Exterior / Pasillo) y Sensor B (Interior / LID).
+
+
+PASILLO (Exterior)
+
+---------------------------------
+
+       [ Sensor A ]  <-- Lado Pasillo
+         |  10-15 cm de distancia
+       [ Sensor B ]  <-- Lado LID
+       
+---------------------------------
+
+       INTERIOR DEL LID
+       
+
+
 
 
 
