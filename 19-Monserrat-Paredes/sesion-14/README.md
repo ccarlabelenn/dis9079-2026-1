@@ -226,6 +226,11 @@ https://www.ibm.com/es-es/think/topics/api
 Una API (por sus siglas en inglés, Application Programming Interface o Interfaz de Programación de Aplicaciones) es un componente fundamental en el desarrollo de software moderno.
 
 
+## Origen
+
+Aunque hoy asociamos las API a las páginas web, el concepto nació en 1968. Los científicos de computación Ira Cotton y Frank Greatorex crearon un sistema para que diferentes programas de software pudieran interactuar dentro de una misma computadora principal. Internet ni siquiera existía tal como lo conocemos.
+
+
 ## ¿Qué es una API?
 
 Según la documentación de IBM, una API es un conjunto de reglas, protocolos y especificaciones que permite que diferentes aplicaciones informáticas se comuniquen entre sí para intercambiar datos, características y funcionalidades.
