@@ -6,10 +6,10 @@ Vamos a pedir el KIT Humidificador USB en <www.mechatronicstore.cl> ya que queda
 
 Tenemos que hacer el pseudocódigo en base a lo que decidimos la semana pasada como grupo.
 
- Pseudocódigo:
+### Pseudocódigos:
 
 
-PYTHON
+#### CÓDIGO PYTHON
 
 código enviar: 
 
@@ -51,7 +51,7 @@ deja de enviar información al girar el interruptor de derecha a izq
 
 
 
-INO
+#### CÓDIGO INO
 
 código recibir:
 
