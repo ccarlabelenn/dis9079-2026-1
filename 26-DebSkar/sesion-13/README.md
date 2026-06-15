@@ -52,7 +52,16 @@ Deja de enviar información al girar el interruptor de derecha a izquierda.
 
 Definir módulo LED,definir pantalla,definir humidificador,verificar si Wi Fi conectado,verificar si API está funcionando,verificar conexión con la nube,definir componentes conectados al arduino.
 
-Recibir información de la humedad de las 8 ciudades,asignarle un valor y relacionarlo a un LED del módulo.Con dado digital elegir al azar un valor y encender el LED correspondiente de la ciudad,detectar el porcentaje de humedad del lugar y se activa el humidificador 
+Recibir información de la humedad de las 8 ciudades,asignarle un valor y relacionarlo a un LED del módulo.Con dado digital elegir al azar un valor y encender el LED correspondiente de la ciudad,detectar el porcentaje de humedad del lugar y se activa el humidificador.
+
+#### Ideas para el concepto de "Bruma Compacta"
+
+![maguito](imágenes/Mago.jpeg)
+
+![ruleta](imágenes/Ruleta.jpeg)
+
+![botón](imágenes/Sol.jpeg)
+
 
 
 
