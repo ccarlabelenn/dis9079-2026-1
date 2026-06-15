@@ -48,6 +48,12 @@ Grupo 04: Queremos lograr una exploración sobre la capacidad de las tecnología
 
     - Resp: Estamos considerando el uso de la pantalla led del arduino o anexar una pantalla LCD para la visualización de los datos, que en este caso son las pulsaciones por minuto
 
+![Registro Discord 1](./imagenes/discord-1.png)
+
+![Registro Discord 2](./imagenes/discord-2.png)
+
+*Registro de Interacción en Discord*
+
 -----
 
 ### Lunes 08 Junio
@@ -162,6 +168,14 @@ Cuenta Adafruit IO
 
 ![Compra Afel](./imagenes/compra-afel.gif)
 
+*Compra de Sensor AD8282 en AFEL*
+
+
+## Inicio de Trabajo con Sensor
+
+### Día Lunes 15-06
+
+Iniciamos en en lid, tenemos todos los materiales necesarios para poder trabajar, tenemos pendiente realizar el modelado 3D para la pantalla
 
 
 
