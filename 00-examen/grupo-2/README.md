@@ -13,7 +13,7 @@ Lunes 22 de junio 2026
 
 ## Descripción del proyecto
 
-"¿Cómo presenciamos el "habitar" de los espacios a través del sonido presente en los edificios de la FAAD?"
+### _"¿Cómo presenciamos el "habitar" de los espacios a través del sonido presente en los edificios de la FAAD?"_
 
 Nos interesa observar en vivo las huellas sonoras (conversaciones, pasos, risas, silencios, etc) que dejan las personas al ocupar o transitar un lugar (espacio físico). Esta "identidad acústica" cambiante nos habla de cómo se vive y se comparte un espacio . Estos registros en tiempo real son la materia prima para la producción de visualizaciones experimentales producidas en Touchdesigner,
 
