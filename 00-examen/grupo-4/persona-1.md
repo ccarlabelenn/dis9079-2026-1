@@ -90,21 +90,26 @@ La Spotify Web API opera mediante solicitudes realizadas por una aplicación cli
 
 Créditos imágen: https://www.thedataschool.com.au/blogs/spotify-api/
 
-## Ventajas de la Spotify Web API
 
-- Acceso a uno de los catálogos musicales más grandes del mundo
+### Ventajas de la Spotify Web API
 
-- Amplia documentación para desarrolladores
+- Acceso al catálogo global: Consulta directa de millones de canciones, álbumes y artistas.
 
-- Integración con aplicaciones web, móviles y dispositivos inteligentes
+- Amplia documentación: Guías claras que facilitan el desarrollo de aplicaciones.
 
-- Disponibilidad de datos musicales detallados
+- Integración multiplataforma: Soporte para entornos web, móviles y de escritorio (Android, iOS, PC, Mac).
 
-- Implementación de estándares modernos de autenticación y seguridad
+- Métricas y analítica detallada: Datos históricos para crear gráficos de consumo y tendencias.
 
-- Posibilidad de desarrollar experiencias personalizadas basadas en música
+- Seguridad moderna: Protocolos avanzados de autenticación y protección de datos.
 
-![Compra Afel](./imagenes/compra-afel.gif)
+- Experiencias personalizadas: Rastreo preciso de hábitos, top tracks y patrones de escucha.
+
+*Dashboard analítico de datos de reproducción de Spotify.*
+
+![dashboard](./imagenes/api-spotify)
+
+https://medium.com/@aruljennifer2000/how-i-turned-my-spotify-history-into-an-interactive-power-bi-dashboard-e67ea879de49
 
 ### Relevancia para el diseño y la experiencia de usuario
 
