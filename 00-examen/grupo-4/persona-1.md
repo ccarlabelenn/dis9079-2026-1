@@ -107,7 +107,7 @@ Créditos imágen: https://www.thedataschool.com.au/blogs/spotify-api/
 
 *Dashboard analítico de datos de reproducción de Spotify.*
 
-![dashboard](./imagenes/api-spotify)
+![dashboard](./imagenes/api-spotify.webp)
 
 https://medium.com/@aruljennifer2000/how-i-turned-my-spotify-history-into-an-interactive-power-bi-dashboard-e67ea879de49
 
