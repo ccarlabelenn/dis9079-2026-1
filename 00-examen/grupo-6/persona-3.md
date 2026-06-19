@@ -17,7 +17,9 @@ Valentina Ruz Pizarro / <https://github.com/vxlentiinaa>
 
 `API:` *Application Programming Interface*
 
-<img src="./imagenes/png" alt="api" width="400">
+<img src="./imagenes/vale_imagenes/API2.png" alt="api" width="300">
+
+imagen sacada de: <https://itsqmet.edu.ec/api/>
 
 Una API, o interfaz de programación de aplicaciones, es un conjunto de reglas o protocolos que permite a las aplicaciones informáticas comunicarse entre sí para intercambiar datos, características y funcionalidades.
 
@@ -47,7 +49,7 @@ La API es el puente que establece la conexión entre ellos.
 
 Si bien la transferencia de datos es según el servicio web utilizado, las solicitudes y respuestas se realizan a través de una API. No hay visibilidad en la interfaz de usuario, lo que significa que las API intercambian datos dentro del ordenador o la aplicación, y aparecen ante el usuario como una conexión sin fisuras.
 
-<img src="./imagenes/API.png" alt="api" width="400">
+<img src="./imagenes/vale_imagenes/API.png" alt="api" width="500">
 
 imagen sacada de: <https://outvio.com/es/blog/que-es-una-api/>
 
@@ -90,6 +92,7 @@ Según la localización de ambos sistemas, pueden ser:
 
 ### Bibliografía
 
-- https://immune.institute/blog/que-es-la-api/
-- https://outvio.com/es/blog/que-es-una-api/
-- https://www.sensedia.com.es/pillar/tipos-de-apis
+- <https://immune.institute/blog/que-es-la-api/>
+- <https://outvio.com/es/blog/que-es-una-api/>
+- <https://www.sensedia.com.es/pillar/tipos-de-apis>
+- <https://itsqmet.edu.ec/api/>
