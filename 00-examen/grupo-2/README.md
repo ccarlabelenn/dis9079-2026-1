@@ -293,13 +293,56 @@ while True:
 
 ## Output: Touchdesigner
 
-[![Ver video](https://img.youtube.com/vi/n-fH_hPftp4/maxresdefault.jpg)](https://youtu.be/n-fH_hPftp4)
+## Codigo Mqtt client / touch designer
+
+```python
+# mqttclient1_callbacks
+
+def onConnect(dat, *args):
+    dat.subscribe('udpmontoyamoraga/feeds/grupo02-rep')
+    dat.subscribe('udpmontoyamoraga/feeds/grupo02-ss')
+    print('MQTT conectado')
+    return
+
+def onDisconnect(dat, *args):
+    print('MQTT desconectado')
+    return
+
+def onMessage(dat, topic, payload, qos, retain):
+    try:
+        valor = float(payload)
+        valor = max(0.0, min(100.0, valor))
+    except:
+        return
+
+    if 'rep180' in topic:
+        op('constant_rep').par.value0 = valor
+        print(f'[rep180] {valor:.0f}%')
+
+    elif topic.endswith('/ss'):
+        op('constant_ss').par.value0 = valor
+        print(f'[ss]     {valor:.0f}%')
+    return
+
+def onSubscribe(dat, *args):
+    print(f'Suscrito a: {args}')
+    return
+
+def onUnsubscribe(dat, *args):
+    return
+```
+
+## Parámetros del mqtt_client DAT
+
+![foto](./imagenes/voice14.png)
 
 ## Demostraciones en vivo
 
 ### Video en el mismo edificio (distintos espacios)
 
 [![Ver video](https://img.youtube.com/vi/wxTEaNKYboA/maxresdefault.jpg)](https://youtube.com/shorts/wxTEaNKYboA)
+
+[![Ver video](https://img.youtube.com/vi/n-fH_hPftp4/maxresdefault.jpg)](https://youtu.be/n-fH_hPftp4)
 
 ---
 
