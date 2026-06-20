@@ -230,5 +230,6 @@ void encenderProgresivamentePorAusencia() {
 }
 ```
 
-El corazoncito quedó muy lindo con el filamento transparente, créditos a Jota por la buena onda y la disposición a ayudarnos en esta pequeña pero importante parte del proyecto.
+El corazoncito quedó muy lindo con el filamento transparente, créditos a Jota por la buena onda y la disposición a ayudarnos en esta importante parte del proyecto.
 
+<img src="imagenes/corazoncito3d.png" style="width: 50%;" alt="Mi imagen"> 
