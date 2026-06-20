@@ -109,4 +109,4 @@ import code
 ```
 #### Imagenes proceso
 
-<img src="./imagenes/conexionAnilloLed.jpg" alt="totem" width="300">
+![conexion](./imagenes/conexionAnilloLed.jpg)
