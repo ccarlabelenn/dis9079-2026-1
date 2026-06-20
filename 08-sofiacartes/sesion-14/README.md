@@ -110,3 +110,5 @@ import code
 #### Imagenes proceso
 
 ![conexion](./imagenes/conexionAnilloLed.jpg)
+
+![anilloLed](./imagenes/anilloLed.gif)
