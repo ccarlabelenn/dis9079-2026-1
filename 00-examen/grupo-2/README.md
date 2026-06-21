@@ -57,13 +57,13 @@ Para comenzar...
 
 ```cpp
 # ============================================================
-# SENSOR DE SONIDO — Raspberry Pi Pico 2W + MAX9812
-# Examen interacciones inalámbricas
+# SENSOR DE SONIDO - Raspberry Pi Pico 2W + MAX9812
+# Examen interacciones inalambricas
 # ============================================================
 # CONEXIONES MAX9812:
-#   VCC  → Pin 36 (3V3)
-#   GND  → Pin 38 (GND)
-#   OUT  → Pin 31 (GP26)
+#   VCC  -> Pin 36 (3V3)
+#   GND  -> Pin 38 (GND)
+#   OUT  -> Pin 31 (GP26)
 # ============================================================
 
 import time
@@ -74,32 +74,28 @@ import socketpool
 import adafruit_minimqtt.adafruit_minimqtt as MQTT
 
 # ============================================================
-# CONFIGURACIÓN — solo cambia esto entre los dos Picos
+# CONFIGURACION - esto es lo unico que cambia entre las dos Raspberry
 # ============================================================
 
-EDIFICIO      = "grupo02-rep" # Dirección del feed (cambia según el edificio)
-WIFI_SSID     = "Nombre wifi" # Nombre wifi
-WIFI_PASSWORD = "01234" # Clave wifi
+EDIFICIO      = "grupo02-rep"   # nombre del feed, cambia segun el edificio
+WIFI_SSID     = "Nombre wifi"
+WIFI_PASSWORD = "01234"
 
-AIO_USERNAME  = "loremipsum" # Nombre del usuario de la cuenta
-AIO_KEY       = "aio_secret" # AIO Key del usuario de la cuenta
-
-# ============================================================
-# PARÁMETROS DE MEDICIÓN
-# ============================================================
-
-# El MAX9812 ya tiene 20dB de ganancia incorporada
-# así que los umbrales son más bajos que con KY-037
-RUIDO_PISO   = 150    # amplitud mínima para contar como sonido
-AMPLITUD_MAX = 5000   # amplitud que representa 100%
-                      # bajar si no llega a 100% aplaudiendo
-                      # subir si se satura muy fácil
-
-NUM_MUESTRAS = 150    # muestras por ráfaga (~15ms sin delay)
-INTERVALO_S  = 2.0    # segundos entre envíos (límite Adafruit IO)
+AIO_USERNAME  = "udpmontoyamoraga"
+AIO_KEY       = "aio_secret"
 
 # ============================================================
-# SENSOR (arreglo para el requisito del curso)
+# PARAMETROS DE MEDICION
+# ============================================================
+
+RUIDO_PISO   = 150    # bajo este numero se considera silencio
+AMPLITUD_MAX = 5000   # esto es lo que se considera 100%
+
+NUM_MUESTRAS = 150    # cuantas lecturas toma por rafaga
+INTERVALO_S  = 1.0    # cada cuanto envia datos
+
+# ============================================================
+# SENSOR
 # ============================================================
 
 PINES_SENSORES = [board.GP26]
@@ -114,6 +110,7 @@ mqtt_cliente = None
 
 
 def estado_wifi():
+    # chequea si seguimos conectados
     try:
         return wifi.radio.connected
     except Exception:
@@ -121,21 +118,22 @@ def estado_wifi():
 
 
 def conectar_wifi():
-    print(f"Conectando a WiFi: '{WIFI_SSID}'")
+    print(f"Conectando a wifi: '{WIFI_SSID}'")
     while not estado_wifi():
         try:
             wifi.radio.connect(WIFI_SSID, WIFI_PASSWORD)
             time.sleep(1)
             if estado_wifi():
-                print(f"  ✓ WiFi OK — IP: {wifi.radio.ipv4_address}")
+                print(f"  conectado - IP: {wifi.radio.ipv4_address}")
                 return
         except Exception as e:
-            print(f"  ✗ {e}")
-        print("  Reintentando en 5s...")
+            print(f"  fallo: {e}")
+        print("  reintentando en 5s...")
         time.sleep(5)
 
 
 def crear_mqtt():
+    # arma una conexion mqtt nueva desde cero
     global pool, mqtt_cliente
     pool = socketpool.SocketPool(wifi.radio)
     mqtt_cliente = MQTT.MQTT(
@@ -153,14 +151,14 @@ def conectar_mqtt():
     intentos = 0
     while True:
         try:
-            print("Conectando a Adafruit IO...")
+            print("Conectando a adafruit io...")
             mqtt_cliente.connect()
-            print(f"  ✓ MQTT OK — feed: {EDIFICIO}")
+            print(f"  listo - feed: {EDIFICIO}")
             return
         except Exception as e:
             intentos += 1
             espera = min(3 * intentos, 30)
-            print(f"  ✗ {e}. Reintentando en {espera}s...")
+            print(f"  fallo: {e}. reintentando en {espera}s...")
             try:
                 mqtt_cliente.disconnect()
             except Exception:
@@ -169,8 +167,9 @@ def conectar_mqtt():
 
 
 def asegurar_conexiones():
+    # revisa que todo siga vivo, y si se cayo algo, lo reconstruye
     if not estado_wifi():
-        print("WiFi caído. Reconectando...")
+        print("wifi caido. reconectando todo...")
         try:
             mqtt_cliente.disconnect()
         except Exception:
@@ -182,7 +181,7 @@ def asegurar_conexiones():
     try:
         mqtt_cliente.loop(timeout=1)
     except Exception as e:
-        print(f"MQTT caído: {e}. Reconectando...")
+        print(f"mqtt caido: {e}. reconectando...")
         try:
             mqtt_cliente.disconnect()
         except Exception:
@@ -194,12 +193,13 @@ def asegurar_conexiones():
 
 
 def publicar(valor):
+    # manda el dato al feed de adafruit io
     try:
         asegurar_conexiones()
         mqtt_cliente.publish(f"{AIO_USERNAME}/feeds/{EDIFICIO}", str(valor))
-        print(f"  → {EDIFICIO}: {valor}%")
+        print(f"  -> {EDIFICIO}: {valor}%")
     except Exception as e:
-        print(f"  ✗ Error: {e}")
+        print(f"  error: {e}")
         try:
             mqtt_cliente.disconnect()
         except Exception:
@@ -209,21 +209,21 @@ def publicar(valor):
         conectar_mqtt()
 
 # ============================================================
-# MEDICIÓN — pico máximo sin promediar
+# MEDICION - toma el nivel mas alto
 # ============================================================
 
-def medir_pico():
+def medir_nivel():
     """
-    Recorre el arreglo de sensores con un bucle for.
-    En cada sensor toma una ráfaga rápida y calcula
-    la amplitud pico-a-pico SIN promediar.
-    Retorna el nivel más alto entre todos los sensores.
+    recorre el arreglo de sensores.
+    en cada uno toma una rafaga rapida de 150 lecturas y se queda
+    con la diferencia entre el valor mas alto y el mas bajo.
+    eso es lo que indica que tan fuerte sono algo.
     """
     niveles = []
 
     for i in range(len(sensores)):
 
-        # Ráfaga rápida sin delays (bucle for + arreglo)
+        # rafaga rapida, sin pausas entre lecturas
         maximo = 0
         minimo = 65535
         for j in range(NUM_MUESTRAS):
@@ -253,10 +253,10 @@ conectar_wifi()
 crear_mqtt()
 conectar_mqtt()
 
-ultimo_envio = 0
-pico_maximo  = 0       # guarda el pico más alto desde el último envío
+ultimo_envio   = 0
+nivel_maximo   = 0   # guarda el sonido mas fuerte detectado desde el ultimo envio
 
-print(f"\n=== [{EDIFICIO.upper()}] Escuchando... ===\n")
+print(f"\n=== [{EDIFICIO.upper()}] escuchando... ===\n")
 
 # ============================================================
 # LOOP PRINCIPAL
@@ -264,23 +264,23 @@ print(f"\n=== [{EDIFICIO.upper()}] Escuchando... ===\n")
 
 while True:
     try:
-        # Medir constantemente
-        nivel = medir_pico()
+        # mide todo el tiempo, sin parar
+        nivel = medir_nivel()
 
-        # Guardar el pico más alto visto (no promediar)
-        if nivel > pico_maximo:
-            pico_maximo = nivel
-            print(f"    nuevo pico: {pico_maximo}%")
+        # si este nivel es mas fuerte que el guardado, lo reemplaza
+        if nivel > nivel_maximo:
+            nivel_maximo = nivel
+            print(f"    nuevo maximo detectado: {nivel_maximo}%")
 
-        # Enviar cada INTERVALO_S segundos
+        # cada 2 segundos manda el nivel mas fuerte que pillo
         ahora = time.monotonic()
         if (ahora - ultimo_envio) >= INTERVALO_S:
-            publicar(pico_maximo)
-            pico_maximo = 0        # resetear después de enviar
+            publicar(nivel_maximo)
+            nivel_maximo = 0   # se resetea para el siguiente ciclo
             ultimo_envio = ahora
 
     except Exception as e:
-        print(f"Error: {e}. Reconectando...")
+        print(f"error: {e}. reconectando...")
         try:
             mqtt_cliente.disconnect()
         except Exception:
