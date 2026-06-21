@@ -340,6 +340,8 @@ def onUnsubscribe(dat, *args):
 
 ### Video en el mismo edificio (distintos espacios)
 
+Este video fué grabado con uno de los micrófonos en el Laboratorio de interacción digital, otro en pañol y el output en la sala 102 de Salvador Sanfuentes 2221, en el proyector de la sala. Todo en el mismo edificio.
+
 [![Ver video](https://img.youtube.com/vi/wxTEaNKYboA/maxresdefault.jpg)](https://youtube.com/shorts/wxTEaNKYboA)
 
 [![Ver video](https://img.youtube.com/vi/n-fH_hPftp4/maxresdefault.jpg)](https://youtu.be/n-fH_hPftp4)
