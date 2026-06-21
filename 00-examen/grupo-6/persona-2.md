@@ -9,9 +9,27 @@ Monserrat-Paredes / https://github.com/Monserrat-Paredes
 - Bitácoras junio: evaluación de 4 sesiones (25 mayo, 01 junio, 08 de junio, 15 junio).
 - Bitácoras junio (la misma nota que punto anterior).
 
+
 ## Investigación sobre API (Interfaz de Programación de Aplicaciones)
 
-¿Qué es una API?
+
+### Origen
+
+En la década de los 70, las API experimentaron su primer gran salto en progreso gracias a los sistemas distribuidos. Surgieron métodos que permitieron el acceso remoto a la API de procedimientos al tiempo que evitaban la sobrecarga típica del programador mediante el empaquetado y desempaquetado de datos requerido para la interoperación entre diferentes tipos de computadoras.
+
+- 1947 : Herman Goldstine y John Von Neumann escriben sobre la idea general de reutilizar partes de código programático, llamándolos "subrutinas"
+
+- 1968 : El TÉRMINO "API" se acuña formalmente en un artículo sobre gráficos computacionales por Ira W. Cotton y Frank S. Greatorex, crearon un sistema para que diferentes programas de software pudieran interactuar dentro de una misma computadora principal. Internet ni siquiera existía tal como lo conocemos.
+
+- Años 60-70 : Las primeras APIs se usaban como bibliotecas en sistemas operativos , permitiendo comunicación entre programas en la misma máquina (sin Internet)
+
+- 1989 : Tim Berners-Lee propone la web mundial, creando el estándar HTTP.
+
+- 2000 : Roy Fielding define REST, transformando APIs en interfaces globales basadas en web.
+
+
+
+### ¿Qué es una API?
 
 Una API (por sus siglas en inglés Application Programming Interface , en español Interfaz de Programación de Aplicaciones ) es un conjunto de definiciones, reglas y protocolos que permite la comunicación entre diferentes aplicaciones o softwares. A diferencia de una interfaz de usuario que conecta una persona con un ordenador, una API conecta dos softwares o partes de un software.
 
@@ -19,36 +37,14 @@ En términos simples, una API es como un mensajero que actúa entre un cliente y
 
 Analogía del restaurante: Para entenderlo mejor.
 
-El cliente = el usuario/app que hace la solicitud.
+- El cliente = el usuario/app que hace la solicitud.
 
-El camarero = la API (transmite la orden).
+- El camarero = la API (transmite la orden).
 
-El cocinero = el servidor que procesa y responde con la información.
-
-
-## Origen
-
-Aunque hoy asociamos las API a las páginas web, el concepto nació en 1968. Los científicos de computación Ira Cotton y Frank Greatorex crearon un sistema para que diferentes programas de software pudieran interactuar dentro de una misma computadora principal. Internet ni siquiera existía tal como lo conocemos.
-
-Aunque hoy asociamos las APIs casi exclusivamente a internet (Web APIs), el concepto es mucho más antiguo:
-
-Años 1960 : Las primeras APIs se usaron como bibliotecas en los sistemas operativos, permitiendo que los programas interactuaran con el sistema.
-
-1988 : RPC (Llamada a procedimiento remoto) desarrollado por SUN Microsystems, primer protocolo que ganó popularidad.
-
-Años 2000 (Revolución Web) : Roy Fielding describe en su tesis (2000) el estilo arquitectónico REST. Las API basadas en la red que utilizan HTTP se convirtieron en el estándar actual
+- El cocinero = el servidor que procesa y responde con la información.
 
 
-
-
-## ¿Qué es una API?
-
-Según la documentación de IBM, una API es un conjunto de reglas, protocolos y especificaciones que permite que diferentes aplicaciones informáticas se comuniquen entre sí para intercambiar datos, características y funcionalidades.
-
-En lugar de crear cada herramienta u origen de datos desde cero, las API permiten a los desarrolladores conectar e integrar sistemas existentes de forma rápida y segura. Actúan como un puente o intermediario invisible para el usuario final, ofreciendo una conexión fluida dentro del software.
-
-
-## El concepto de "Caja Negra" y Seguridad
+### El concepto de "Caja Negra" y Seguridad
 
 Las API permiten compartir únicamente la información necesaria para una solicitud específica, manteniendo ocultos los detalles internos del código, el servidor o la base de datos. Esto añade una capa crítica de seguridad, ya que los dispositivos externos no tienen acceso total al sistema, sino solo a pequeños paquetes de datos autorizados.
 
@@ -65,13 +61,12 @@ Cliente / App  --- (1) Envía Petición (URI/HTTP) --->  API ---> (2) Llama al p
 Cliente / App <--- (4) Entrega Datos en Pantalla <-- Bridge  <--- (3) Responde con la información <--- Servidor Externo
 
 
-1. La Petición (Request): Una aplicación (el cliente) envía una solicitud de datos a través de una dirección específica (URI). Esta petición incluye un verbo de solicitud (como GET para leer datos o POST para enviar datos) y una cabecera.
+El funcionamiento de una puede entenderse en cuatro pasos básicos:
 
-2. El Procesamiento: La API toma la solicitud y llama al servidor web o programa externo que contiene la información.
-
-3. La Respuesta (Response): El servidor procesa la orden y envía los datos de vuelta a la API (generalmente organizados en formatos estandarizados y ligeros como JSON o XML).
-
-4. La Entrega: La API transfiere estos datos a la aplicación inicial, que los interpreta y los muestra al usuario en su interfaz.
+1. Solicitud: Una aplicación envía una solicitud, especificando qué información o acción necesita.
+2. Procesamiento: La API recibe la solicitud y la procesa, validando que los permisos sean correctos.
+3. Respuesta: La API recupera los datos o ejecuta la acción requerida.
+4. Devolución: Los datos o resultados son enviados de vuelta a la aplicación solicitante en un formato entendible (como JSON o XML).
 
 
 Un ejemplo cotidiano es cuando compras en una tienda online y seleccionas "Pagar con PayPal". La tienda no conoce tus claves bancarias; utiliza una API para comunicarse con PayPal, procesar el pago de forma segura y recibir de vuelta la confirmación de que el pago fue exitoso.
@@ -88,6 +83,16 @@ IBM clasifica las API principalmente bajo dos criterios: su accesibilidad (casos
 - API Internas (o Privadas): Permanecen ocultas para el público general. Las empresas las utilizan internamente para comunicar diferentes componentes o departamentos de desarrollo y mejorar la productividad.
 
 - API Compuestas: Combinan múltiples API de datos o servicios diferentes. Permiten que un programador haga una única llamada y obtenga información de varias fuentes a la vez (muy útil en arquitecturas de microservicios).
+
+
+| Tipo                      | Descripción                                                                     | Ejemplo                                                     |
+| ------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| API Públicas/Abiertas     | Accesibles para cualquier desarrollador, generalmente requieren clave de acceso | API de Google Maps, API de OpenWeatheritsqmet               |
+| API Privadas              | Restringidas al uso interno de una organización                                 | Sistemas internos de una empresaitsqmet                     |
+| API Asociativas/de Socios | Disponibles solo para socios estratégicos                                       | Integraciones entre bancos y proveedores financierositsqmet |
+
+
+
 
 
 ## Protocolos y estilos arquitectónicos:
