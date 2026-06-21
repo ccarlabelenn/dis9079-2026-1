@@ -2,9 +2,9 @@
 
 lunes 22 junio 2026
 
-Examen
+Examen-grupo 6
 
-## Conexiones finales
+## Conexiones finales -> Puente digital 
 
 Conectar el anillo led al arduino
 
