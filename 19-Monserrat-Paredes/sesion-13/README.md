@@ -177,17 +177,47 @@ Que cosas vamos a necesitar / dibujos de planificación
 Imagen sacada de: https: //afel.cl/products/sensor-infrarrojo-evasor-de-obstaculos?variant=45125238227096
 
  
-Cómo funciona sensor:
+¿Cómo funciona sensor?
 
 https://www.luisllamas.es/detectar-obstaculos-con-sensor-infrarrojo-y-arduino/
 
 https://agelectronica.lat/pdfs/textos/O/OKY3127.PDF
+
+Normalmente tiene 3 pines:
+
+VCC → 5V
+GND → GND
+OUT → Pin digital
+
+Cuando detecta un objeto frente al sensor:
+
+OUT = LOW (0)
+LED indicador encendido
+
+Cuando no detecta nada:
+
+OUT = HIGH (1)
+
+La distancia de detección suele ajustarse con el potenciómetro azul.
+
+
 
 
 - Anillo LED RGB WS2812 de 16 leds (más economico) -> Matriz LED RGB 8×8 con WS2812B – 64 píxeles direccionables (menos economico).
 
 Nos quedaremos con el Anillo LED RGB WS2812 de 16 leds
 
+¿Cómo funciona?
+
+Tiene 3 conexiones:
+
+5V
+
+GND
+
+DIN (Data In)
+
+Cada LED puede encenderse con cualquier color RGB y de forma independiente.
 
 <img width="581" height="457" alt="anilloLed" src="https://github.com/user-attachments/assets/a4c00820-2e9f-4c05-82d6-3724f5b96c13" />
 
@@ -219,4 +249,11 @@ Codigo para el anillo led -> https://github.com/adafruit/Adafruit_NeoPixel/blob/
 Poner datos al azar y cuando funcione cambiarlo los datos reales y rangos buscados.
 
 No alcanzamos, pero fui Afel a comprar lo que nos faltaba -> Anillo led y Sensor infrarrojo 
+
+# Dibujos (imagen de referencia)
+
+Representa la idea del mini totém.
+
+<img width="1158" height="912" alt="referencia" src="https://github.com/user-attachments/assets/5ad78df5-9a85-4614-a2ba-2cc527fa1239" />
+
 

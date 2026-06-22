@@ -5,15 +5,21 @@
 - Renata Arévalo Urra / [arevalourra](<https://github.com/isipm08/dis9079-2026-1/tree/main/06-arevalourra>)
 - Isidora Pérez Maulén / [isipm08](<https://github.com/isipm08/dis9079-2026-1/tree/main/21-isipm08>)
 
+## Descripción del proyecto
+
+Nuestro proyecto nace del deseo de transformar cada latido en un puente de conexión. Mediante el sensor ECG AD8232, la actividad cardíaca deja de ser una señal invisible para convertirse en información que viaja en cuestión de segundos. A través de Adafruit IO, cada pulso encuentra un camino seguro hasta una pantalla LCD conectada a un segundo microcontrolador, donde los datos cobran vida nuevamente. Así, este sistema no solo captura y transmite información: crea una nueva forma de acompañar, observar, demostrando que incluso el ritmo silencioso del corazón puede trascender la distancia y hacerse presente allí donde más se necesita.
+
 ## Materiales usados
 
 | Componente | Valor Unidad | Cantidad | Link |
 | --- | --- | --- | --- |
 | Arduino UNO R4 WiFi | $38.990 | 2 | <https://arduino.cl/producto/arduino-uno-r4-wifi/?srsltid=AfmBOopyyargcSiTQeFlT3cTN5ide380bxZlQXRZVP4u_op0O-qJcENB> |
-| Protoboard 400 puntos | $2.100 | 1 | <https://afel.cl/products/mini-protoboard-400-puntos?pr_prod_strat=e5_desc&pr_rec_id=b8ead05f1&pr_rec_pid=8382004101272&pr_ref_pid=8381979852952&pr_seq=uniform> |
+| Mini protoboard 170 puntos | $990 | 2 | <https://afel.cl/products/mini-protoboard-170-puntos?_pos=4&_sid=aa0b39e11&_ss=r |
 | Cables Dupont (Pack 20 unidades) | $1.000 | 1 | <https://afel.cl/products/pack-20-cables-de-conexion-macho-macho> |
 | Sensor de Frecuencia Cardíaca ECG AD8232 Electrocardiograma | $9.990 | 1 | <https://afel.cl/products/sensor-de-frecuencia-cardiaca-ecg-ad8232-electrocardiograma> |
-| Cable USB C | $ | 2 | <> |
+| Pantalla TFT LCD redonda de 1.28" | $4.990 | 1 | <https://www.mechatronicstore.cl/pantalla-tft-lcd-redonda-de-1-28/?srsltid=AfmBOormrgaJyuZokh0vmjczLkHKXalCX8OpIDNKoXI-k0D8GjpyM3mX
+| Electrodos PACH ECG TENS 5 unidades | $1.500 | 1 | <https://rambal.com/biometricos/1238-electrodo-ecg.html
+| Cable USB C | X | 2 | X
 
 
 ## Proceso de Proyecto
@@ -23,7 +29,15 @@
 
 #### 3 Semanas para el examen
 
-Inicio de ideación de examen, estuvimos leyendo e investigando sobre varios sensores, para ver si nos gustaba alguno para realizar nuestro proyectop de examen, nos decidimos por un sensor de pulso, específicamente el Sensor de Frecuencia Cardíaca ECG AD8232 Electrocardiograma, con la idea de obtener registros en vivo de los latidos por minuto del usuario, usaremos la API -> Adafruit IO, que ya conocemos y sabemos su funcionamiento, por el lado de recepción de datos, pensamos en una pantalla LCD que muestre los latidos por minuto, usaremos 2 arduinos, uno paras enviar y otro para recibir la información.
+Inicio de ideación de examen, estuvimos leyendo e investigando sobre varios sensores, para ver si nos gustaba alguno para realizar nuestro proyecto de examen, nos decidimos por un sensor de pulso, específicamente el Sensor de Frecuencia Cardíaca ECG AD8232 Electrocardiograma,  que es un módulo diseñado para medir la actividad eléctrica del corazón y generar lecturas similares a un electrocardiograma (ECG). Funcionando como una interfaz que extrae, amplifica y filtra las señales eléctricas muy débiles que genera el cuerpo humano al latir. 
+
+Con  este sensor teníamos la idea de obtener registros en vivo de los latidos por minuto del usuario, usaremos la API -> Adafruit IO, que ya conocemos y sabemos su funcionamiento, por el lado de recepción de datos, pensamos en una pantalla LCD que muestre los latidos por minuto, usaremos 2 arduinos, uno para enviar y otro para recibir la información.
+
+![Modulo Sensor](./imagenes/modulo-sensor.webp)
+
+*Modulo Sensor AD8232 - Imagen extraída de página web de AFEL*
+
+https://afel.cl/cdn/shop/files/modulo-sensor-ad8232.jpg?v=1720904051&width=713
 
 
 ### Interacción entre grupos vía Discord
@@ -41,6 +55,12 @@ Grupo 04: Queremos lograr una exploración sobre la capacidad de las tecnología
 - Jesús Miranda nos pregunta: ¿qué pasa en este caso en el dispositivo receptor? ya que en el párrafo dice que los latidos "son observados" pero no queda claro si es una pantalla LED, sonido, ¿cómo se ve esa presencia remota?
 
     - Resp: Estamos considerando el uso de la pantalla led del arduino o anexar una pantalla LCD para la visualización de los datos, que en este caso son las pulsaciones por minuto
+
+![Registro Discord 1](./imagenes/discord-1.png)
+
+![Registro Discord 2](./imagenes/discord-2.png)
+
+*Registro de Interacción en Discord*
 
 -----
 
@@ -132,7 +152,7 @@ Cuenta Adafruit IO
 
 ---- 
 
-Mateo viene a nuestros puestos a consultar como va el avancwe de nuestro proyecto, le comentamos nuestra idea definida y le gusta, nos da la idea de hacer una carcasa para la opantalla donde se muestran los datos (BPM), y nos presta una Pantalla TFT LCD Redonda de 1,28", lo cual nos quedaría super con una carcasa, en forma de corazón, ya estamos trabajando en un modelo de impresión 3D e imprimir entre esta semana y la siguiente en el LID; Gracias Mateo!!
+Mateo viene a nuestros puestos a consultar como va el avance de nuestro proyecto, le comentamos nuestra idea definida y le gusta, nos da la idea de hacer una carcasa para la opantalla donde se muestran los datos (BPM), y nos presta una Pantalla TFT LCD Redonda de 1,28", lo cual nos quedaría super con una carcasa, en forma de corazón, ya estamos trabajando en un modelo de impresión 3D e imprimir entre esta semana y la siguiente en el LID; Gracias Mateo!!
 
 -----
 
@@ -155,7 +175,943 @@ Red WiFi
 Cuenta Adafruit IO
 
 
+### Martes 09 de Junio
+
+![Compra Afel](./imagenes/compra-afel.gif)
+
+*Compra de Sensor AD8282 en AFEL*
 
 
+## Inicio de Trabajo con Sensor
+
+### Lunes 15 Junio 
+
+#### 1 Semana para el examen
+
+Iniciamos en el LID, tenemos todos los materiales necesarios para poder trabajar, tenemos pendiente realizar el modelado 3D para la pantalla.
+
+![titulo](./imagenes/conexiones-sensor-chat-gpt.png)
+
+*Primeras conexiones del Sensor a Arduino sugeridas por ChatGPT*
+
+Utilizamos estos Electrodos para realizar la conexión directamente entre el cuerpo de isipm --> Sensor ECG AD8232
+
+![titulo](./imagenes/electrodos.jpeg)
+
+*Electrodos*
+
+Luego conectamos nuestra Pantalla TFT LCD redonda de 1.28" a una proto y luego el Sensor ECG AD8232 a otra proto y a la isipm.
+
+![titulo](./imagenes/abdomen-isi.jpeg)
+
+*Conexión del Sensor ECG AD8238 a abdomen de isi*
+
+![titulo](./imagenes/clavicula-der-isi.jpeg)
+
+*Conexión del Sensor ECG AD8238 a clavícula derecha de isi*
+
+![titulo](./imagenes/clavicula-izq-isi.jpeg)
+
+*Conexión del Sensor ECG AD8238 a clavícula izquierda de isi*
+
+Entre varios intentos de códigos, llegamos a uno final para TRANSMISOR y RECEPTOR. (más adelante verán nuestro error)
+
+---- 
+
+Mateo y Aarón nos revisaron nuestro proyecto, nos comentaron que estaba bueno, solo que podíamos mejorar que la pantalla no refrescara.
+Aún no hemos podido mejorar la pantalla (si está buena pero creemos que son los cables), además mejorar la calidad de la visualización de los datos. Estaremos informando...
+
+---- 
+
+![titulo](./imagenes/pantalla-letras-rojas.jpeg)
+
+*Pantalla reflejando los datos pero con mala visualización (cambiar cables)*
+
+![titulo](./imagenes/mateo-help.jpeg)
+
+*Mateo ayudándonos en nuestro proyecto :) gracias Mateo!*
+
+> CÓDIGO FALLIDO
+
+```cpp
+#include <WiFiS3.h>
+#include "AdafruitIO_WiFi.h"
+
+#include <Arduino_GFX_Library.h>
+
+// ---------------- WIFI ----------------
+#define WIFI_SSID "iPhone de Renata"
+#define WIFI_PASS "arevalo1234"
+
+// ---------------- ADAFRUIT ----------------
+#define IO_USERNAME "arevalourra"
+#define IO_KEY "TU_KEY"
+
+// FEEDS
+AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
+
+AdafruitIO_Feed *bpmFeed =
+  io.feed("examen-grupo04-bpm");
+
+AdafruitIO_Feed *estadoFeed =
+  io.feed("examen-grupo04-ecg");
+
+// ---------------- PANTALLA GC9A01 ----------------
+
+Arduino_DataBus *bus =
+  new Arduino_HWSPI(
+    9,    // DC
+    10    // CS
+  );
+
+Arduino_GFX *gfx =
+  new Arduino_GC9A01(
+    bus,
+    8,    // RESET
+    0,    // rotación
+    true
+  );
+
+// ---------------- VARIABLES ----------------
+
+String bpm = "--";
+String estado = "---";
+
+void dibujarPantalla()
+{
+  gfx->fillScreen(0x0000);
+
+  gfx->setTextColor(0xFFFF);
+
+  gfx->setTextSize(2);
+  gfx->setCursor(30, 40);
+  gfx->println("ECG");
+
+  gfx->setTextSize(4);
+  gfx->setCursor(40, 90);
+  gfx->println(bpm);
+
+  gfx->setTextSize(2);
+  gfx->setCursor(20, 170);
+  gfx->println(estado);
+}
+
+// ---------- CALLBACK BPM ----------
+
+void handleBPM(AdafruitIO_Data *data)
+{
+  bpm = data->toString();
+
+  Serial.print("BPM recibido: ");
+  Serial.println(bpm);
+
+  dibujarPantalla();
+}
+
+// ---------- CALLBACK ESTADO ----------
+
+void handleEstado(AdafruitIO_Data *data)
+{
+  estado = data->toString();
+
+  Serial.print("Estado recibido: ");
+  Serial.println(estado);
+
+  dibujarPantalla();
+}
+
+void setup()
+{
+  Serial.begin(115200);
+
+  gfx->begin();
+
+  gfx->fillScreen(0x0000);
+
+  gfx->setTextColor(0xFFFF);
+
+  gfx->setTextSize(2);
+  gfx->setCursor(20,120);
+  gfx->println("Conectando...");
+
+  Serial.println("Conectando Adafruit IO");
+
+  io.connect();
+
+  while(io.status() < AIO_CONNECTED)
+  {
+    Serial.print(".");
+    delay(500);
+  }
+
+  Serial.println();
+  Serial.println("Conectado!");
+
+  bpmFeed->onMessage(handleBPM);
+  estadoFeed->onMessage(handleEstado);
+
+  bpmFeed->get();
+  estadoFeed->get();
+
+  dibujarPantalla();
+}
+
+void loop()
+{
+  io.run();
+}
+```
+
+> CÓDIGO FALLIDO
+
+```cpp
+#include <WiFiS3.h>
+#include "AdafruitIO_WiFi.h"
+
+#include <Arduino_GFX_Library.h>
+
+// ---------------- WIFI ----------------
+#define WIFI_SSID "TU_WIFI"
+#define WIFI_PASS "TU_CLAVE"
+
+// ---------------- ADAFRUIT ----------------
+#define IO_USERNAME "TU_USUARIO"
+#define IO_KEY "TU_KEY"
+
+// FEEDS
+AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
+
+AdafruitIO_Feed *bpmFeed =
+  io.feed("examen-grupo04-bpm");
+
+AdafruitIO_Feed *estadoFeed =
+  io.feed("examen-grupo04-ecg");
+
+// ---------------- PANTALLA GC9A01 ----------------
+
+Arduino_DataBus *bus =
+  new Arduino_HWSPI(
+    9,    // DC
+    10    // CS
+  );
+
+Arduino_GFX *gfx =
+  new Arduino_GC9A01(
+    bus,
+    8,    // RESET
+    0,    // rotación
+    true
+  );
+
+// ---------------- VARIABLES ----------------
+
+String bpm = "--";
+String estado = "---";
+
+void dibujarPantalla()
+{
+  gfx->fillScreen(0x0000);
+
+  gfx->setTextColor(0xFFFF);
+
+  gfx->setTextSize(2);
+  gfx->setCursor(30, 40);
+  gfx->println("ECG");
+
+  gfx->setTextSize(4);
+  gfx->setCursor(40, 90);
+  gfx->println(bpm);
+
+  gfx->setTextSize(2);
+  gfx->setCursor(20, 170);
+  gfx->println(estado);
+}
+
+// ---------- CALLBACK BPM ----------
+
+void handleBPM(AdafruitIO_Data *data)
+{
+  bpm = data->toString();
+
+  Serial.print("BPM recibido: ");
+  Serial.println(bpm);
+
+  dibujarPantalla();
+}
+
+// ---------- CALLBACK ESTADO ----------
+
+void handleEstado(AdafruitIO_Data *data)
+{
+  estado = data->toString();
+
+  Serial.print("Estado recibido: ");
+  Serial.println(estado);
+
+  dibujarPantalla();
+}
+
+void setup()
+{
+  Serial.begin(115200);
+
+  gfx->begin();
+
+  gfx->fillScreen(0x0000);
+
+  gfx->setTextColor(0xFFFF);
+
+  gfx->setTextSize(2);
+  gfx->setCursor(20,120);
+  gfx->println("Conectando...");
+
+  Serial.println("Conectando Adafruit IO");
+
+  io.connect();
+
+  while(io.status() < AIO_CONNECTED)
+  {
+    Serial.print(".");
+    delay(500);
+  }
+
+  Serial.println();
+  Serial.println("Conectado!");
+
+  bpmFeed->onMessage(handleBPM);
+  estadoFeed->onMessage(handleEstado);
+
+  bpmFeed->get();
+  estadoFeed->get();
+
+  dibujarPantalla();
+}
+
+void loop()
+{
+  io.run();
+}
+```
+
+Adjuntamos registro de nuestras conexiones realizadas el día lunes, que estas despúes fueron cambiadas, ya que el día miércoles nos dimos cuenta que los datos visualizados en Adafruit y Arduino eran datos aleatorios.
+
+![titulo](./imagenes/conexiones-lunes.jpeg)
+
+*Conexiones día Lunes*
+
+Tuvimos que considerar la compra de más parches, debido a su desgaste y la adherencia con el cuerpo, ya que sin unos parches nuevos, los datos no tomarían de buena forma.
+
+![titulo](./imagenes/comprar-electrodos.png)
+
+*Imagen electrodos sacada de https://rambal.com/biometricos/1238-electrodo-ecg.html*
+
+![titulo](./imagenes/ilusas-oficial.jpeg)
+
+*Ilusas creyendo con que los datos que se reflejaban eran reales*
+
+### Miércoles 17 Junio 
+
+### 5 días para el examen
+
+El día de hoy realizamos denuevo la prueba para la pantalla y efectivamente eran los cables!!. El día anterior la Rena realizó la compra de estos cables, para así poder realizar la prueba nuevamente con la pantalla y comprobar nuestra teoría.
+
+![titulo](./imagenes/cables-nuevos.jpeg)
+
+*Nuevos cables*
+
+Nos dimos cuenta que los datos que nos tiraba en el monitor serial de Arduino y en Adafruit eran solo datos aleatorios y no detectaba los pulsos reales... Tras varios intentos de nuevas pruebas con nuevos códigos no pudimos realizar que los pulsos fueran en tiempo real y de nosotras. (Por hoy nos rendimos, seguiremos en esta lucha)...
+
+![titulo](./imagenes/frustradas-oficial.jpeg)
+
+*Conexiones día Miércoles, probando nuevos cables*
+
+![titulo](./imagenes/pantalla-funcionando.jpeg)
+
+*Prueba pantalla con nuevos cables*
+
+![titulo](./imagenes/pantalla-fondo-rojo.jpeg)
+
+*Prueba pantalla con nuevos cables*
+
+![titulo](./imagenes/intento-3-pantalla-tft.gif)
+
+*Acá nos funcionó tanto la pantalla como el código, solo que este código despúes no lo utilizamos debido a los datos no reales*
+
+![titulo](./imagenes/ilusas-pt2.jpeg)
+
+*Foto riendo pero por dentro llorando*
+
+> CÓDIGO DE PRUEBA PANTALLA TFT LCD redonda de 1.28"
+
+- Utilizamos este código para probar la pantalla con los cables nuevos y si funcionó, reflejaba los colores respectivos.
+
+```cpp
+#include <Arduino_GFX_Library.h>
+
+// Pines de control
+#define TFT_DC   9
+#define TFT_CS   10
+#define TFT_RST  8
+
+// Colores RGB565
+#define TFT_BLACK   0x0000
+#define TFT_BLUE    0x001F
+#define TFT_RED     0xF800
+#define TFT_GREEN   0x07E0
+#define TFT_WHITE   0xFFFF
+#define TFT_YELLOW  0xFFE0
+#define TFT_CYAN    0x07FF
+#define TFT_MAGENTA 0xF81F
+
+// Configuración SPI por hardware
+Arduino_DataBus *bus = new Arduino_HWSPI(
+  TFT_DC,
+  TFT_CS
+);
+
+// Configuración pantalla GC9A01
+Arduino_GFX *gfx = new Arduino_GC9A01(
+  bus,
+  TFT_RST,
+  0,      // Rotación (0-3)
+  true    // IPS
+);
+
+void setup() {
+
+  Serial.begin(115200);
+
+  if (!gfx->begin()) {
+    Serial.println("Error al iniciar la pantalla");
+    while (1);
+  }
+
+  gfx->fillScreen(TFT_BLACK);
+
+  gfx->setTextSize(2);
+  gfx->setTextColor(TFT_WHITE);
+  gfx->setCursor(45, 110);
+  gfx->println("TEST RGB");
+
+  delay(2000);
+}
+
+void loop() {
+
+  mostrarColor(TFT_RED, "ROJO");
+  mostrarColor(TFT_GREEN, "VERDE");
+  mostrarColor(TFT_BLUE, "AZUL");
+  mostrarColor(TFT_WHITE, "BLANCO");
+  mostrarColor(TFT_YELLOW, "AMARILLO");
+  mostrarColor(TFT_CYAN, "CIAN");
+  mostrarColor(TFT_MAGENTA, "MAGENTA");
+  mostrarColor(TFT_BLACK, "NEGRO");
+}
+
+void mostrarColor(uint16_t color, const char *texto) {
+
+  gfx->fillScreen(color);
+
+  if (color == TFT_BLACK) {
+    gfx->setTextColor(TFT_WHITE);
+  } else {
+    gfx->setTextColor(TFT_BLACK);
+  }
+
+  gfx->setTextSize(3);
+
+  int16_t x1, y1;
+  uint16_t w, h;
+
+  gfx->getTextBounds(
+    texto,
+    0,
+    0,
+    &x1,
+    &y1,
+    &w,
+    &h
+  );
+
+  int16_t x = (240 - w) / 2;
+  int16_t y = (240 - h) / 2;
+
+  gfx->setCursor(x, y);
+  gfx->println(texto);
+
+  delay(2000);
+}
+```
+
+
+### Viernes 19 de Junio 
+
+### 3 días para el examen
+
+El día de hoy tratamos de mejorar los códigos, tuvimos un tiempo corto para poder avanzar, debido a nuestro acotado tiempo entre clases. No pudimos mejorar el código... Seguiremos informando.
+
+### Domingo 21 de Junio
+
+### 1 día para el examen
+
+El día de hoy nos ayudó la Carla (gracias Carla) a realizar nuestras últimas conexiones y hacer que la señal de los BPM llegara a la pantalla que estaba conectada en la casa de Isipm. 
+
+De partida probamos los códigos mostrados a continuación para realizar tanto demostraciones de la pantalla como los BPM en modo demo.
+
+**CÓDIGO PANTALLA COLOR**
+```cpp
+#include <Arduino_GFX_Library.h>
+
+#define TFT_CS 10
+#define TFT_DC 9
+#define TFT_RST 8
+
+Arduino_DataBus *bus = new Arduino_HWSPI(TFT_DC, TFT_CS);
+Arduino_GFX *tft = new Arduino_GC9A01(bus, TFT_RST, 0, false);
+
+void setup() {
+
+  tft->begin();
+
+  tft->fillScreen(0xF800);
+
+}
+
+void loop() {
+}
+```
+
+
+**CÓDIGO PANTALLA AZUL**
+```cpp
+#include <Arduino_GFX_Library.h>
+
+#define TFT_CS 10
+#define TFT_DC 9
+#define TFT_RST 8
+
+Arduino_DataBus *bus = new Arduino_HWSPI(TFT_DC, TFT_CS);
+Arduino_GFX *tft = new Arduino_GC9A01(bus, TFT_RST, 0, true);
+
+void setup() {
+
+  tft->begin();
+
+  tft->fillScreen(0x001F);
+
+}
+
+void loop() {
+}
+```
+
+Este código nos sirvió para comprobar si la pantalla estaba buena, realizando pruebas de color. Tal como el anterior.
+
+**CÓDIGO PRUEBA BPM DEMO**
+```cpp
+#include <WiFiS3.h>
+#include "AdafruitIO_WiFi.h"
+#include "config.h"
+#include <Arduino_GFX_Library.h>
+
+// Colores ajustados para tu pantalla
+#define BLACK 0x0000
+#define WHITE 0xFFFF
+#define RED   0x001F
+#define GREEN 0x07E0
+
+AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
+AdafruitIO_Feed *bpmFeed = io.feed("pulsaciones");
+
+// Pines pantalla
+#define TFT_CS   10
+#define TFT_DC   9
+#define TFT_RST  8
+
+Arduino_DataBus *bus = new Arduino_HWSPI(TFT_DC, TFT_CS);
+Arduino_GFX *tft = new Arduino_GC9A01(bus, TFT_RST, 0, false);
+
+int bpm = 75;
+int x = 0;
+int lastY = 190;
+
+unsigned long ultimoDibujo = 0;
+unsigned long ultimoDemo = 0;
+
+bool conectadoAdafruit = false;
+bool corazonGrande = false;
+
+void setup() {
+  Serial.begin(115200);
+  delay(2000);
+
+  tft->begin();
+  tft->fillScreen(BLACK);
+
+  tft->setTextColor(WHITE);
+  tft->setTextSize(2);
+  tft->setCursor(35, 105);
+  tft->print("Conectando...");
+
+  Serial.println("Conectando Adafruit...");
+  io.connect();
+
+  unsigned long inicio = millis();
+
+  while (io.status() < AIO_CONNECTED && millis() - inicio < 15000) {
+    Serial.print(".");
+    delay(500);
+  }
+
+  if (io.status() == AIO_CONNECTED) {
+    conectadoAdafruit = true;
+    Serial.println("\nAdafruit conectado");
+    bpmFeed->onMessage(recibirBPM);
+  } else {
+    conectadoAdafruit = false;
+    Serial.println("\nSin nube, modo demo");
+  }
+
+  tft->fillScreen(BLACK);
+  dibujarPantalla();
+}
+
+void loop() {
+  if (conectadoAdafruit) {
+    io.run();
+  }
+
+  if (!conectadoAdafruit && millis() - ultimoDemo > 5000) {
+    ultimoDemo = millis();
+    bpm++;
+    if (bpm > 82) bpm = 74;
+    dibujarPantalla();
+  }
+
+  if (millis() - ultimoDibujo > 80) {
+    ultimoDibujo = millis();
+    dibujarOnda();
+  }
+}
+
+void recibirBPM(AdafruitIO_Data *data) {
+  bpm = data->toInt();
+
+  if (bpm < 55 || bpm > 130) {
+    bpm = 75;
+  }
+
+  Serial.print("BPM recibido: ");
+  Serial.println(bpm);
+
+  dibujarPantalla();
+}
+
+void dibujarPantalla() {
+  tft->fillScreen(BLACK);
+
+  tft->setTextColor(WHITE);
+  tft->setTextSize(3);
+  tft->setCursor(55, 30);
+  tft->print(bpm);
+  tft->print(" BPM");
+
+  tft->setTextSize(1);
+  tft->setCursor(78, 65);
+
+  if (conectadoAdafruit) {
+    tft->print("Pulso en nube");
+  } else {
+    tft->print("Modo demo");
+  }
+
+  dibujarCorazon(120, 115, false);
+  tft->drawLine(20, 190, 220, 190, GREEN);
+}
+
+void dibujarCorazon(int cx, int cy, bool grande) {
+  int r = grande ? 18 : 15;
+
+  tft->fillCircle(cx - r / 2, cy, r, RED);
+  tft->fillCircle(cx + r / 2, cy, r, RED);
+
+  tft->fillTriangle(
+    cx - r - 8, cy + 5,
+    cx + r + 8, cy + 5,
+    cx, cy + r + 25,
+    RED
+  );
+}
+
+void dibujarOnda() {
+  corazonGrande = !corazonGrande;
+
+  tft->fillRect(65, 85, 110, 85, BLACK);
+  dibujarCorazon(120, 115, corazonGrande);
+
+  int fase = x % 48;
+  int y = 190;
+
+  if (fase < 8) y = 190;
+  else if (fase < 12) y = 178;
+  else if (fase < 16) y = 210;
+  else if (fase < 20) y = 150;
+  else y = 190;
+
+  tft->drawLine(x, lastY, x + 2, y, GREEN);
+
+  lastY = y;
+  x += 2;
+
+  if (x > 235) {
+    x = 0;
+    lastY = 190;
+    tft->fillRect(0, 175, 240, 65, BLACK);
+  }
+}
+```
+
+![titulo](./imagenes/demo-bpm.jpeg)
+
+![imagenes](./imagenes/bpm-prueba.gif) 
+
+Este código nos funcionó de prueba para ver como se mostraban los BPM en la pantalla. Simulando BPM reales.
+
+```cpp
+#include <Arduino_GFX_Library.h>
+
+#define TFT_CS 10
+#define TFT_DC 9
+#define TFT_RST 8
+
+Arduino_DataBus *bus = new Arduino_HWSPI(TFT_DC, TFT_CS);
+Arduino_GFX *tft = new Arduino_GC9A01(bus, TFT_RST, 0, false);
+
+void setup() {
+  tft->begin();
+  tft->fillScreen(0xF800);
+  tft->setTextColor(0xFFFF);
+  tft->setTextSize(3);
+  tft->setCursor(50, 100);
+  tft->print("TEST");
+}
+
+void loop() {}
+```
+
+![titulo](./imagenes/test.jpeg)
+
+## FUNCIONÓ!
+
+Realizamos la prueba de distintos códigos, tanto para ver el funcionamiento de la pantalla nuevamente, como también para realizar una prueba de los BPM. La prueba que realizamos fue de San Bernardo - Maipú, logrando una exitosa conexión entre ambos dispositivos y que en la nube de Adafruit y en la pantalla se pudiera registrar de manera simultánea los datos. !!! De igual forma en el Arduino con la pantalla mantuvimos siempre las conexiones iniciales, pero en el Arduino con el Sensor fuimos cambiando de conexiones hasta llegar a una definitiva e ir mejorando los códigos.
+
+![imagenes](./imagenes/transmisor.gif) 
+
+> DEMO EN VIVO REALIZADA DESDE MAIPÚ
+
+Esta es la demo en vivo del transmisor.
+
+![imagenes](./imagenes/receptor.gif) 
+
+> DEMO EN VIVO REALIZADA DESDE SAN BERNARDO
+
+Esta es la demo en vivo del receptor.
+
+**CÓDIGO FINAL TRANSMISOR**
+```cpp
+#include <WiFiS3.h>
+#include "AdafruitIO_WiFi.h"
+#include "config.h"
+
+AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
+AdafruitIO_Feed *bpmFeed = io.feed("pulsaciones");
+
+#define ECG_PIN A0
+
+float ecgFiltrado = 0;
+float anteriorECG = 0;
+
+unsigned long ultimoLatido = 0;
+unsigned long ultimoEnvio = 0;
+
+bool detectando = false;
+
+float bpm = 75;
+float ultimoBPMValido = 75;
+
+// Ajustado a tu señal actual: sube aprox. a 235–236
+int umbral = 233;
+
+void setup() {
+  Serial.begin(115200);
+  delay(2000);
+
+  Serial.println("Iniciando emisor ECG");
+  Serial.println("Conectando Adafruit...");
+
+  io.connect();
+
+  while (io.status() < AIO_CONNECTED) {
+    Serial.print(".");
+    delay(500);
+  }
+
+  Serial.println("\nAdafruit conectado");
+}
+
+void loop() {
+  io.run();
+
+  int lectura = analogRead(ECG_PIN);
+
+  ecgFiltrado = 0.75 * anteriorECG + 0.25 * lectura;
+  anteriorECG = ecgFiltrado;
+
+  Serial.print("ECG: ");
+  Serial.print(ecgFiltrado);
+  Serial.print(" | BPM: ");
+  Serial.println(ultimoBPMValido);
+
+  unsigned long ahora = millis();
+
+  if (ecgFiltrado > umbral && !detectando) {
+    unsigned long intervalo = ahora - ultimoLatido;
+
+    if (intervalo > 450 && intervalo < 1200) {
+      float bpmDetectado = 60000.0 / intervalo;
+
+      if (bpmDetectado > 55 && bpmDetectado < 130) {
+        bpm = bpmDetectado;
+        ultimoBPMValido = (0.7 * ultimoBPMValido) + (0.3 * bpm);
+
+        Serial.print("BPM valido: ");
+        Serial.println(ultimoBPMValido);
+      } else {
+        Serial.print("BPM descartado: ");
+        Serial.println(bpmDetectado);
+      }
+    }
+
+    ultimoLatido = ahora;
+    detectando = true;
+  }
+
+  if (ecgFiltrado < umbral - 2) {
+    detectando = false;
+  }
+
+  if (ahora - ultimoEnvio > 5000) {
+    ultimoEnvio = ahora;
+
+    int bpmEnviar = (int)ultimoBPMValido;
+
+    if (bpmEnviar < 55 || bpmEnviar > 130) {
+      bpmEnviar = 75;
+    }
+
+    bpmFeed->save(bpmEnviar);
+
+    Serial.print("ENVIADO A ADAFRUIT: ");
+    Serial.println(bpmEnviar);
+  }
+
+  delay(10);
+}
+```
+
+**CÓDIGO FINAL RECEPTOR**
+```cpp
+#include <WiFiS3.h>
+#include "AdafruitIO_WiFi.h"
+#include "config.h"
+#include <Arduino_GFX_Library.h>
+
+#define BLACK 0x0000
+#define WHITE 0xFFFF
+#define RED   0x001F
+#define GREEN 0x07E0
+
+AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
+AdafruitIO_Feed *bpmFeed = io.feed("pulsaciones");
+
+#define TFT_CS 10
+#define TFT_DC 9
+#define TFT_RST 8
+
+Arduino_DataBus *bus = new Arduino_HWSPI(TFT_DC, TFT_CS);
+Arduino_GFX *tft = new Arduino_GC9A01(bus, TFT_RST, 0, false);
+
+int bpm = 75;
+
+void setup() {
+  Serial.begin(115200);
+  delay(2000);
+
+  tft->begin();
+  tft->fillScreen(BLACK);
+  tft->setTextColor(WHITE);
+  tft->setTextSize(2);
+  tft->setCursor(35, 105);
+  tft->print("Conectando...");
+
+  io.connect();
+
+  while (io.status() < AIO_CONNECTED) {
+    Serial.print(".");
+    delay(500);
+  }
+
+  Serial.println("\nAdafruit conectado");
+  bpmFeed->onMessage(recibirBPM);
+
+  dibujarPantalla();
+}
+
+void loop() {
+  io.run();
+}
+
+void recibirBPM(AdafruitIO_Data *data) {
+  bpm = data->toInt();
+  if (bpm < 55 || bpm > 130) bpm = 75;
+
+  Serial.print("BPM recibido: ");
+  Serial.println(bpm);
+
+  dibujarPantalla();
+}
+
+void dibujarPantalla() {
+  tft->fillScreen(BLACK);
+
+  tft->setTextColor(WHITE);
+  tft->setTextSize(3);
+  tft->setCursor(55, 30);
+  tft->print(bpm);
+  tft->print(" BPM");
+
+  tft->setTextSize(1);
+  tft->setCursor(78, 65);
+  tft->print("Pulso en nube");
+
+  tft->fillCircle(112, 115, 18, RED);
+  tft->fillCircle(128, 115, 18, RED);
+  tft->fillTriangle(88, 125, 152, 125, 120, 170, RED);
+
+  tft->drawLine(20, 200, 60, 200, GREEN);
+  tft->drawLine(60, 200, 75, 175, GREEN);
+  tft->drawLine(75, 175, 90, 220, GREEN);
+  tft->drawLine(90, 220, 110, 160, GREEN);
+  tft->drawLine(110, 160, 130, 200, GREEN);
+  tft->drawLine(130, 200, 220, 200, GREEN);
+}
+```
+Finalmente pudimos terminar nuestro examen de manera exitosa y pacientemente. Además de que nuestro prueba y error constante nos hizo seguir adelante a pesar de las muchas frustraciones que se pusieron en nuestros caminos. Aprendimos bastante y de eso nos nutrimos! Gracias LID, Aarón y Mateo! 
+
+GRACIAS INTERACCIONES INALÁMBRICAS
+
+fin mientras...
+
+### DEMO EN VIDEO REPU-SS
 
 
