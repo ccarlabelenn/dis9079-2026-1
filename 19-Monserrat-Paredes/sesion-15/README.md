@@ -5,7 +5,7 @@ lunes 22 junio 2026
 Examen-grupo 6
 
 
-### criterios individuales
+### Criterios individuales
 
 - Investigación textual sobre API.
 - Bitácoras junio: evaluación de 4 sesiones (25 mayo, 01 junio, 08 de junio, 15 junio).
