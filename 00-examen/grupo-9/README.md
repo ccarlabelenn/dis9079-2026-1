@@ -37,6 +37,10 @@ Al inicio, nuestra idea era utilizar dos placas Arduino UNO R4 WiFi. La primera 
 
 Queríamos que la activación se realizará mediante un aplauso o un chasquido de dedos. Sin embargo, tras numerosas pruebas descubrimos que estos sonidos eran demasiado breves y el sensor no lograba detectarlos de manera correcta. Debido a esto, decidimos reemplazarlos por un soplido, ya que generaba una señal más estable y fácil de capturar.
 
+![procesos](./imagenes/proceso-4.png)
+
+> Primera prueba de aplauso
+
 Durante el desarrollo nos dimos cuenta de que el Arduino que actuaba como cerebro no aportaba una función realmente necesaria al sistema. Conversando con Mateo, llegamos a dos posibles soluciones.
 
 La primera consistía en mantener dos Arduino UNO R4 WiFi: uno conectado al sensor de sonido y otro conectado tanto a la pantalla OLED como al DFPlayer. De esta forma, una persona realizaría la pregunta y soplaría al sensor, mientras que el segundo Arduino recibiría la información y entregaría la respuesta mediante texto en la pantalla y audio por el parlante.
@@ -756,6 +760,24 @@ Posteriormente, surgió otro inconveniente: aunque el sistema ya leía los nuevo
 En cuanto al sensor de sonido, inicialmente queríamos activar el Oráculo mediante un aplauso o un chasquido de dedos. Sin embargo, debido a las dificultades para ajustar correctamente la sensibilidad del sensor, decidimos cambiar la interacción a un soplido, que resultó más fácil de detectar y calibrar.
 
 Aun así, observamos que la mayoría de los valores obtenidos terminaban en el dígito 5, por lo que el sistema repetía constantemente la misma respuesta. Para solucionarlo, modificamos el código para que, además del valor máximo detectado, también considerara el promedio de las mediciones realizadas durante el soplido. Al combinar ambos valores y obtener el último dígito del resultado, logramos una mayor variedad de respuestas y una experiencia más interesante para el usuario.
+
+## Fotos procesos
+
+![procesos](./imagenes/proceso-1.png)
+
+> Avance en el LID
+
+![procesos](./imagenes/proceso-2.png)
+
+> Soldaje del sensor MAX4466
+
+![procesos](./imagenes/proceso-3.png)
+
+> Sensor y PAM
+
+![gif](./imagenes/frames.gif)
+
+> Frames del gif de Croacardo el Sabio
 
 ## Uso de IA
 
