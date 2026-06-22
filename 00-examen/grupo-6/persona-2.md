@@ -3,10 +3,10 @@
 Monserrat-Paredes / https://github.com/Monserrat-Paredes
 
 
-## Investigación sobre API (Interfaz de Programación de Aplicaciones)
+# Investigación sobre API (Interfaz de Programación de Aplicaciones)
 
 
-### Origen
+## Origen
 
 En la década de los 70, las API experimentaron su primer gran salto en progreso gracias a los sistemas distribuidos. Surgieron métodos que permitieron el acceso remoto a la API de procedimientos al tiempo que evitaban la sobrecarga típica del programador mediante el empaquetado y desempaquetado de datos requerido para la interoperación entre diferentes tipos de computadoras.
 
@@ -157,8 +157,6 @@ La plataforma de OpenWeather muestra los tres pasos estándar de la industria pa
 
 - Integración: Se programa la llamada dentro del código de la aplicación para automatizar la solicitud de datos.
 
-En resumen, las API son el tejido conectivo de internet. Permiten que un diseñador o programador cree una aplicación que muestre mapas interactivos, procese pagos o dé el pronóstico del tiempo en tiempo real, delegando la complejidad de los datos a servicios expertos externos.
-
 
 
 ### Conclusión
@@ -166,7 +164,7 @@ Las API son un pilar del desarrollo de software moderno que promueven la conecti
 
 
 
-## Bibliografia
+### Bibliografia
 
 Instituto Superior Tecnológico Quito Metropolitano [ITSQMET]. (s.f.). ¿Qué es una API y para qué sirve? https://itsqmet.edu.ec/api/
 
