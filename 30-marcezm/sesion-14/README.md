@@ -234,7 +234,14 @@ Se revisaron distintos enfoques hasta llegar a la interpretación correcta del c
 
 Se intentó inicialmente convertir los valores del ADC en un porcentaje de humedad utilizando un rango de referencia entre estado seco y mojado:
 
-cod
+```cpp
+const int VALOR_SECO   = 17000;   // Valor cuando el suelo está SECO
+const int VALOR_MOJADO = 8000;    // Valor cuando el suelo está MOJADO
+
+int16_t valorCrudo = ads.readADC_SingleEnded(0);
+int humedad = map(valorCrudo, VALOR_SECO, VALOR_MOJADO, 0, 100);
+humedad = constrain(humedad, 0, 100);
+```
 
 ## Problema real identificado
 
