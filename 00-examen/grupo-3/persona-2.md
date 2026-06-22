@@ -27,24 +27,24 @@ Las APIs se clasifican de dos maneras: por su arquitectura (protocolo de comunic
 
 #### Por arquitectura
 
-* SOAP (Simple Object Access Protocol): 
+* SOAP(Simple Object Access Protocol): 
 Protocolo basado en mensajes XML. Es menos flexible y fue más popular en el pasado. Ofrece verificación de tipos estricta, siendo preferido en entornos con altos requisitos de integridad de datos.
 
-* RPC *(Remote Procedure Call): El cliente ejecuta un procedimiento en el servidor y recibe el resultado. Existen variantes como XML-RPC (usa XML, más simple y ligero) y JSON-RPC (usa JSON, compatible con cualquier lenguaje de programación).
+* RPC(Remote Procedure Call): El cliente ejecuta un procedimiento en el servidor y recibe el resultado. Existen variantes como XML-RPC (usa XML, más simple y ligero) y JSON-RPC (usa JSON, compatible con cualquier lenguaje de programación).
 
-* WebSocket *: Permite comunicación bidireccional y continua entre cliente y servidor. No requiere establecer una nueva conexión en cada intercambio, siendo ideal para aplicaciones en tiempo real.
+* WebSocket: Permite comunicación bidireccional y continua entre cliente y servidor. No requiere establecer una nueva conexión en cada intercambio, siendo ideal para aplicaciones en tiempo real.
 
-* REST * (Representational State Transfer): El tipo más popular y flexible actualmente. Utiliza HTTP con métodos como GET, PUT, DELETE. Es sin estado (el servidor no guarda datos del cliente entre solicitudes) y soporta múltiples formatos (JSON, XML, texto, HTML, YAML), lo que lo hace ideal para APIs públicas.
+* REST(Representational State Transfer): El tipo más popular y flexible actualmente. Utiliza HTTP con métodos como GET, PUT, DELETE. Es sin estado (el servidor no guarda datos del cliente entre solicitudes) y soporta múltiples formatos (JSON, XML, texto, HTML, YAML), lo que lo hace ideal para APIs públicas.
 
-* GraphQL *: Lenguaje de consulta desarrollado por Facebook (2012, código abierto desde 2015). Permite obtener exactamente los datos necesarios en una sola solicitud, resolviendo problemas de recuperación excesiva o insuficiente propios de REST.
+* GraphQL: Lenguaje de consulta desarrollado por Facebook (2012, código abierto desde 2015). Permite obtener exactamente los datos necesarios en una sola solicitud, resolviendo problemas de recuperación excesiva o insuficiente propios de REST.
 
 #### Por ámbito de uso
 
-* APIs privadas (internas) *: Solo se utilizan dentro de una empresa para conectar sistemas y equipos internos. No están disponibles para usuarios externos.
+* APIs privadas (internas): Solo se utilizan dentro de una empresa para conectar sistemas y equipos internos. No están disponibles para usuarios externos.
 
-* APIs públicas (abiertas) *: Disponibles para cualquier desarrollador. Pueden ser gratuitas o de pago, con o sin proceso de autorización.
+* APIs públicas (abiertas): Disponibles para cualquier desarrollador. Pueden ser gratuitas o de pago, con o sin proceso de autorización.
 
-* APIs de socios *: Accesibles únicamente por desarrolladores externos autorizados, generalmente para facilitar alianzas estratégicas entre empresas.
+* APIs de socios: Accesibles únicamente por desarrolladores externos autorizados, generalmente para facilitar alianzas estratégicas entre empresas.
 APIs compuestas: Combinan dos o más APIs para responder a requisitos complejos del sistema. Son especialmente útiles en arquitecturas de microservicios.
 
 ### ¿Cómo se crea una API?
@@ -66,19 +66,19 @@ El diseño de una API de calidad requiere seguir un proceso ordenado de cinco et
 Las APIs ofrecen ventajas significativas 
 tanto para desarrolladores como para organizaciones:
 
-Integración: Permiten conectar nuevas aplicaciones con sistemas existentes, eliminando la necesidad de desarrollar funcionalidades desde cero y acelerando los tiempos de desarrollo.
+* Integración: Permiten conectar nuevas aplicaciones con sistemas existentes, eliminando la necesidad de desarrollar funcionalidades desde cero y acelerando los tiempos de desarrollo.
 
-Innovación: Facilitan la implementación rápida de nuevos servicios y funcionalidades sin reescribir el código completo, permitiendo a las empresas adaptarse ágilmente a cambios del mercado.
+* Innovación: Facilitan la implementación rápida de nuevos servicios y funcionalidades sin reescribir el código completo, permitiendo a las empresas adaptarse ágilmente a cambios del mercado.
 
-Ampliación multiplataforma: Hacen posible que una misma funcionalidad (como la integración de mapas) esté disponible en web, Android, iOS y otras plataformas simultáneamente.
+* Ampliación multiplataforma: Hacen posible que una misma funcionalidad (como la integración de mapas) esté disponible en web, Android, iOS y otras plataformas simultáneamente.
 
-Facilidad de mantenimiento: Al actuar como puerta de enlace entre sistemas, los cambios internos de un sistema no afectan al otro. Esto reduce el impacto de modificaciones futuras en el código.
+* Facilidad de mantenimiento: Al actuar como puerta de enlace entre sistemas, los cambios internos de un sistema no afectan al otro. Esto reduce el impacto de modificaciones futuras en el código.
 
-Colaboración mejorada: Permiten integrar cientos de aplicaciones que de otro modo estarían desconectadas, automatizando flujos de trabajo y eliminando silos de información.
+* Colaboración mejorada: Permiten integrar cientos de aplicaciones que de otro modo estarían desconectadas, automatizando flujos de trabajo y eliminando silos de información.
 
-Monetización de datos: Las empresas pueden ofrecer acceso a sus datos o funcionalidades mediante APIs de pago, creando nuevas fuentes de ingresos.
+* Monetización de datos: Las empresas pueden ofrecer acceso a sus datos o funcionalidades mediante APIs de pago, creando nuevas fuentes de ingresos.
 
-Seguridad: Al no exponer completamente los datos del sistema, solo comparten los paquetes de información necesarios para cada solicitud específica.
+* Seguridad: Al no exponer completamente los datos del sistema, solo comparten los paquetes de información necesarios para cada solicitud específica.
 
 ### A Considerar
 
