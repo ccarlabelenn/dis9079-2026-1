@@ -779,6 +779,10 @@ Aun así, observamos que la mayoría de los valores obtenidos terminaban en el d
 
 > Frames del gif de Croacardo el Sabio
 
+![procesos](./imagenes/rana-salta.gif)
+
+> Prueba en pantalla OLED del gif
+
 ## Uso de IA
 
 En este trabajo usamos 3 IAs distintas. Principalmente utilizamos ChatGPT para generar el código de las tres placas: una Raspberry Pi Pico 2 W y dos Arduino UNO R4 WiFi. También usamos Claude IA para algunos códigos y, por último, Deevid AI para crear los audios con voz de anciano.
