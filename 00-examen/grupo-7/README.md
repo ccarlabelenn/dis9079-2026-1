@@ -23,17 +23,17 @@ El grupo comenzó con una idea general: hacer visible el mundo invisible de las 
 
 Claude respondió explicando que la Raspberry Pi Pico tiene solo 12 bits de resolución analógica, insuficiente para micro-voltajes, y recomendó el ADS1115 de 16 bits.
 
-![ads1](./imagenes/compraAds.JPG)
+![ads1](./imagenes/compra-ads.jpg)
 
 **Imagen 1** *compra del módulo ADS1115 en la tienda Afel*
 
 ### Proceso de instalación de bibliotecas de ADS1115
 
-![ads2](./imagenes/adsInstalacion1.JPG)
+![ads2](./imagenes/ads-instalacion1.jpg)
 
 **Imagen 2** *Proceso de instalación de bibliotecas de ADS1115*
 
-![ads3](./imagenes/adsInstalacion2.JPG)
+![ads3](./imagenes/ads-instalacion2.jpg)
 
 **Imagen 3** *Proceso de instalación de bibliotecas de ADS1115*
 
@@ -79,11 +79,11 @@ void loop() {
 }
 ```
 
-![prueba1ads](./imagenes/adsPrueba1.JPG)
+![prueba1ads](./imagenes/ads-prueba1.jpg)
 
 **Imagen 4** *Monitor serial prueba ADS1115*
 
-![prueba2ads](./imagenes/adsPrueba2.JPG)
+![prueba2ads](./imagenes/ads-prueba2.jpg)
 
 **Imagen 5** *Monitor serial prueba ADS1115*
 
@@ -106,21 +106,21 @@ Una segunda prueba consistió en acercar la mano a una hoja sin tocarla directam
 3. Pinzas de cocodrilo al ADS1115.
 4. Sistema completo armado y funcionando.
 
-![monitorserial1](./imagenes/adsConexion5.JPG)
+![monitorserial1](./imagenes/ads-conexion5.jpg)
 
 **Imagen 6** *Datos del monitor serial al completar las conexiones*
 
-![funcionamiento](./imagenes/adsConexion6.JPG)
+![funcionamiento](./imagenes/ads-conexion6.jpg)
 
 **Imagen 7** *Se comprueba que la lectura funciona*
 
-![monitorserial2](./imagenes/adsConexion7.JPG)
+![monitorserial2](./imagenes/ads-conexion7.jpg)
 
 **Imagen 8** *Monitor serial al acercar la mano a la planta*
 
 ¡Funciona perfectamente! El Canal 0 subió más de 1000 puntos sin tocar la planta, solo acercando la mano.
 
-![funciona](./imagenes/adsConexion8.JPG)
+![funciona](./imagenes/ads-conexion8.jpg)
 
 **Imagen 9** *Lectura al acercar la mano*
 
@@ -216,7 +216,7 @@ void loop() {
 
 Esta versión se probó tanto sin acercar la mano a la planta como acercando la mano o tocando la tierra, lo que permitió observar en vivo el cambio de estado de "calma" a "¡actividad!" directamente en el Monitor Serial.
 
-![adscodigo2](./imagenes/adsCodigo2.JPG)
+![adscodigo2](./imagenes/ads-codigo2.jpg)
 
 **Imagen 10** *Prueba del segundo código y lectura en monitor serial*
 
@@ -348,7 +348,7 @@ void loop() {
 
 Se logró conectar, pero surgieron varios problemas: el código mandaba datos muy rápido (la luz del Arduino parpadeaba casi sin pausa), y existía la duda de cómo manejar la conexión si el PC que visualiza los datos está a varios metros de distancia del Arduino, cada uno en redes distintas. También se necesitaba que la visualización mostrara formas y colores tipo animación en vez de solo texto plano.
 
-![adserror](./imagenes/adsCodigo2error.JPG)
+![adserror](./imagenes/ads-codigo2-error.jpg)
 
 **Imagen 11** *Error en código*
 
@@ -356,7 +356,7 @@ Se logró conectar, pero surgieron varios problemas: el código mandaba datos mu
 
 Claude entonces entregó un HTML nuevo con visualización gráfica.
 
-![primerhtml](./imagenes/adsPrimerhtml.JPG)
+![primerhtml](./imagenes/ads-primer-html.jpg)
 
 **Imagen 12** *Primera visualización en HTML entregada por Claude*
 
@@ -372,11 +372,11 @@ Esa línea descarga la API de p5.js desde internet y la usa para dibujar todo lo
 
 **¿Qué dibuja exactamente?**
 
-![claude](./imagenes/adsExplicacionhtml.JPG)
+![claude](./imagenes/ads-explicacion-html.jpg)
 
 **Imagen 13** *Explicación dada por Claude acerca de la visualización*
 
-![claude](./imagenes/adsExplicacionhtml2.JPG)
+![claude](./imagenes/ads-explicacion-html2.jpg)
 
 **Imagen 14** *Explicación de los datos de la planta*
 
@@ -384,11 +384,11 @@ Esa línea descarga la API de p5.js desde internet y la usa para dibujar todo lo
 
 Durante el proceso de conectar todo el sistema directamente a la planta, se detectó que las hojas y el tallo se rompían con facilidad al manipular las pinzas, por lo que fue necesario colocarlas con mucho cuidado para no dañar el organismo que se estaba midiendo.
 
-![planta](./imagenes/cuidadoPlanta.JPG)
+![planta](./imagenes/cuidado-planta.jpg)
 
 ### Pruebas con otra gráfica y sonido en el HTML
 
-![pruebaclaude](./imagenes/prueba2html.JPG)
+![pruebaclaude](./imagenes/prueba2-html.jpg)
 
 **Imagen 15** *Segunda gráfica de HTML*
 
@@ -396,17 +396,17 @@ Aquí nos dimos cuenta de que, al querer conectar el Arduino (con el ADS1115 y l
 
 En la imagen de prueba se veía que el Arduino se conectaba al WiFi, pero la IP marcaba 0.0.0.0, lo que significa que el router no le había asignado dirección todavía. Tampoco aparecía el mensaje "Enviado a dweet.io OK", lo que confirmaba que dweet.io no estaba respondiendo bien.
 
-![errordweet](./imagenes/dweet1.JPG)
+![errordweet](./imagenes/dweet-1.jpg)
 
 **Imagen 16** *Error en Dweet*
 
 Le preguntamos a Claude cómo solucionar esto, y luego tratamos de resolverlo usando Visual Studio Code, ya que el HTML seguía sin conectarse. Claude guió la instalación y uso de la extensión Live Server (de Ritwik Dey) para servir el archivo HTML localmente. Aun así, el problema de fondo persistía, por lo que se decidió migrar de dweet.io a HiveMQ Cloud.
 
-![errordweet](./imagenes/dweetError.JPG)
+![errordweet](./imagenes/dweet-error.jpg)
 
 **Imagen 17** *Guía de Claude en uso de Dweet*
 
-![errordwet](./imagenes/dweetError2.JPG)
+![errordwet](./imagenes/dweet-error2.jpg)
 
 **Imagen 18** *Visualización en visualstudiocode, seguía sin funcionar*
 
@@ -591,47 +591,47 @@ Solución final aplicada:
 
 ### Imágenes del proceso en HiveMQ
 
-![hivemq1](./imagenes/hiveMq1.JPG)
+![hivemq1](./imagenes/hive-mq1.jpg)
 
 **Imagen 19** *Proceso en HiveMQ*
 
-![hivemq2](./imagenes/hiveMq2.JPG)
+![hivemq2](./imagenes/hive-mq2.jpg)
 
 **Imagen 20** *Proceso en HiveMQ*
 
-![hivemq3](./imagenes/hiveMq3.JPG)
+![hivemq3](./imagenes/hive-mq3.jpg)
 
 **Imagen 21** *Proceso en HiveMQ*
 
-![hivemq4](./imagenes/hiveMq4.JPG)
+![hivemq4](./imagenes/hive-mq4.jpg)
 
 **Imagen 22** *Proceso en HiveMQ*
 
-![hivemq5](./imagenes/hiveMq5.JPG)
+![hivemq5](./imagenes/hive-mq5.jpg)
 
 **Imagen 23** *Proceso en HiveMQ*
 
-![hivemq6](./imagenes/hiveMq6.JPG)
+![hivemq6](./imagenes/hive-mq6.jpg)
 
 **Imagen 24** *Proceso en HiveMQ*
 
-![hivemq7](./imagenes/hiveMq7.JPG)
+![hivemq7](./imagenes/hive-mq7.jpg)
 
 **Imagen 25** *Proceso en HiveMQ*
 
-![hivemq8](./imagenes/hiveMq8.JPG)
+![hivemq8](./imagenes/hive-mq8.jpg)
 
 **Imagen 26** *Proceso en HiveMQ*
 
-![hivemq9](./imagenes/hiveMq9.JPG)
+![hivemq9](./imagenes/hive-mq9.jpg)
 
 **Imagen 27** *Proceso en HiveMQ*
 
-![hivemq10](./imagenes/hiveMq10.JPG)
+![hivemq10](./imagenes/hive-mq10.jpg)
 
 **Imagen 28** Proceso en HiveMQ*
 
-![hivemq11](./imagenes/hiveMq11.JPG)
+![hivemq11](./imagenes/hive-mq11.jpg)
 
 **Imagen 29** *Proceso en HiveMQ*
 
@@ -648,19 +648,19 @@ Solución final aplicada:
 
 Una vez adoptado HiveMQ, fue necesario configurar el código de Arduino correctamente, lo que implicó resolver distintos errores que fueron apareciendo durante la integración. Se descubrió que era necesario agregar las credenciales específicas de HiveMQ (host, usuario y contraseña del clúster) directamente en el código del Arduino para que la conexión MQTT con TLS se autenticara correctamente.
 
-![errorhivemq](./ïmagenes/hivemqError1.JPG)
+![errorhivemq](./imagenes/hivemq-error1.jpg)
 
 **Imagen 30** *Error al utilizar HiveMQ en Arduino*
 
-![errorhivemq2](./imagenes/hivemqError2.JPG)
+![errorhivemq2](./imagenes/hivemq-error2.jpg)
 
 **Imagen 31** *Error al utilizar HiveMQ en Arduino*
 
-![credenciales](./imagenes/hivemqCredenciales.JPG)
+![credenciales](./imagenes/hivemq-credenciales.jpg)
 
 **Imagen 32** *Implementación de credenciales de HiveMQ dentro de Arduino*
 
-![hivemq12](./imagenes/hiveMq12.JPG)
+![hivemq12](./imagenes/hive-mq12.jpg)
 
 **Imagen 33**
 
@@ -848,17 +848,17 @@ void conectarMQTT() {
 }
 ```
 
-![hivemqurl](./imagenes/hivemqUrl.JPG)
+![hivemqurl](./imagenes/hivemq-url.jpg)
 
 **Imagen 34** *Configuración y URL de HiveMQ*
 
 Las credenciales generadas en HiveMQ (host, usuario, contraseña) tuvieron que copiarse directamente en este código del Arduino para que la autenticación funcionara. En el Cliente Web de HiveMQ se confirmó que la información sí estaba llegando correctamente.
 
-![hivemqconexión](./imagenes/hivemqConexion.JPG)
+![hivemqconexión](./imagenes/hivemq-conexion.jpg)
 
 **Imagen 35** *Conexión de HiveMQ realizada*
 
-![hivemqultimo](./imagenes/hivemqConexion2.JPG)
+![hivemqultimo](./imagenes/hivemq-conexion2.jpg)
 
 **Imagen 36** *HiveMQ recibiendo la información*
 
@@ -1175,13 +1175,17 @@ Lo que diferencia este proyecto de otros similares en el mundo (Mileece, PlantWa
 
 Claude no tomó decisiones creativas. Todas las decisiones sobre concepto, estética, qué planta usar, qué colores, qué tipo de visualización, fueron del grupo. Claude funcionó como un profesor técnico disponible en cualquier momento.
 
-## Demo video en SS
+## Demo video en sala
 
-- demostración de prueba en salvador sanfuentes 
+- demostración de prueba en sala de salvador sanfuentes
 
-[demoss](https://www.youtube.com/shorts/Hh6tSR9Zxnw) 
 
-## Demo video SS-república 180
+
+## Demo video SS piso 1 - pañol
+
+[demosspañol](https://www.youtube.com/shorts/Hh6tSR9Zxnw) 
+[demoss](https://youtube.com/shorts/H2X1xayq0s8?si=_cKhxB6TC0V4_3Be) 
+[demoss]([https://youtube.com/shorts/H2X1xayq0s8?si=_cKhxB6TC0V4_3Be](https://youtube.com/shorts/7V4tm9dL1Pg?si=IMiIpCeYupOx-oC6)) 
 
 ## Conclusión
 
