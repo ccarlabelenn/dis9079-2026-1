@@ -1177,7 +1177,7 @@ Claude no tomó decisiones creativas. Todas las decisiones sobre concepto, esté
 
 ## Demo video en SS
 
--demostración de prueba en salvador sanfuentes 
+- demostración de prueba en salvador sanfuentes 
 
 [demoss](https://www.youtube.com/shorts/Hh6tSR9Zxnw) 
 
