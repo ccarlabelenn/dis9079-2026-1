@@ -23,17 +23,17 @@ El grupo comenzó con una idea general: hacer visible el mundo invisible de las 
 
 Claude respondió explicando que la Raspberry Pi Pico tiene solo 12 bits de resolución analógica, insuficiente para micro-voltajes, y recomendó el ADS1115 de 16 bits.
 
-![ads1](./imagenes/compraAds.JPG)
+![ads1](./imagenes/compra-ads.jpg)
 
 **Imagen 1** *compra del módulo ADS1115 en la tienda Afel*
 
 ### Proceso de instalación de bibliotecas de ADS1115
 
-![ads2](./imagenes/adsInstalacion1.JPG)
+![ads2](./imagenes/ads-instalacion1.jpg)
 
 **Imagen 2** *Proceso de instalación de bibliotecas de ADS1115*
 
-![ads3](./imagenes/adsInstalacion2.JPG)
+![ads3](./imagenes/ads-instalacion2.jpg)
 
 **Imagen 3** *Proceso de instalación de bibliotecas de ADS1115*
 
