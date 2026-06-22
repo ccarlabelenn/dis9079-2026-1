@@ -20,12 +20,12 @@
 
 // Definir credenciales constantes
 
-const char* WIFI_SSID     = "tuRedWiFi";
-const char* WIFI_PASSWORD = "tuContraseñaWifi";
+const char* WIFI_SSID     = "NombreWiFi";
+const char* WIFI_PASSWORD = "ContraseñaWiFi";
 
 
-const char* AIO_USER      = "tuUserAIO";
-const char* AIO_KEY       = "tuAIOkey";
+const char* AIO_USER      = "aioUser";
+const char* AIO_KEY       = "aioKey";
 
 
 const char* AIO_BROKER    = "io.adafruit.com";
