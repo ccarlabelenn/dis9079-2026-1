@@ -157,10 +157,12 @@ Segundo problema, el contador se actualiza si se conecta o desconecta el cable m
 
 
 *foto del proyecto, especifico ARDUINO+BOTONES*
-*prueba en adafruit, sumando y restando personas
-<img width="1912" height="855" alt="Captura de pantalla 2026-06-18 161901" src="https://github.com/user-attachments/assets/c0c32417-e97f-4fe3-9612-d75ae046a6aa" />
 <img width="900" height="1600" alt="WhatsApp Image 2026-06-22 at 11 10 36 (1)" src="https://github.com/user-attachments/assets/60f0d5c3-d86c-46fb-8795-d79f75d66b1c" />
 <img width="900" height="1600" alt="WhatsApp Image 2026-06-22 at 11 10 36" src="https://github.com/user-attachments/assets/b68a869c-b2e9-40c9-ac88-7e6a252eaa8d" />
+
+*prueba en adafruit, sumando y restando personas*
+<img width="1912" height="855" alt="Captura de pantalla 2026-06-18 161901" src="https://github.com/user-attachments/assets/c0c32417-e97f-4fe3-9612-d75ae046a6aa" />
+
 
 
 https://youtube.com/shorts/AJlLrTNiS2I?si=OBioyqRRyYEKV35q
