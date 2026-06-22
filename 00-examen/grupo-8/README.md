@@ -27,12 +27,15 @@ Parámetros del semáforo
 
 ### Materiales 
 
-* Arduino UNO R4 WiFi 
-* Raspberry Pi Pico 2 W 
-* 2 botones
-* 1 módulo semáforo RGB (con pines GND, R, Y, G integrados)
-* Protoboards y cables jumper
-* Resistencias de 10kΩ 
+| materiales | costo | cantidad|
+|------------|-------|---------|
+|Modulo Luz Led de Semaforo ( (con pines GND, R, Y, G integrados)| 1.500 | 1       |
+|Raspberry Pi Pico 2 W         | 14.990 | 1        |
+|arduino UNO R4 wifi        | 38.990  | 1       |
+|botones         | 100c/u  | 2       |
+|Protoboards     | 1.500c/u  | 2       |
+|cables jumper (pack de 20 cables de conexión macho macho)  | 1.000  |         |
+
 
 ## Proceso 
 
