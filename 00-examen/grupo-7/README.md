@@ -79,11 +79,11 @@ void loop() {
 }
 ```
 
-![prueba1ads](./imagenes/adsPrueba1.JPG)
+![prueba1ads](./imagenes/ads-prueba1.jpg)
 
 **Imagen 4** *Monitor serial prueba ADS1115*
 
-![prueba2ads](./imagenes/adsPrueba2.JPG)
+![prueba2ads](./imagenes/ads-prueba2.jpg)
 
 **Imagen 5** *Monitor serial prueba ADS1115*
 
@@ -356,7 +356,7 @@ Se logró conectar, pero surgieron varios problemas: el código mandaba datos mu
 
 Claude entonces entregó un HTML nuevo con visualización gráfica.
 
-![primerhtml](./imagenes/adsPrimerhtml.JPG)
+![primerhtml](./imagenes/ads-primer-html.jpg)
 
 **Imagen 12** *Primera visualización en HTML entregada por Claude*
 
@@ -372,11 +372,11 @@ Esa línea descarga la API de p5.js desde internet y la usa para dibujar todo lo
 
 **¿Qué dibuja exactamente?**
 
-![claude](./imagenes/adsExplicacionhtml.JPG)
+![claude](./imagenes/ads-explicacion-html.jpg)
 
 **Imagen 13** *Explicación dada por Claude acerca de la visualización*
 
-![claude](./imagenes/adsExplicacionhtml2.JPG)
+![claude](./imagenes/ads-explicacion-html2.jpg)
 
 **Imagen 14** *Explicación de los datos de la planta*
 
@@ -388,7 +388,7 @@ Durante el proceso de conectar todo el sistema directamente a la planta, se dete
 
 ### Pruebas con otra gráfica y sonido en el HTML
 
-![pruebaclaude](./imagenes/prueba2html.JPG)
+![pruebaclaude](./imagenes/prueba2-html.jpg)
 
 **Imagen 15** *Segunda gráfica de HTML*
 
