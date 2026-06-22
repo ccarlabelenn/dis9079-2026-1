@@ -231,21 +231,21 @@ También consideramos que el sensor era sensible, por lo que estas distancias te
 | `encendidoProgresivoAusencia()` | Genera el fade de ausencia prolongada. El LED no se prende de golpe, sino que sube progresivamente hasta llegar al brillo máximo en 10 segundos. |
 
 
-Decisiones importantes que tomamos
+**Decisiones importantes que tomamos**:
 
 También fuimos ajustando varias cosas durante la construcción:
 
 
--No enviar lecturas crudas del sensor.  
--Enviar solo códigos simples a Adafruit IO.   
--Usar promedio para estabilizar el sensor.  
--Usar confirmación temporal antes de cambiar de estado.  
--Agregar botón demo para el examen.  
--Hacer que el LED tenga respuestas distintas según la cercanía.  
--Hacer que la ausencia prolongada tenga un fade de 10 segundos.  
--Evitar que Adafruit bloquee el código si no hay internet.  
--Retirar el servo del Tótem 02 para dejar una respuesta más limpia.  
--Usar pantalla OLED como respuesta principal del segundo tótem.  
+- No enviar lecturas crudas del sensor.  
+- Enviar solo códigos simples a Adafruit IO.   
+- Usar promedio para estabilizar el sensor.  
+- Usar confirmación temporal antes de cambiar de estado.  
+- Agregar botón demo para el examen.  
+- Hacer que el LED tenga respuestas distintas según la cercanía.  
+- Hacer que la ausencia prolongada tenga un fade de 10 segundos.  
+- Evitar que Adafruit bloquee el código si no hay internet.  
+- Retirar el servo del Tótem 02 para dejar una respuesta más limpia.  
+- Usar pantalla OLED como respuesta principal del segundo tótem.  
 
 ### Prompts utilizados para el desarrollo del código del Tótem 01
 
