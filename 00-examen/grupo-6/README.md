@@ -827,6 +827,12 @@ while True:
 2. Cambiar claves WIFI (funciona mejor que cada microcontrolador tenga su propio wifi)
 3. Y listo, dejamos que fluya!
 
+### Procesos imagenes / videos
+
+<img src="./imagenes/video5.gif" alt="video" width="400"> <img src="./imagenes/proceso1.gif" alt="video" width="400">
+
+<img src="./imagenes/proceso2.jpeg" alt="video" width="400">  <img src="./imagenes/proceso3.jpeg" alt="video" width="400">
+
 ---
 
 ## INput - Sensor Infrarrojo (código en Raspberry) / código que envía
