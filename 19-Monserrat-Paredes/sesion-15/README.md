@@ -5,7 +5,7 @@ lunes 22 junio 2026
 Examen-grupo 6
 
 
-### Criterios individuales
+## Criterios individuales
 
 - Investigación textual sobre API.
 - Bitácoras junio: evaluación de 4 sesiones (25 mayo, 01 junio, 08 de junio, 15 junio).
@@ -260,9 +260,9 @@ Las API son un pilar del desarrollo de software moderno que promueven la conecti
 
 
 
-# Pueste digital: Codigo/proceso
+# Puente digital: Código/proceso
 
-### Entrada - Sensor Infrarrojo (código en Raspberry) / código que envía
+## Entrada - Sensor Infrarrojo (código en Raspberry) / código que envía
 
 Recomendaciones:
 
@@ -404,7 +404,7 @@ while True:
 ```
 
 
-### Resumen del código entrada (para que se entienda mejor)
+## Resumen del código entrada (para que se entienda mejor)
 
 INICIO
 
@@ -427,7 +427,7 @@ FIN
 
 
 
-### SALIDA - Anillo LED (código en Arduino) / código que recibe
+## SALIDA - Anillo LED (código en Arduino) / código que recibe
 
 Recomendaciones:
 
@@ -596,7 +596,7 @@ void actualizarAnillo(int conteo) {
 }
 ```
 
-### Resumen del código de salida (para que se entienda mejor)
+## Resumen del código de salida (para que se entienda mejor)
 
 INICIO
 
@@ -634,7 +634,7 @@ FIN
 <img width="576" height="1024" alt="digiprueba" src="https://github.com/user-attachments/assets/6bc2e232-1aa4-4880-9632-bc30a04dd6e3" />
 
 
-### Demostraciones en vivo de Peñalolén y Quilicura :)
+# Demostraciones en vivo de Peñalolén y Quilicura :)
 
 Decidimos elevar el nivel de dificultad del proyecto probando la conexión inalámbrica a grandes distancias. La infraestructura se distribuyó geográficamente de esta forma:
 
