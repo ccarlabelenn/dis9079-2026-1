@@ -2,7 +2,7 @@
 
 lunes 15 junio 2026
 
-El día de hoy realizamos trabajo en clase, intendo realizar nuestras conexiones para nuestro examen.
+El día de hoy realizamos trabajo en clase, intentando realizar nuestras conexiones para nuestro examen.
 
 ## Listado de materiales final
 
