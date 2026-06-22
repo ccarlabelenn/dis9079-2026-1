@@ -186,12 +186,8 @@ Pico 2 W: botón en GP15, LED en GP16
 
 Arduino: módulo RGB en D2, control del relé (vía transistor) en pin 5, igual a como ya lo tenías armado
 
-Created 2 files, ran a command
-Created 2 files, ran a command
-
 Ahora el receptor en el Arduino UNO R4 WiFi:
 
-Created a file, ran a command, read a file
 Created a file, ran a command, read a file
 
 Cómo instalarlo:
